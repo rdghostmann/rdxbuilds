@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     yandex: "",
   },
    icons: {
-    icon: "/favicon.png",
+    icon: "/rdxbuilds-favicon.png",
   },
 };
 
@@ -61,7 +61,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
        <Head>
-        <link rel="icon" href="/favicon" />
+        <link rel="icon" href="/rdxbuilds-favicon.png" />
       </Head>
       <body
         className={cn(
