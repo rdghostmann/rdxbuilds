@@ -132,11 +132,11 @@ export const DATA = {
     },
     {
       company: "EU Cultural Centre",
-      href: "https://eu-cultural-centre.vercel.app",
+      href: "https://euculturalcenta.vercel.app/",
       badges: ["Culture", "Education", "International"],
       location: "Remote",
       title: "Cultural Exchange Platform",
-      logoUrl: "/eucc.png",
+      logoUrl: "/eucc.webp",
       start: "2024",
       end: "2024",
       description:
@@ -158,20 +158,7 @@ export const DATA = {
       roles: ["Frontend Development", "UI/UX Design"],
       technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "React Player"],
     },
-    {
-      company: "Modern Digital Hub",
-      href: "https://modern-digital-hub.vercel.app",
-      badges: ["E-commerce", "Media", "Blog"],
-      location: "Remote",
-      title: "Digital Media & Shop Platform",
-      logoUrl: "/emilyagros.png",
-      start: "2024",
-      end: "2024",
-      description:
-        "Discover our blog, shop our products, and watch featured videos in one unified, responsive platform designed for content and commerce.",
-      roles: ["Frontend Development", "UI/UX Design"],
-      technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "React Player"],
-    },
+
     {
       company: "EmilyAgro",
       href: "https://www.emilyagros.com/",
@@ -193,7 +180,7 @@ export const DATA = {
       badges: ["Fintech", "Payments", "Education"],
       location: "Remote",
       title: "School Payment Platform",
-      logoUrl: "/claretianupay.png",
+      logoUrl: "/project-placeholder.png",
       start: "2024",
       end: "2024",
       description:
