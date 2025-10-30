@@ -35,7 +35,7 @@ export default function RdWorkCard({
             <div className="flex items-center gap-3">
 
                 {logoUrl && (
-                    <div className="relative w-12 h-12 rounded-md border overflow-hidden">
+                    <div className="bg-white relative w-12 h-12 rounded-md border overflow-hidden">
                         <Image
                             src={logoUrl}
                             alt={title}
