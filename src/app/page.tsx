@@ -2,7 +2,9 @@ import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
+import RdWorkCard from "@/components/rdwork-card";
 import { ResumeCard } from "@/components/resume-card";
+import Stats from "@/components/stats";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
@@ -74,7 +76,7 @@ export default function Page() {
           ))}
         </div>
       </section>
-      <section id="education">
+      <section className="hidden" id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
             <h2 className="text-xl font-bold">Education</h2>
@@ -111,6 +113,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <Stats />
       <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
@@ -152,6 +155,55 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <section id="rdworks">
+        <div className="space-y-12 w-full py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                  Projects
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Selected Works & Case Studies
+                </h2>
+                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  A showcase of projects I’ve built across industries — from NGOs and
+                  education to finance and agriculture — focusing on modern design,
+                  performance, and seamless user experience.
+                </p>
+              </div>
+            </div>
+          </BlurFade>
+
+          <BlurFade delay={BLUR_FADE_DELAY * 14}>
+            {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8"> */}
+            <div className="grid grid-cols-1 gap-8">
+              {DATA.rdworks.map((project, id) => (
+                <BlurFade
+                  key={project.title + id}
+                  delay={BLUR_FADE_DELAY * 15 + id * 0.05}
+                >
+                  <RdWorkCard
+                    title={project.title}
+                    company={project.company}
+                    href={project.href}
+                    location={project.location}
+                    start={project.start}
+                    end={project.end}
+                    logoUrl={project.logoUrl}
+                    description={project.description}
+                    roles={project.roles}
+                    technologies={project.technologies}
+                    badges={project.badges}
+                  />
+                </BlurFade>
+              ))}
+            </div>
+          </BlurFade>
+        </div>
+      </section>
+
+
       <section id="hackathons">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
