@@ -9,9 +9,9 @@ export const DATA = {
   location: "Surulere - Lagos, Nigeria",
   locationLink: "",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "Senior Fullstack JavaScript Developer | Next.js, REST, MongoDB, Auth",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
+    "I'm a passionate and detail-driven Fullstack Web Developer with strong expertise in Next.js, React, Tailwind CSS, MongoDB, and UI/UX design. I build modern, responsive, and high-performing web applications that don’t just work—but wow your users..",
   avatarUrl: "/me.png",
   skills: [
     "React",
