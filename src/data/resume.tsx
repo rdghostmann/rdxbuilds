@@ -9,7 +9,7 @@ export const DATA = {
   location: "Surulere - Lagos, Nigeria",
   locationLink: "",
   description:
-    "Senior Fullstack JavaScript Developer | Next.js, REST, MongoDB, Auth",
+    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
   summary:
     "I'm a passionate and detail-driven Fullstack Web Developer with strong expertise in Next.js, React, Tailwind CSS, MongoDB, and UI/UX design. I build modern, responsive, and high-performing web applications that don’t just work—but wow your users..",
   avatarUrl: "/me.png",
@@ -58,12 +58,12 @@ export const DATA = {
 
         navbar: true,
       },
-      Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/rdwilson-youtube",
-        icon: Icons.youtube,
-        navbar: true,
-      },
+      // Youtube: {
+      //   name: "Youtube",
+      //   url: "https://dub.sh/rdwilson-youtube",
+      //   icon: Icons.youtube,
+      //   navbar: true,
+      // },
       email: {
         name: "Send Email",
         url: "https://gmail.com/rw3225304@gmail.com",
@@ -76,7 +76,7 @@ export const DATA = {
   rdworks: [
     {
       company: "DAAF NGO",
-      href: "https://daaf-ngo-charity-website.vercel.app",
+      href: "https://www.agapefoundationasaba.org",
       badges: ["Web Design", "Charity", "Responsive UI"],
       location: "Remote",
       title: "NGO/Charity Website",
@@ -205,7 +205,7 @@ export const DATA = {
 
     {
       company: "Stella Maris Academy",
-      href: "https://stellamarisacademy.vercel.app",
+      href: "https://stellamarisschools.com",
       badges: ["School Website", "Education", "Responsive UI"],
       location: "Remote",
       title: "Official School Website",
