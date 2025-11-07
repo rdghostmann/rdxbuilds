@@ -7,6 +7,8 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
+import FavIcon from "../rdxbuilds-favicon.png"
+import Pawn from "../../public/pawn.jpeg"
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -49,7 +51,9 @@ export const metadata: Metadata = {
     yandex: "",
   },
    icons: {
-    icon: "/rdxbuilds-favicon.png",
+    // icon: Pawn,
+    // icon: "/rdxbuilds-favicon.png",
+    icon: "../../public/pawn.jpeg",
   },
 };
 
@@ -61,7 +65,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
        <Head>
-        <link rel="icon" href="/rdxbuilds-favicon.png" />
+        <link rel="icon" href="../../public/pawn.jpeg" />
+        {/* <link rel="icon" href="/pawn.jpeg" /> */}
       </Head>
       <body
         className={cn(
