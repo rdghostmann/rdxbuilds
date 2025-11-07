@@ -9,9 +9,9 @@ export const DATA = {
   location: "Surulere - Lagos, Nigeria",
   locationLink: "",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "Senior Fullstack JavaScript Developer. I build, scale, and support meaningful digital products.",
   summary:
-    "I'm a passionate and detail-driven Fullstack Web Developer with strong expertise in Next.js, React, Tailwind CSS, MongoDB, and UI/UX design. I build modern, responsive, and high-performing web applications that don’t just work—but wow your users..",
+    "As a passionate and detail-oriented Fullstack Web Developer, I specialize in Next.js, React, Tailwind CSS, MongoDB, and UI/UX design — building modern, responsive, and high-performing web applications that not only work flawlessly but truly delight users.",
   avatarUrl: "/me.png",
   skills: [
     "React",
@@ -51,13 +51,13 @@ export const DATA = {
 
         navbar: true,
       },
-      X: {
-        name: "X",
-        url: "https://dub.sh/rdwilson-twitter",
-        icon: Icons.x,
+      // X: {
+      //   name: "X",
+      //   url: "https://dub.sh/rdwilson-twitter",
+      //   icon: Icons.x,
 
-        navbar: true,
-      },
+      //   navbar: true,
+      // },
       // Youtube: {
       //   name: "Youtube",
       //   url: "https://dub.sh/rdwilson-youtube",

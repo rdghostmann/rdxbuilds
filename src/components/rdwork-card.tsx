@@ -32,10 +32,10 @@ export default function RdWorkCard({
     return (
         <div className="flex flex-col border rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 bg-background space-y-3">
             {/* Header */}
-            <div className="flex items-center gap-3">
+            <div className="flex flex-col md:flex-row items-center md:space-x-4">
 
                 {logoUrl && (
-                    <div className="bg-white relative w-12 h-12 rounded-md border overflow-hidden">
+                    <div className="bg-white relative w-12 h-12 rounded-md overflow-hidden">
                         <Image
                             src={logoUrl}
                             alt={title}
@@ -48,7 +48,7 @@ export default function RdWorkCard({
                         />
                     </div>
                 )}
-                <div>
+                <div className="text-center">
                     <h3 className="text-xl font-semibold">
                         <Link
                             href={href}

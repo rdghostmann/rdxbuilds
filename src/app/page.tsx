@@ -259,12 +259,12 @@ export default function Page() {
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Want to chat? Just shoot me a dm{" "}
-                <Link
+                {/* <Link
                   href={DATA.contact.social.X.url}
                   className="text-blue-500 hover:underline"
                 >
                   with a direct question on twitter
-                </Link>{" "}
+                </Link>{" "} */}
                 and I&apos;ll respond whenever I can. I will ignore all
                 soliciting.
               </p>
