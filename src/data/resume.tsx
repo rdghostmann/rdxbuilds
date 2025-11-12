@@ -20,14 +20,12 @@ export const DATA = {
     "Node.js",
     "React-Native",
     "Python",
-    "Go",
     "PHP",
     "Laravel",
     "Postgres",
     "Docker",
     "Kubernetes",
     "Java",
-    "C++",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -89,6 +87,78 @@ export const DATA = {
       technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "Vercel"],
     },
     {
+      company: "EmilyAgro",
+      href: "https://www.emilyagros.com/",
+      badges: ["Agriculture", "Mobile App", "Innovation"],
+      location: "Remote",
+      title: "Farm Management Mobile App",
+      logoUrl: "/emilyagros.png",
+      start: "2024",
+      end: "2024",
+      description:
+        "A modern farm management mobile app enabling farmers to track activities, manage expenses, monitor crops, and analyze yields in real time — built for efficiency and scalability.",
+      roles: ["Frontend Development", "UI/UX Design", "Mobile Integration"],
+      technologies: ["React Native", "Supabase", "Tailwind CSS", "Expo"],
+    },
+    {
+      company: "Speak 10x Better",
+      href: "https://www.speak10xbetter.com",
+      badges: ["Language", "Education", "Culture"],
+      location: "Remote",
+      title: "Language Learning Platform",
+      logoUrl: "/speaker10xbetter.png",
+      start: "2024",
+      end: "2024",
+      description:
+        "A language learning and cultural improvement website aimed at enhancing communication skills through practical lessons and global interaction.",
+      roles: ["Frontend Development", "UI/UX Design"],
+      technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    },
+
+    {
+      company: "EU Cultural Centre",
+      href: "https://euculturalcenta.vercel.app/",
+      badges: ["Culture", "Education", "International"],
+      location: "Remote",
+      title: "Cultural Exchange Platform",
+      logoUrl: "/eucc.webp",
+      start: "2024",
+      end: "2024",
+      description:
+        "Bridging cultures, fostering understanding, and promoting cooperation between Europe and Nigeria through education, arts, and cultural exchange.",
+      roles: ["Frontend Development", "UI/UX Design"],
+      technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "i8n"],
+    },
+    {
+      company: "Paragon Micro Data - School Pilot",
+      href: "https://schoolpilot.online/",
+      badges: ["Education", "Admin", "Productivity"],
+      location: "Remote",
+      title: "School Management Platform",
+      logoUrl: "/schoolpilot.png",
+      start: "2024",
+      end: "2024",
+      description:
+        "A comprehensive school management platform built to simplify academic and administrative operations — enhancing productivity and digital efficiency for schools.",
+      roles: ["Web Design"],
+      technologies: ["Laravel", "HTML5", "JavaScript", "CSS3", "Bootstrap CSS", "MySQL"],
+    },
+
+    {
+      company: "Stella Maris Academy",
+      href: "https://stellamarisschools.com",
+      badges: ["School Website", "Education", "Responsive UI"],
+      location: "Remote",
+      title: "Official School Website",
+      logoUrl: "/stellamaris.png",
+      start: "2024",
+      end: "2024",
+      description:
+        "Official website for Stella Maris International Academy — a modern, responsive platform showcasing academic excellence, values, and programs.",
+      roles: ["Frontend Development", "UI/UX Design"],
+      technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "SMTP"],
+    },
+    {
       company: "Expense Tracker PRO",
       href: "https://expense-tracker-pro-flame.vercel.app",
       badges: ["Finance", "Charts", "UI/UX"],
@@ -116,34 +186,7 @@ export const DATA = {
       roles: ["Frontend Development", "UI/UX Design"],
       technologies: ["Next.js", "Tailwind CSS", "Shadcn/UI", "Zustand"],
     },
-    {
-      company: "Speak 10x Better",
-      href: "https://www.speak10xbetter.com",
-      badges: ["Language", "Education", "Culture"],
-      location: "Remote",
-      title: "Language Learning Platform",
-      logoUrl: "/speaker10xbetter.png",
-      start: "2024",
-      end: "2024",
-      description:
-        "A language learning and cultural improvement website aimed at enhancing communication skills through practical lessons and global interaction.",
-      roles: ["Frontend Development", "UI/UX Design"],
-      technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    },
-    {
-      company: "EU Cultural Centre",
-      href: "https://euculturalcenta.vercel.app/",
-      badges: ["Culture", "Education", "International"],
-      location: "Remote",
-      title: "Cultural Exchange Platform",
-      logoUrl: "/eucc.webp",
-      start: "2024",
-      end: "2024",
-      description:
-        "Bridging cultures, fostering understanding, and promoting cooperation between Europe and Nigeria through education, arts, and cultural exchange.",
-      roles: ["Frontend Development", "UI/UX Design"],
-      technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    },
+
     {
       company: "Modern Digital Hub",
       href: "https://modern-digital-hub.vercel.app",
@@ -159,20 +202,7 @@ export const DATA = {
       technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "React Player"],
     },
 
-    {
-      company: "EmilyAgro",
-      href: "https://www.emilyagros.com/",
-      badges: ["Agriculture", "Mobile App", "Innovation"],
-      location: "Remote",
-      title: "Farm Management Mobile App",
-      logoUrl: "/emilyagros.png",
-      start: "2024",
-      end: "2024",
-      description:
-        "A modern farm management mobile app enabling farmers to track activities, manage expenses, monitor crops, and analyze yields in real time — built for efficiency and scalability.",
-      roles: ["Frontend Development", "UI/UX Design", "Mobile Integration"],
-      technologies: ["React Native", "Supabase", "Tailwind CSS", "Expo"],
-    },
+
 
     {
       company: "ClaretianUPay",
@@ -188,6 +218,71 @@ export const DATA = {
       roles: ["Frontend Development", "UI/UX Design"],
       technologies: ["Next.js", "Tailwind CSS", "Paystack API", "Framer Motion"],
     },
+  ],
+
+
+  // Work Experience
+  work: [
+    {
+      company: "DAAF NGO",
+      href: "https://www.agapefoundationasaba.org",
+      badges: ["Web Design", "Charity", "Responsive UI"],
+      location: "Remote",
+      title: "NGO/Charity Website",
+      logoUrl: "/DAAF_Logo-1.webp",
+      start: "2024",
+      end: "2024",
+      description:
+        "A responsive, modern, and accessible website for an NGO/charity organization, showcasing its mission, donation options, team, testimonials, and contact information. Built with performance and SEO in mind.",
+    },
+    {
+      company: "Expense Tracker PRO",
+      href: "https://expense-tracker-pro-flame.vercel.app",
+      badges: ["Finance", "Charts", "UI/UX"],
+      location: "Remote",
+      title: "Expense Tracking App",
+      logoUrl: "/expense.png",
+      start: "2024",
+      end: "2024",
+      description:
+        "An Expense Tracker PRO project featuring pie and line charts with the ability to lock and review overall monthly expenses in a visually engaging dashboard.",
+    },
+    {
+      company: "Agrifarm",
+      href: "https://agrifarm-farm-management-system.vercel.app",
+      badges: ["Dashboard", "Management", "Responsive"],
+      location: "Remote",
+      title: "Farm Management System",
+      logoUrl: "/project-placeholder.png",
+      start: "2024",
+      end: "2024",
+      description:
+        "A clean, modern, and responsive farm management system UI designed to manage agricultural operations including activities, expenses, incomes, crops, lands, species, equipment, warehouses, housings, employees, and more.",
+    },
+    {
+      company: "Speak 10x Better",
+      href: "https://www.speak10xbetter.com",
+      badges: ["Language", "Education", "Culture"],
+      location: "Remote",
+      title: "Language Learning Platform",
+      logoUrl: "/speaker10xbetter.png",
+      start: "2024",
+      end: "2024",
+      description:
+        "A language learning and cultural improvement website aimed at enhancing communication skills through practical lessons and global interaction.",
+    },
+    {
+      company: "EU Cultural Centre",
+      href: "https://euculturalcenta.vercel.app/",
+      badges: ["Culture", "Education", "International"],
+      location: "Remote",
+      title: "Cultural Exchange Platform",
+      logoUrl: "/eucc.webp",
+      start: "2024",
+      end: "2024",
+      description:
+        "Bridging cultures, fostering understanding, and promoting cooperation between Europe and Nigeria through education, arts, and cultural exchange.",
+    },
     {
       company: "Paragon Micro Data - School Pilot",
       href: "https://schoolpilot.online/",
@@ -199,10 +294,7 @@ export const DATA = {
       end: "2024",
       description:
         "A comprehensive school management platform built to simplify academic and administrative operations — enhancing productivity and digital efficiency for schools.",
-      roles: ["Web Design"],
-      technologies: ["Laravel", "Tailwind CSS", "Blade", "MySQL"],
     },
-
     {
       company: "Stella Maris Academy",
       href: "https://stellamarisschools.com",
@@ -214,133 +306,34 @@ export const DATA = {
       end: "2024",
       description:
         "Official website for Stella Maris International Academy — a modern, responsive platform showcasing academic excellence, values, and programs.",
-      roles: ["Frontend Development", "UI/UX Design"],
-      technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "SMTP"],
     },
-  ],
+    {
+      company: "Modern Digital Hub",
+      href: "https://modern-digital-hub.vercel.app",
+      badges: ["E-commerce", "Media", "Blog"],
+      location: "Remote",
+      title: "Digital Media & Shop Platform",
+      logoUrl: "/project-placeholder.png",
+      start: "2024",
+      end: "2024",
+      description:
+        "Discover our blog, shop our products, and watch featured videos in one unified, responsive platform designed for content and commerce.",
+    },
 
-work: [
-  {
-    company: "DAAF NGO",
-    href: "https://www.agapefoundationasaba.org",
-    badges: ["Web Design", "Charity", "Responsive UI"],
-    location: "Remote",
-    title: "NGO/Charity Website",
-    logoUrl: "/DAAF_Logo-1.webp",
-    start: "2024",
-    end: "2024",
-    description:
-      "A responsive, modern, and accessible website for an NGO/charity organization, showcasing its mission, donation options, team, testimonials, and contact information. Built with performance and SEO in mind.",
-  },
-  {
-    company: "Expense Tracker PRO",
-    href: "https://expense-tracker-pro-flame.vercel.app",
-    badges: ["Finance", "Charts", "UI/UX"],
-    location: "Remote",
-    title: "Expense Tracking App",
-    logoUrl: "/expense.png",
-    start: "2024",
-    end: "2024",
-    description:
-      "An Expense Tracker PRO project featuring pie and line charts with the ability to lock and review overall monthly expenses in a visually engaging dashboard.",
-  },
-  {
-    company: "Agrifarm",
-    href: "https://agrifarm-farm-management-system.vercel.app",
-    badges: ["Dashboard", "Management", "Responsive"],
-    location: "Remote",
-    title: "Farm Management System",
-    logoUrl: "/project-placeholder.png",
-    start: "2024",
-    end: "2024",
-    description:
-      "A clean, modern, and responsive farm management system UI designed to manage agricultural operations including activities, expenses, incomes, crops, lands, species, equipment, warehouses, housings, employees, and more.",
-  },
-  {
-    company: "Speak 10x Better",
-    href: "https://www.speak10xbetter.com",
-    badges: ["Language", "Education", "Culture"],
-    location: "Remote",
-    title: "Language Learning Platform",
-    logoUrl: "/speaker10xbetter.png",
-    start: "2024",
-    end: "2024",
-    description:
-      "A language learning and cultural improvement website aimed at enhancing communication skills through practical lessons and global interaction.",
-  },
-  {
-    company: "EU Cultural Centre",
-    href: "https://euculturalcenta.vercel.app/",
-    badges: ["Culture", "Education", "International"],
-    location: "Remote",
-    title: "Cultural Exchange Platform",
-    logoUrl: "/eucc.webp",
-    start: "2024",
-    end: "2024",
-    description:
-      "Bridging cultures, fostering understanding, and promoting cooperation between Europe and Nigeria through education, arts, and cultural exchange.",
-  },
-  {
-    company: "Modern Digital Hub",
-    href: "https://modern-digital-hub.vercel.app",
-    badges: ["E-commerce", "Media", "Blog"],
-    location: "Remote",
-    title: "Digital Media & Shop Platform",
-    logoUrl: "/project-placeholder.png",
-    start: "2024",
-    end: "2024",
-    description:
-      "Discover our blog, shop our products, and watch featured videos in one unified, responsive platform designed for content and commerce.",
-  },
-  {
-    company: "EmilyAgro",
-    href: "https://www.emilyagros.com/",
-    badges: ["Agriculture", "Mobile App", "Innovation"],
-    location: "Remote",
-    title: "Farm Management Mobile App",
-    logoUrl: "/emilyagros.png",
-    start: "2024",
-    end: "2024",
-    description:
-      "A modern farm management mobile app enabling farmers to track activities, manage expenses, monitor crops, and analyze yields in real time — built for efficiency and scalability.",
-  },
-  {
-    company: "ClaretianUPay",
-    href: "https://claretian-u-pay.vercel.app",
-    badges: ["Fintech", "Payments", "Education"],
-    location: "Remote",
-    title: "School Payment Platform",
-    logoUrl: "/project-placeholder.png",
-    start: "2024",
-    end: "2024",
-    description:
-      "A user-friendly platform designed to simplify school fee payments for Claretian institutions. Integrated with Paystack for secure transactions and real-time confirmations.",
-  },
-  {
-    company: "Paragon Micro Data - School Pilot",
-    href: "https://schoolpilot.online/",
-    badges: ["Education", "Admin", "Productivity"],
-    location: "Remote",
-    title: "School Management Platform",
-    logoUrl: "/schoolpilot.png",
-    start: "2024",
-    end: "2024",
-    description:
-      "A comprehensive school management platform built to simplify academic and administrative operations — enhancing productivity and digital efficiency for schools.",
-  },
-  {
-    company: "Stella Maris Academy",
-    href: "https://stellamarisschools.com",
-    badges: ["School Website", "Education", "Responsive UI"],
-    location: "Remote",
-    title: "Official School Website",
-    logoUrl: "/stellamaris.png",
-    start: "2024",
-    end: "2024",
-    description:
-      "Official website for Stella Maris International Academy — a modern, responsive platform showcasing academic excellence, values, and programs.",
-  },
-],
+    {
+      company: "ClaretianUPay",
+      href: "https://claretian-u-pay.vercel.app",
+      badges: ["Fintech", "Payments", "Education"],
+      location: "Remote",
+      title: "School Payment Platform",
+      logoUrl: "/project-placeholder.png",
+      start: "2024",
+      end: "2024",
+      description:
+        "A user-friendly platform designed to simplify school fee payments for Claretian institutions. Integrated with Paystack for secure transactions and real-time confirmations.",
+    },
+
+  ],
 
   education: [
     {
