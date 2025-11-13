@@ -233,29 +233,29 @@ export const DATA = {
         "A responsive, modern, and accessible website for an NGO/charity organization, showcasing its mission, donation options, team, testimonials, and contact information. Built with performance and SEO in mind.",
     },
     {
-      company: "Expense TrackerPRO",
-      href: "https://expense-tracker-pro-flame.vercel.app",
-      badges: ["Finance", "Charts", "UI/UX"],
+      company: "EmilyAgro",
+      href: "https://www.emilyagros.com/",
+      badges: ["Agriculture", "Mobile App", "Innovation"],
       location: "Remote",
-      title: "Expense Tracking App",
-      logoUrl: "/expense.png",
+      title: "Farm Management Mobile App",
+      logoUrl: "/emilyagros.png",
       start: "2024",
       end: "2024",
       description:
-        "An Expense Tracker PRO project featuring pie and line charts with the ability to lock and review overall monthly expenses in a visually engaging dashboard.",
+        "A modern farm management mobile app enabling farmers to track activities, manage expenses, monitor crops, and analyze yields in real time — built for efficiency and scalability.",
     },
-    {
-      company: "Agrifarm",
-      href: "https://agrifarm-farm-management-system.vercel.app",
-      badges: ["Dashboard", "Management", "Responsive"],
-      location: "Remote",
-      title: "Farm Management System",
-      logoUrl: "/project-placeholder.png",
-      start: "2024",
-      end: "2024",
-      description:
-        "A clean, modern, and responsive farm management system UI designed to manage agricultural operations including activities, expenses, incomes, crops, lands, species, equipment, warehouses, housings, employees, and more.",
-    },
+    // {
+    //   company: "Agrifarm",
+    //   href: "https://agrifarm-farm-management-system.vercel.app",
+    //   badges: ["Dashboard", "Management", "Responsive"],
+    //   location: "Remote",
+    //   title: "Farm Management System",
+    //   logoUrl: "/project-placeholder.png",
+    //   start: "2024",
+    //   end: "2024",
+    //   description:
+    //     "A clean, modern, and responsive farm management system UI designed to manage agricultural operations including activities, expenses, incomes, crops, lands, species, equipment, warehouses, housings, employees, and more.",
+    // },
     {
       company: "Speak 10x Better",
       href: "https://www.speak10xbetter.com",
@@ -304,18 +304,18 @@ export const DATA = {
       description:
         "Official website for Stella Maris International Academy — a modern, responsive platform showcasing academic excellence, values, and programs.",
     },
-    {
-      company: "Modern Digital Hub",
-      href: "https://modern-digital-hub.vercel.app",
-      badges: ["E-commerce", "Media", "Blog"],
-      location: "Remote",
-      title: "Digital Media & Shop Platform",
-      logoUrl: "/project-placeholder.png",
-      start: "2024",
-      end: "2024",
-      description:
-        "Discover our blog, shop our products, and watch featured videos in one unified, responsive platform designed for content and commerce.",
-    },
+    // {
+    //   company: "Modern Digital Hub",
+    //   href: "https://modern-digital-hub.vercel.app",
+    //   badges: ["E-commerce", "Media", "Blog"],
+    //   location: "Remote",
+    //   title: "Digital Media & Shop Platform",
+    //   logoUrl: "/project-placeholder.png",
+    //   start: "2024",
+    //   end: "2024",
+    //   description:
+    //     "Discover our blog, shop our products, and watch featured videos in one unified, responsive platform designed for content and commerce.",
+    // },
 
   ],
 
