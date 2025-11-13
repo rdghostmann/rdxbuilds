@@ -57,8 +57,8 @@ export default function RdWorkCard({
                             {title}
                         </Link>
                     </h3>
-                    <p className="text-xs md:text-sm text-muted-foreground">
-                        {company} • {location} ({start} – {end})
+                    <p className="text-xs text-center md:text-sm text-muted-foreground">
+                        {company} <br /> {location} ({start} – {end})
                     </p>
                 </div>
             </div>

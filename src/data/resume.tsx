@@ -114,7 +114,23 @@ export const DATA = {
       roles: ["Frontend Development", "UI/UX Design"],
       technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
     },
-
+    
+    {
+      company: "2Sweet",
+      href: "https://2sweet.io/",
+      badges: ["Web3", "Ethereum", "Crypto"],
+      location: "Remote",
+      title: "2Sweet DeFi",
+      logoUrl: "/2sweet.webp",
+      start: "2024",
+      end: "2024",
+      description:
+        "",
+      roles: ["Frontend Development", "UI/UX Design"],
+      technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "i8n"],
+    },
+  
+    
     {
       company: "EU Cultural Centre",
       href: "https://euculturalcenta.vercel.app/",
@@ -244,6 +260,18 @@ export const DATA = {
       description:
         "A modern farm management mobile app enabling farmers to track activities, manage expenses, monitor crops, and analyze yields in real time — built for efficiency and scalability.",
     },
+    {
+      company: "JelaConfectionaries",
+      href: "https://jela-confectionaries.vercel.app/",
+      badges: ["Dashboard", "Restuarant", "Mnagement"],
+      location: "Remote",
+      title: "Resturant 2-Tenant Management System",
+      logoUrl: "/project-placeholder.png",
+      start: "2025",
+      end: "2025",
+      description:
+        "A clean, modern, and responsive restuarant management system UI designed to manage resturant operations for 2 location including placing orders, menu management and more.",
+    },
     // {
     //   company: "Agrifarm",
     //   href: "https://agrifarm-farm-management-system.vercel.app",
@@ -281,16 +309,16 @@ export const DATA = {
         "Bridging cultures, fostering understanding, and promoting cooperation between Europe and Nigeria through education, arts, and cultural exchange.",
     },
     {
-      company: "Paragon MicroData - School Pilot",
+      company: "School Pilot",
       href: "https://schoolpilot.online/",
-      badges: ["Education", "Admin", "Productivity"],
+      badges: ["Education", "Admin", "ERP"],
       location: "Remote",
       title: "School Management Platform",
       logoUrl: "/schoolpilot.png",
       start: "2024",
       end: "2024",
       description:
-        "A comprehensive school management platform built to simplify academic and administrative operations — enhancing productivity and digital efficiency for schools.",
+        "A comprehensive school management platform, SchoolPilot simplifies the payment process for schools, allowing them to manage fees, invoices, and transactions seamlessly, providing a hassle-free experience.  In conjuction with <a href='https://paragon.com.ng/'>Paragon MicroData</a> to simplify academic and administrative operations — enhancing productivity and digital efficiency for schools.",
     },
     {
       company: "StellaMaris Academy",
