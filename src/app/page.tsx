@@ -114,7 +114,7 @@ export default function Page() {
         </div>
       </section>
       <Stats />
-      <section classname="hidden" id="project">
+      <section className="hidden" id="project">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">

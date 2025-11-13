@@ -159,7 +159,7 @@ export const DATA = {
       technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "SMTP"],
     },
     {
-      company: "Expense Tracker PRO",
+      company: "Expense TrackerPRO",
       href: "https://expense-tracker-pro-flame.vercel.app",
       badges: ["Finance", "Charts", "UI/UX"],
       location: "Remote",
@@ -201,23 +201,20 @@ export const DATA = {
       roles: ["Frontend Development", "UI/UX Design"],
       technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "React Player"],
     },
-
-
-
-    {
-      company: "ClaretianUPay",
-      href: "https://claretian-u-pay.vercel.app",
-      badges: ["Fintech", "Payments", "Education"],
-      location: "Remote",
-      title: "School Payment Platform",
-      logoUrl: "/project-placeholder.png",
-      start: "2024",
-      end: "2024",
-      description:
-        "A user-friendly platform designed to simplify school fee payments for Claretian institutions. Integrated with Paystack for secure transactions and real-time confirmations.",
-      roles: ["Frontend Development", "UI/UX Design"],
-      technologies: ["Next.js", "Tailwind CSS", "Paystack API", "Framer Motion"],
-    },
+    // {
+    //   company: "ClaretianUPay",
+    //   href: "https://claretian-u-pay.vercel.app",
+    //   badges: ["Fintech", "Payments", "Education"],
+    //   location: "Remote",
+    //   title: "School Payment Platform",
+    //   logoUrl: "/project-placeholder.png",
+    //   start: "2024",
+    //   end: "2024",
+    //   description:
+    //     "A user-friendly platform designed to simplify school fee payments for Claretian institutions. Integrated with Paystack for secure transactions and real-time confirmations.",
+    //   roles: ["Frontend Development", "UI/UX Design"],
+    //   technologies: ["Next.js", "Tailwind CSS", "Paystack API", "Framer Motion"],
+    // },
   ],
 
 
@@ -236,7 +233,7 @@ export const DATA = {
         "A responsive, modern, and accessible website for an NGO/charity organization, showcasing its mission, donation options, team, testimonials, and contact information. Built with performance and SEO in mind.",
     },
     {
-      company: "Expense Tracker PRO",
+      company: "Expense TrackerPRO",
       href: "https://expense-tracker-pro-flame.vercel.app",
       badges: ["Finance", "Charts", "UI/UX"],
       location: "Remote",
@@ -284,7 +281,7 @@ export const DATA = {
         "Bridging cultures, fostering understanding, and promoting cooperation between Europe and Nigeria through education, arts, and cultural exchange.",
     },
     {
-      company: "Paragon Micro Data - School Pilot",
+      company: "Paragon MicroData - School Pilot",
       href: "https://schoolpilot.online/",
       badges: ["Education", "Admin", "Productivity"],
       location: "Remote",
@@ -296,7 +293,7 @@ export const DATA = {
         "A comprehensive school management platform built to simplify academic and administrative operations — enhancing productivity and digital efficiency for schools.",
     },
     {
-      company: "Stella Maris Academy",
+      company: "StellaMaris Academy",
       href: "https://stellamarisschools.com",
       badges: ["School Website", "Education", "Responsive UI"],
       location: "Remote",
@@ -318,19 +315,6 @@ export const DATA = {
       end: "2024",
       description:
         "Discover our blog, shop our products, and watch featured videos in one unified, responsive platform designed for content and commerce.",
-    },
-
-    {
-      company: "ClaretianUPay",
-      href: "https://claretian-u-pay.vercel.app",
-      badges: ["Fintech", "Payments", "Education"],
-      location: "Remote",
-      title: "School Payment Platform",
-      logoUrl: "/project-placeholder.png",
-      start: "2024",
-      end: "2024",
-      description:
-        "A user-friendly platform designed to simplify school fee payments for Claretian institutions. Integrated with Paystack for secure transactions and real-time confirmations.",
     },
 
   ],

@@ -30,7 +30,7 @@ export default function RdWorkCard({
     badges,
 }: Props) {
     return (
-        <div className="flex flex-col border rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 bg-background space-y-3">
+        <div className="border flex flex-col rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 bg-background space-y-3">
             {/* Header */}
             <div className="flex flex-col md:flex-row items-center md:space-x-4">
 
@@ -39,9 +39,7 @@ export default function RdWorkCard({
                         <Image
                             src={logoUrl}
                             alt={title}
-                            // fill
                             className="w-full h-full"
-                            // sizes="48px"
                             width={50}
                             height={50}
                             priority
