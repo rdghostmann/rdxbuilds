@@ -105,16 +105,16 @@ export const DATA = {
       href: "https://www.speak10xbetter.com",
       badges: ["Language", "Education", "Culture"],
       location: "Remote",
-      title: "Language Learning Platform",
+      title: "Public Speaking Coaching Platform",
       logoUrl: "/speaker10xbetter.png",
       start: "2024",
       end: "2024",
       description:
-        "A language learning and cultural improvement website aimed at enhancing communication skills through practical lessons and global interaction.",
+        "Master the art of public speaking. From stage fright to standing ovations — I help professionals, entrepreneurs, and leaders speak with confidence and impact.",
       roles: ["Frontend Development", "UI/UX Design"],
       technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
     },
-    
+
     {
       company: "2Sweet",
       href: "https://2sweet.io/",
@@ -129,8 +129,8 @@ export const DATA = {
       roles: ["Frontend Development", "UI/UX Design"],
       technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "i8n"],
     },
-  
-    
+
+
     {
       company: "EU Cultural Centre",
       href: "https://euculturalcenta.vercel.app/",
@@ -217,20 +217,22 @@ export const DATA = {
       roles: ["Frontend Development", "UI/UX Design"],
       technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "React Player"],
     },
-    // {
-    //   company: "ClaretianUPay",
-    //   href: "https://claretian-u-pay.vercel.app",
-    //   badges: ["Fintech", "Payments", "Education"],
-    //   location: "Remote",
-    //   title: "School Payment Platform",
-    //   logoUrl: "/project-placeholder.png",
-    //   start: "2024",
-    //   end: "2024",
-    //   description:
-    //     "A user-friendly platform designed to simplify school fee payments for Claretian institutions. Integrated with Paystack for secure transactions and real-time confirmations.",
-    //   roles: ["Frontend Development", "UI/UX Design"],
-    //   technologies: ["Next.js", "Tailwind CSS", "Paystack API", "Framer Motion"],
-    // },
+
+    {
+      company: "JelaConfectionaries",
+      href: "https://jela-confectionaries.vercel.app/",
+      badges: ["Dashboard", "Restaurant", "Management"],
+      location: "Remote",
+      title: "Two-Tenant Restaurant Management System",
+      logoUrl: "/project-placeholder.png",
+      start: "2025",
+      end: "2025",
+      description:
+        "A modern, multi-tenant restaurant management system UI built for two-location operations. Features include order management, menu and inventory control, staff scheduling, and reporting dashboards to streamline daily restaurant workflows and improve guest experience.",
+
+      roles: ["Frontend Development", "UI/UX Design"],
+      technologies: ["Next.js", "Tailwind CSS", "Paystack API", "Framer Motion"],
+    },
   ],
 
 
@@ -263,14 +265,14 @@ export const DATA = {
     {
       company: "JelaConfectionaries",
       href: "https://jela-confectionaries.vercel.app/",
-      badges: ["Dashboard", "Restuarant", "Mnagement"],
+      badges: ["Dashboard", "Restaurant", "Management"],
       location: "Remote",
-      title: "Resturant 2-Tenant Management System",
+      title: "Two-Tenant Restaurant Management System",
       logoUrl: "/project-placeholder.png",
       start: "2025",
       end: "2025",
       description:
-        "A clean, modern, and responsive restuarant management system UI designed to manage resturant operations for 2 location including placing orders, menu management and more.",
+        "A modern, multi-tenant restaurant management system UI built for two-location operations. Features include order management, menu and inventory control, staff scheduling, and reporting dashboards to streamline daily restaurant workflows and improve guest experience.",
     },
     // {
     //   company: "Agrifarm",
@@ -289,12 +291,12 @@ export const DATA = {
       href: "https://www.speak10xbetter.com",
       badges: ["Language", "Education", "Culture"],
       location: "Remote",
-      title: "Language Learning Platform",
+      title: "Public Speaking Coaching Platform",
       logoUrl: "/speaker10xbetter.png",
       start: "2024",
       end: "2024",
       description:
-        "A language learning and cultural improvement website aimed at enhancing communication skills through practical lessons and global interaction.",
+        "Master the art of public speaking. From stage fright to standing ovations — I help professionals, entrepreneurs, and leaders speak with confidence and impact.",
     },
     {
       company: "EU Cultural Centre",
