@@ -32,7 +32,7 @@ export default function Stats() {
       </BlurFade>
 
       <div className="grid grid-cols-2 gap-8 max-w-3xl mx-auto">
-        <StatItem value="3+" label="Years of Experience" delay={0.2} />
+        <StatItem value="4+" label="Years of Experience" delay={0.2} />
         <StatItem value="10+" label="Projects Completed" delay={0.3} />
         <StatItem value="7+" label="Happy Clients" delay={0.4} />
         <StatItem value="100%" label="Client Satisfaction" delay={0.5} />
