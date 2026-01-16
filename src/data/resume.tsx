@@ -12,7 +12,7 @@ export const DATA = {
     "Senior Fullstack JavaScript Developer. I build, scale, and support meaningful digital products.",
   summary:
     "As a passionate and detail-oriented Fullstack Web Developer, I specialize in Next.js, React, Tailwind CSS, MongoDB, and UI/UX design — building modern, responsive, and high-performing web applications that not only work flawlessly but truly delight users.",
-  avatarUrl: "/1768559048664.jpg",
+  avatarUrl: "/1768559048686.jpg",
   // avatarUrl: "/me.png",
   skills: [
     "React",
