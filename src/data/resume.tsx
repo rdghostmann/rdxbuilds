@@ -5,14 +5,15 @@ export const DATA = {
   fullname: "Randal Chukwuweike Wilson",
   name: "Randal Chukwuweike Wilson",
   initials: "Rd",
-  url: "https://rd.dev",
+  url: "https://rdxbuilds.vercel.app/",
   location: "Surulere - Lagos, Nigeria",
   locationLink: "",
   description:
     "Senior Fullstack JavaScript Developer. I build, scale, and support meaningful digital products.",
   summary:
     "As a passionate and detail-oriented Fullstack Web Developer, I specialize in Next.js, React, Tailwind CSS, MongoDB, and UI/UX design — building modern, responsive, and high-performing web applications that not only work flawlessly but truly delight users.",
-  avatarUrl: "/me.png",
+  avatarUrl: "/1768559048664.jpg",
+  // avatarUrl: "/me.png",
   skills: [
     "React",
     "Next.js",
@@ -21,15 +22,15 @@ export const DATA = {
     "React-Native",
     "Python",
     "PHP",
-    // "Laravel",
     "Postgres",
+    "Supabase",
     "Docker",
     // "Kubernetes",
-    // "Java",
+    "Java",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    { href: "/#blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "randalchukzwilson@gmail.com",
@@ -37,7 +38,7 @@ export const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/rdghostmann",
+        url: "https://github.com/#",
         icon: Icons.github,
 
         navbar: true,
