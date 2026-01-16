@@ -49,11 +49,12 @@ export const metadata: Metadata = {
   },
    icons: {
     icon: [
-      { url: "/rdxbuilds-favicon.png", media: "(prefers-color-scheme: light)" },
-      { url: "/rdxbuilds-favicon.png", media: "(prefers-color-scheme: dark)" },
-      { url: "/rdxbuilds-favicon.png", type: "image/svg+xml" },
+      { url: "/rdxbuilds-favicon.jpg", media: "(prefers-color-scheme: light)" },
+      { url: "/rdxbuilds-favicon.jpg", media: "(prefers-color-scheme: dark)" },
+      { url: "/rdxbuilds-favicon.jpg", type: "image/svg+xml" },
     ],
-    apple: "/pawn.jpg",
+       apple: "/rdxbuilds-favicon.jpg",
+
   },
 };
 
