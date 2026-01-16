@@ -30,7 +30,7 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/#blog", icon: NotebookIcon, label: "Blog" },
+    // { href: "/#blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "randalchukzwilson@gmail.com",
@@ -38,14 +38,14 @@ export const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/#",
+        url: "https://github.com/rdghostmann",
         icon: Icons.github,
 
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/rdwilson-linkedin",
+        url: "https://www.linkedin.com/in/randal-wilson-ab7b18278/",
         icon: Icons.linkedin,
 
         navbar: true,
