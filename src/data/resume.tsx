@@ -119,7 +119,7 @@ export const DATA = {
 
     {
       company: "2Sweet",
-      href: "https://2sweet.io/",
+      href: "https://nexxro.com/",
       badges: ["Web3", "Ethereum", "Crypto"],
       location: "Remote",
       title: "2Sweet DeFi",
