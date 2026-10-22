@@ -79,12 +79,12 @@ export const DATA = {
       icon: GithubLogo,
       navbar: true,
     },
-    // X: {
-    //   name: "X (Twitter)",
-    //   url: "https://x.com",
-    //   icon: XLogo,
-    //   navbar: true,
-    // },
+    X: {
+      name: "X (Twitter)",
+      url: "https://x.com",
+      icon: XLogo,
+      navbar: true,
+    },
     LinkedIn: {
       name: "LinkedIn",
       url: "https://linkedin.com",
