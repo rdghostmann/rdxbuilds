@@ -510,6 +510,42 @@ projects: [
     metricsContext:
       "Designed to unify AI-powered support, customer communication, and engagement workflows",
   },
+  {
+  id: "titanpos",
+  title: "TitanPOS — Multi-Tenant Business Management System",
+  category: "Enterprise SaaS & Business Management",
+  speciality: ["Full-Stack", "Web-Design", "Software"],
+  role: "Full-Stack Developer & UI/UX Designer",
+  summary:
+    "A multi-tenant business management platform that helps organizations manage inventory, sales, financial audits, users, and multiple business operations from one centralized dashboard.",
+  description:
+    "TitanPOS is a web-based business management system designed to bring different operational workflows into one platform. Its modules cover dashboard analytics, store inventory, provision retail sales, cooking gas plant operations, car wash management, financial audits, Excel integration, user administration, and system settings. The multi-tenant approach supports organizing business operations and access around different tenants.",
+  tags: [
+    "Multi-Tenant SaaS",
+    "POS",
+    "Business Management",
+    "Inventory Management",
+    "Sales Tracking",
+    "Financial Auditing",
+    "User Management",
+    "Excel Integration",
+    "Admin Dashboard",
+  ],
+  image: "/blueflamepos.png",
+  screenshot: "/screenshots/blueflame.png",
+  liveUrl: "#",
+  repoUrl: "",
+  highlights: [
+    "Centralized dashboard for business operations",
+    "Inventory management and provision retail sales",
+    "Specialized modules for cooking gas plants and car wash centers",
+    "Financial auditing and reporting workflows",
+    "Excel integration for business data management",
+    "User management and centralized system settings",
+  ],
+  metricsContext:
+    "Designed to centralize inventory, sales, financial oversight, and day-to-day operations across multiple business units",
+},
 ] satisfies ProjectItem[],
 
   approach: [
