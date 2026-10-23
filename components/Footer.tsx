@@ -1,17 +1,12 @@
 // Footer.tsx
 "use client";
 
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import { DATA } from "@/data/resume";
 import { ArrowUp } from "lucide-react";
 
 export function Footer() {
-  // const [year, setYear] = useState<number | null>(null);
 
-  // useEffect(() => {
-  //   setYear(new Date().getFullYear());
-  // }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
