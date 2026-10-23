@@ -206,11 +206,11 @@
     0 0 20px rgba(37, 99, 235, 0.1);
 }
 
-@utility scrollbar-none {
+/* @utility scrollbar-none {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
 
 @utility scrollbar-none::-webkit-scrollbar {
   display: none;
-}
+} */
