@@ -6,7 +6,7 @@ import { GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
 import heroImg from "/public/images/rdx_hero_product_preview_1792658862900.jpg";
 
 export type ProjectSpeciality =
-  "Full-Stack" | "Web-Design" | "E-commerce" | "Software" | "Mobile" | "AI Integration" | "Web3" | "Blockchain" | "FinTech" | "Healthcare" | "Education" | "Enterprise SaaS" | "Digital Media" | "Content Management" | "Multi-Tenant" | "SaaS" | "Administration" | "Dashboard" | "Data Visualization" | "Responsive UI" | "Nonprofit" | "Agriculture" | "Professional Development" | "Lifestyle";
+  "Full-Stack" | "Web-Design" | "E-commerce" | "Software" | "Mobile" | "AI" | "AI Integration" | "Web3" | "Blockchain" | "FinTech" | "Healthcare" | "Education" | "Enterprise SaaS" | "Digital Media" | "Content Management" | "Multi-Tenant" | "SaaS" | "Administration" | "Dashboard" | "Data Visualization" | "Responsive UI" | "Nonprofit" | "Agriculture" | "Professional Development" | "Lifestyle";
 
 export interface ProjectItem {
   id: string;
