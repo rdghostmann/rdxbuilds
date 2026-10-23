@@ -17,7 +17,7 @@ const SPECIALITY_ORDER: ProjectSpeciality[] = [
   "Full-Stack",
   "Web-Design",
   "E-commerce",
-  "Software",
+  "SaaS",
 ];
 
 export function Projects() {
