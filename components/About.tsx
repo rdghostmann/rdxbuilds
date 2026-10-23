@@ -17,10 +17,14 @@ export function About() {
   const [isPaused, setIsPaused] = useState(false);
 
   const principles = [
-    "Type safety from database to client UI",
-    "Accessible semantic markup by default",
-    "Predictable release cadences & clean git history",
-    "Direct, transparent founder communication",
+    "Easy-to-use digital experiences",
+    "Reliable and secure solutions",
+    "Clear communication from start to finish",
+    "Mobile-friendly design on every screen",
+    "Features built around real business needs",
+    "Thoughtful planning and timely delivery",
+    "Room to grow as your business grows",
+    "Long-term value beyond launch day",
   ];
 
   // Repeat for continuous seamless auto-slide loop
@@ -46,7 +50,7 @@ export function About() {
             </div>
 
             <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white text-balance sm:text-4xl">
-              Craftsmanship, reliability, and pragmatic problem-solving.
+              We build digital experiences that move your business forward.
             </h2>
 
             <p className="mt-4 text-base leading-relaxed text-slate-600 dark:text-slate-300">

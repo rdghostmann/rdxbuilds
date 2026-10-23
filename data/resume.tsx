@@ -233,23 +233,24 @@ export const DATA = {
   ],
 
   about: {
-    philosophy:
-      "Modern software value is realized at the intersection of architectural discipline and user-centric craftsmanship. Rather than prioritizing superficial novelty or unmaintainable bloat, Rdxbuilds engineers solutions that are clean, resilient, and built to scale.",
-    pillars: [
-      {
-        title: "Rigorous Craftsmanship",
-        text: "Clean code structure, strict TypeScript types, deterministic state management, and accessible responsive layouts that work seamlessly across every viewport.",
-      },
-      {
-        title: "Pragmatic Problem-Solving",
-        text: "Direct alignment with business objectives. We build features that solve actual bottlenecks for users and founders, not unnecessary architectural complexity.",
-      },
-      {
-        title: "Transparent Collaboration",
-        text: "Clear documentation, predictable milestones, proactive risk mitigation, and continuous communication throughout the entire product lifecycle.",
-      },
-    ],
-  },
+  philosophy:
+    "At RdxBuilds, we turn ideas into reliable, easy-to-use digital products that help businesses grow. We focus on what matters most: solving real problems, creating great user experiences, and building solutions that are ready for the future. From the first idea to launch and beyond, every detail is designed with your goals in mind.",
+
+  pillars: [
+    {
+      title: "Built with Care",
+      text: "We create fast, reliable, and easy-to-use websites and applications that work smoothly across phones, tablets, and computers. Every detail is thoughtfully designed to give your users a better experience.",
+    },
+    {
+      title: "Solutions That Matter",
+      text: "We focus on solving real business problems, saving time, and making everyday tasks easier. Every feature has a purpose: helping your business serve customers better and achieve its goals.",
+    },
+    {
+      title: "Clear Communication",
+      text: "You stay informed at every stage of your project. We agree on clear goals, share progress regularly, and work with you to turn your vision into a product you can confidently launch.",
+    },
+  ],
+},
 
 projects: [
   {
