@@ -78,10 +78,10 @@ export function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Contact via WhatsApp"
-                    className="flex min-w-0 items-center gap-2 font-mono text-sm font-semibold text-emerald-600 hover:underline dark:text-emerald-400"
+                    className="hidden min-w-0 items-center gap-2 font-mono text-sm font-semibold text-emerald-600 hover:underline dark:text-emerald-400"
                   >
                     <MessageCircle className="size-4 shrink-0" />
-                    <span className="truncate">{DATA.whatsappNumber}</span>
+                    <span className="hiddentruncate">{DATA.whatsappNumber}</span>
                   </a>
 
                   <a

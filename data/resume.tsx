@@ -292,7 +292,7 @@ export const DATA = {
         "B2B SaaS",
         "Healthcare",
       ],
-      image: "/medisupply.png",
+      image: "/medsupply.png",
       liveUrl: "https://www.medisupplyltd.com/",
       repoUrl: "",
       highlights: [

@@ -28,7 +28,7 @@ function HeroSection({ avatarList }: HeroSectionProps) {
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(#2563eb_1px,transparent_1px)] [background-size:24px_24px] opacity-[0.03] dark:opacity-[0.05]"
       />
       <div className="w-full h-full relative">
-        <div className="relative w-full pt-0 md:pt-20 pb-6 md:pb-10 before:absolute before:w-full before:h-full before:bg-linear-to-r before:from-sky-100 before:via-white before:to-amber-100 before:rounded-full before:top-24 before:blur-3xl before:-z-10 dark:before:from-slate-800 dark:before:via-black dark:before:to-stone-700 dark:before:rounded-full dark:before:blur-3xl dark:before:-z-10">
+        <div className="relative w-full p-3 pt-0 md:pt-20 pb-6 md:pb-10 before:absolute before:w-full before:h-full before:bg-linear-to-r before:from-sky-100 before:via-white before:to-amber-100 before:rounded-full before:top-24 before:blur-3xl before:-z-10 dark:before:from-slate-800 dark:before:via-black dark:before:to-stone-700 dark:before:rounded-full dark:before:blur-3xl dark:before:-z-10">
           <div className="container mx-auto relative z-10">
             <div className="flex flex-col max-w-5xl mx-auto gap-8">
               <div className="relative flex flex-col text-center items-center sm:gap-6 gap-4">
@@ -36,13 +36,13 @@ function HeroSection({ avatarList }: HeroSectionProps) {
                   initial={{ opacity: 0, y: 32 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
-                  className="lg:text-8xl md:text-7xl text-5xl font-medium leading-14 md:leading-20 lg:leading-24"
+                  className="px-2 lg:text-8xl md:text-7xl text-4xl font-medium  md:leading-20 lg:leading-24"
                 >
-                 Transforming ideas into {" "}
+                  Transforming ideas into {" "}
                   <span
                     className={`${instrumentSerif.className} tracking-tight text-electric-600 dark:text-electric-400`}
                   >
-                  scalable Solutions.
+                    scalable Solutions.
                   </span>
                 </motion.h1>
                 <motion.p
@@ -51,8 +51,8 @@ function HeroSection({ avatarList }: HeroSectionProps) {
                   transition={{ duration: 1, delay: 0.1, ease: "easeInOut" }}
                   className="text-base font-normal max-w-2xl text-muted-foreground"
                 >
-                 We partner with founders, venture builders, and ambitious teams to turn complex ideas into reliable, useful, and exceptionally polished web applications. Focused on engineering rigor, maintainability, and clear business results.
-                </motion.p>
+                  {/* We partner with founders, venture builders, and ambitious teams to turn complex ideas into reliable, useful, and exceptionally polished web applications. Focused on engineering rigor, maintainability, and clear business results. */}
+                  We help founders and ambitious teams turn complex ideas into polished, reliable web applications that deliver results.                </motion.p>
               </div>
               <motion.div
                 initial={{ opacity: 0, y: 32 }}

@@ -9,6 +9,7 @@ import { GithubLogo } from "@phosphor-icons/react";
 import type { ProjectItem, ProjectSpeciality } from "@/data/resume";
 import { DATA } from "@/data/resume";
 import { ProjectModal } from "@/components/ProjectModal";
+import Link from "next/link";
 
 type ProjectFilter = "All" | ProjectSpeciality;
 
@@ -79,7 +80,7 @@ export function Projects() {
 
           {/* Project Filters */}
           <div
-            className="flex w-fit max-w-full flex-wrap gap-1 rounded-xl border border-slate-200 bg-slate-100/70 p-1 dark:border-slate-800 dark:bg-slate-900/60"
+            className="flex w-fit max-w-full flex-wrap rounded-xl border border-slate-200 bg-slate-100/70 p-1 dark:border-slate-800 dark:bg-slate-900/60"
             aria-label="Filter projects by speciality"
           >
             {filterOptions.map((option) => (
@@ -94,7 +95,7 @@ export function Projects() {
                     : "text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white"
                 }`}
               >
-                {option === "All" ? "All Projects" : option}
+                {option === "All" ? "All" : option}
               </button>
             ))}
           </div>
@@ -223,7 +224,7 @@ export function Projects() {
 
                   <div className="flex items-center gap-3">
                     {project.repoUrl && (
-                      <a
+                      <Link
                         href={project.repoUrl}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -231,19 +232,19 @@ export function Projects() {
                         className="text-slate-400 transition-colors hover:text-slate-900 dark:hover:text-white"
                       >
                         <GithubLogo className="size-4" />
-                      </a>
+                      </Link>
                     )}
 
                     {project.liveUrl && (
-                      <a
+                      <Link
                         href={project.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`Visit live demo for ${project.title}`}
-                        className="text-slate-400 transition-colors hover:text-electric-600 dark:hover:text-electric-400"
+                        className="hidden text-slate-400 transition-colors hover:text-electric-600 dark:hover:text-electric-400"
                       >
                         <ExternalLink className="size-4" />
-                      </a>
+                      </Link>
                     )}
                   </div>
                 </div>
