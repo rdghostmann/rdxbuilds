@@ -3,17 +3,10 @@
 
 import Image from "next/image";
 import { DATA } from "@/data/resume";
-import { ArrowUp } from "lucide-react";
 
 export function Footer() {
 
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
 
   return (
     <footer className="border-t border-slate-200/80 bg-slate-100/50 pb-28 transition-colors dark:border-slate-800/80 dark:bg-[#070b14]/60">
@@ -43,17 +36,6 @@ export function Footer() {
               </span>
             </div>
           </div>
-
-          {/* Quick jump to top */}
-          <button
-            type="button"
-            onClick={scrollToTop}
-            aria-label="Scroll back to top"
-            className="inline-flex items-center gap-1.5 text-xs text-slate-500 transition-colors hover:text-electric-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-electric-500 dark:text-slate-400 dark:hover:text-electric-400"
-          >
-            <span>Back to top</span>
-            <ArrowUp className="size-3.5" aria-hidden="true" />
-          </button>
         </div>
 
         {/* Copyright */}
