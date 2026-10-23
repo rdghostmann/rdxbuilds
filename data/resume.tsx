@@ -264,7 +264,7 @@ projects: [
       "A digital school operations platform focused on improving administrative workflows and productivity. The recorded technology stack includes Laravel, JavaScript, Bootstrap, and MySQL.",
     tags: ["Laravel", "HTML5", "JavaScript", "CSS3", "Bootstrap", "MySQL"],
     image: "/schoolpilot.png",
-    screenshot: "/screenshots/schoolpilot.png",
+    screenshot: "/screenshot/schoolpilot.png",
     liveUrl: "https://schoolpilot.ng/",
     repoUrl: "",
     highlights: [
@@ -295,7 +295,7 @@ projects: [
       "Healthcare",
     ],
     image: "/medsupply.png",
-    screenshot: "/screenshots/medisupply.png",
+    screenshot: "/screenshot/medisupply.png",
     liveUrl: "https://www.medisupplyltd.com/",
     repoUrl: "",
     highlights: [
@@ -327,7 +327,7 @@ projects: [
       "Marketplace",
     ],
     image: "/roomfind.png",
-    screenshot: "/screenshots/roomfind.png",
+    screenshot: "/screenshot/roomfind.png",
     liveUrl: "https://www.roomfind.ie/",
     repoUrl: "",
     highlights: [
@@ -351,7 +351,7 @@ projects: [
       "A farm management application concept designed to support agricultural workflows through activity tracking, expense management, crop monitoring, and yield analysis. The listed stack includes React Native, Expo, and Supabase.",
     tags: ["React Native", "Expo", "Supabase", "Mobile UI", "Agriculture"],
     image: "/emilyagros.png",
-    screenshot: "/screenshots/emilyagros.png",
+    screenshot: "/screenshot/emilyagros.png",
     liveUrl: "https://www.emilyagros.com/",
     repoUrl: "",
     highlights: [
@@ -374,7 +374,7 @@ projects: [
       "A web presence for a public speaking coaching service, presenting its value proposition to professionals, entrepreneurs, and leaders seeking to improve their communication and presentation skills.",
     tags: ["Next.js", "Tailwind CSS", "Framer Motion", "Responsive UI"],
     image: "/speaker10xbetter.png",
-    screenshot: "/screenshots/speak10xbetter.png",
+    screenshot: "/screenshot/speak10xbetter.png",
     liveUrl: "https://www.speak10xbetter.com/",
     repoUrl: "",
     highlights: [
@@ -404,7 +404,7 @@ projects: [
       "DApp",
     ],
     image: "/2sweet.webp",
-    screenshot: "/screenshots/2sweet.png",
+    screenshot: "/screenshot/2sweet.png",
     liveUrl: "https://nexxro.com/",
     repoUrl: "",
     highlights: [
@@ -435,7 +435,7 @@ projects: [
       "Multi-Tenancy",
     ],
     image: "/usemoos.webp",
-    screenshot: "/screenshots/usemoos.png",
+    screenshot: "/screenshot/usemoos.png",
     liveUrl: "https://www.usemoos.com/",
     repoUrl: "",
     highlights: [
@@ -465,7 +465,7 @@ projects: [
       "Internationalization",
     ],
     image: "/eucc.webp",
-    screenshot: "/screenshots/eu-cultural-centre.png",
+    screenshot: "/screenshot/eu-cultural-centre.png",
     liveUrl: "https://eu-cultural-centre.com/",
     repoUrl: "",
     highlights: [
@@ -497,7 +497,7 @@ projects: [
       "Customer Experience",
     ],
     image: "/kota-ai.png",
-    screenshot: "/screenshots/kota-ai.png",
+    screenshot: "/screenshot/kota-ai.png",
     liveUrl: "https://bunloop.com/",
     repoUrl: "",
     highlights: [
