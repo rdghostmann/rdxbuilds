@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { DATA } from "@/data/resume";
-import { ArrowUpRight, Check, Copy, MessageSquare, Send } from "lucide-react";
+import { ArrowUpRight, Check, Copy, MessageCircle, MessageSquare, Send } from "lucide-react";
 
 export function Contact() {
   const [copied, setCopied] = useState(false);
@@ -64,37 +64,37 @@ export function Contact() {
               </p>
 
               {/* Direct Email Card with One-Click Copy */}
-              <div className="mt-8 p-5 rounded-2xl glass-panel shadow-sm">
+              {/* Direct WhatsApp Contact Card */}
+              <div className="mt-8 rounded-2xl glass-panel p-5 shadow-sm">
                 <p className="text-xs font-bold uppercase tracking-wider text-slate-400">
                   Direct Inquiries
                 </p>
+
                 <div className="mt-3 flex items-center justify-between gap-3">
                   <a
-                    href={`mailto:${DATA.contactEmail}`}
-                    className="font-mono text-sm font-semibold text-electric-600 dark:text-electric-400 hover:underline truncate"
+                    href={`https://wa.me/${DATA.whatsappNumber.replace(/\D/g, "")}?text=${encodeURIComponent(
+                      "Hello, I came across your portfolio and would like to discuss a project with you."
+                    )}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Contact via WhatsApp"
+                    className="flex min-w-0 items-center gap-2 font-mono text-sm font-semibold text-emerald-600 hover:underline dark:text-emerald-400"
                   >
-                    {DATA.contactEmail}
+                    <MessageCircle className="size-4 shrink-0" />
+                    <span className="truncate">{DATA.whatsappNumber}</span>
                   </a>
-                  <button
-                    type="button"
-                    onClick={copyEmail}
-                    aria-label="Copy email address"
-                    className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 px-3 py-1.5 text-xs font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-electric-500"
+
+                  <a
+                    href={`https://wa.me/${DATA.whatsappNumber.replace(/\D/g, "")}?text=${encodeURIComponent(
+                      "Hello, I came across your portfolio and would like to discuss a project with you."
+                    )}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex shrink-0 items-center gap-1.5 rounded-lg bg-[#25D366] px-3 py-1.5 text-xs font-semibold text-white transition-colors hover:bg-[#1EBE5D] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
                   >
-                    {copied ? (
-                      <>
-                        <Check className="size-3.5 text-emerald-600 dark:text-emerald-400" />
-                        <span className="text-emerald-600 dark:text-emerald-400">
-                          Copied
-                        </span>
-                      </>
-                    ) : (
-                      <>
-                        <Copy className="size-3.5" />
-                        <span>Copy</span>
-                      </>
-                    )}
-                  </button>
+                    <MessageCircle className="size-3.5" />
+                    <span>WhatsApp</span>
+                  </a>
                 </div>
               </div>
 

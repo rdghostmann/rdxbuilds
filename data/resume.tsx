@@ -39,6 +39,8 @@ export const DATA = {
   initials: "RD",
   title: "Web Developer & Digital Product Builder",
   location: "Global / Remote",
+  whatsappNumber: "2349032374880",
+
   description:
     "Engineering high-performance web applications, scalable client interfaces, and robust full-stack architectures. Focused on turning complex ideas into reliable, useful, polished digital products.",
   url: "https://rdxbuilds.app",
@@ -376,36 +378,36 @@ export const DATA = {
         "Web3 project showcasing decentralized application interface work",
     },
     {
-  id: "usemoos",
-  title: "UseMoos — Enterprise Knowledge Layer",
-  category: "Enterprise SaaS & AI",
-  speciality: ["Web-Design", "Software", "AI Integration"],
-  role: "Full-Stack Developer & UI/UX Designer",
-  summary:
-    "An enterprise knowledge layer that ensures employees only access information they're authorized to see.",
-  description:
-    "An enterprise knowledge platform concept focused on secure information retrieval, permission-aware AI, and multi-tenant data isolation. Designed to help organizations make internal knowledge accessible while enforcing existing access controls, protecting sensitive documents, and preventing unauthorized information disclosure.",
-  tags: [
-    "Next.js",
-    "TypeScript",
-    "AI Integration",
-    "Enterprise SaaS",
-    "RBAC",
-    "Data Security",
-    "Multi-Tenancy",
-  ],
-  image: "/usemoos.png",
-  liveUrl: "https://www.usemoos.com/",
-  repoUrl: "",
-  highlights: [
-    "Permission-aware enterprise knowledge access",
-    "Designed around role-based authorization and data isolation",
-    "Security-focused approach to AI-powered information retrieval",
-    "Balances organizational knowledge discovery with access-control enforcement",
-  ],
-  metricsContext:
-    "Focused on making enterprise knowledge discoverable without exposing unauthorized information",
-},
+      id: "usemoos",
+      title: "UseMoos — Enterprise Knowledge Layer",
+      category: "Enterprise SaaS & AI",
+      speciality: ["Web-Design", "Software", "AI Integration"],
+      role: "Full-Stack Developer & UI/UX Designer",
+      summary:
+        "An enterprise knowledge layer that ensures employees only access information they're authorized to see.",
+      description:
+        "An enterprise knowledge platform concept focused on secure information retrieval, permission-aware AI, and multi-tenant data isolation. Designed to help organizations make internal knowledge accessible while enforcing existing access controls, protecting sensitive documents, and preventing unauthorized information disclosure.",
+      tags: [
+        "Next.js",
+        "TypeScript",
+        "AI Integration",
+        "Enterprise SaaS",
+        "RBAC",
+        "Data Security",
+        "Multi-Tenancy",
+      ],
+      image: "/usemoos.png",
+      liveUrl: "https://www.usemoos.com/",
+      repoUrl: "",
+      highlights: [
+        "Permission-aware enterprise knowledge access",
+        "Designed around role-based authorization and data isolation",
+        "Security-focused approach to AI-powered information retrieval",
+        "Balances organizational knowledge discovery with access-control enforcement",
+      ],
+      metricsContext:
+        "Focused on making enterprise knowledge discoverable without exposing unauthorized information",
+    },
     {
       id: "eu-cultural-centre",
       title: "EU Cultural Centre Website",
