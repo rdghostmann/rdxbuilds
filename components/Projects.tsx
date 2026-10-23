@@ -145,7 +145,7 @@ export function Projects() {
                   type="button"
                   onClick={() => setActiveModalProject(project)}
                   aria-label={`View ${project.title} case details`}
-                  className="relative flex size-14 shrink-0 items-center justify-center overflow-hidden rounded-full border border-slate-200/80 bg-white transition-transform duration-300 group-hover:scale-[1.03] dark:border-slate-700 dark:bg-slate-900"
+                  className="relative flex size-14 shrink-0 items-center justify-center overflow-hidden rounded-full border-slate-200/80 bg-white transition-transform duration-300 group-hover:scale-[1.03] dark:border-slate-700 dark:bg-slate-900"
                 >
                   <Image
                     src={project.image}
