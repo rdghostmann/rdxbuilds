@@ -4,7 +4,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { DATA } from "@/data/resume";
 
 interface LogoProps {
   handleNavClick?: (
@@ -22,22 +21,24 @@ export default function Logo({ handleNavClick, className = "" }: LogoProps) {
       className={`group flex shrink-0 items-center gap-2.5 whitespace-nowrap text-lg font-bold tracking-tight text-slate-900 transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-electric-500 dark:text-white ${className}`}
       aria-label="Rdxbuilds homepage"
     >
-      <div className="flex size-8 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-electric-600/30 bg-electric-600/10 p-0.5">
+      <div className="flex size-20 shrink-0 items-center justify-center">
         <Image
-          src={DATA.brandAvatar}
+          src="/rdxbuilds-logo-light.png"
           alt="Rdxbuilds logo"
-          width={32}
-          height={32}
-          sizes="32px"
+          width={1254}
+          height={1254}
           priority
-          className="size-full rounded-md object-cover"
+          className="size-full object-contain dark:hidden"
+        />
+        <Image
+          src="/rdxbuilds-logo-dark.png"
+          alt=""
+          width={1254}
+          height={1254}
+          priority
+          className="hidden size-full object-contain dark:block"
         />
       </div>
-
-      <span className="font-extrabold tracking-tight">
-        Rdx
-        <span className="text-electric-600 dark:text-electric-400">builds</span>
-      </span>
     </Link>
   );
 }

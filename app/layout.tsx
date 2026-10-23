@@ -52,8 +52,8 @@ export const metadata: Metadata = {
     yandex: "",
   },
   icons: {
-    icon: [{ url: "/rdxbuilds-favicon.png" }],
-    apple: "/rdxbuilds-favicon.jpg",
+    icon: [{ url: "/rdxbuilds-favicon-1.png" }],
+    apple: "/rdxbuilds-favicon-1.png",
   },
 };
 

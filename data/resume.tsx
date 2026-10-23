@@ -44,7 +44,7 @@ export const DATA = {
     "Engineering high-performance web applications, scalable client interfaces, and robust full-stack architectures. Focused on turning complex ideas into reliable, useful, polished digital products.",
   url: "https://rdxbuilds.app",
   contactEmail: "RandalChukzWilson@gmail.com",
-  brandAvatar: brandAvatarImg,
+  brandAvatar: "/images/rdxbuilds-favicon.png",
   heroImage: heroImg,
   avatarUrl: "/1768559048664.jpg",
 
