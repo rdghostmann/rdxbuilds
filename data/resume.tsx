@@ -386,8 +386,8 @@ projects: [
       "Designed to communicate coaching services and encourage engagement",
   },
   {
-    id: "2sweet-defi",
-    title: "2Sweet DeFi",
+    id: "nexxro",
+    title: "Nexxro - Web3",
     category: "Web3 & Decentralized Finance",
     speciality: ["Full-Stack", "Web-Design", "Software"],
     role: "Frontend Developer & UI/UX Designer",
@@ -477,10 +477,10 @@ projects: [
       "Designed to strengthen digital communication for cultural exchange",
   },
   {
-    id: "kota-ai",
-    title: "Kota AI — Trainable AI Customer Support",
-    category: "AI & Customer Experience SaaS",
-    speciality: ["Web-Design", "Software", "AI"],
+    id: "bunloop",
+    title: "Bunloop — Collaborative Workspace",
+    category: "Productivity & Collaboration SaaS",
+    speciality: ["Web-Design", "Full-Stack", "AI Integration"],
     role: "Full-Stack Developer & UI/UX Designer",
     summary:
       "An AI-powered customer support platform concept combining customer messaging, automated journeys, broadcasts, and a shared inbox to help businesses manage customer interactions from one unified workspace.",
@@ -496,8 +496,8 @@ projects: [
       "Shared Inbox",
       "Customer Experience",
     ],
-    image: "/kota-ai.png",
-    screenshot: "/screenshot/kota-ai.png",
+    image: "/bunloop.png",
+    screenshot: "/screenshot/bunloop.png",
     liveUrl: "https://bunloop.com/",
     repoUrl: "",
     highlights: [
