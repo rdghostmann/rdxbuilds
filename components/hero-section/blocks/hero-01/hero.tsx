@@ -76,7 +76,7 @@ function HeroSection({ avatarList }: HeroSectionProps) {
                   </span>
                 </Button>
                 <div className="flex items-center sm:gap-7 gap-3">
-                  <ul className="avatar flex flex-row items-center">
+                  <ul className="avatar hidden flex-row items-center">
                     {avatarList.map((avatar, index) => (
                       <li key={index} className="-mr-2 z-1 avatar-hover:ml-2">
                         <Image
@@ -104,7 +104,7 @@ function HeroSection({ avatarList }: HeroSectionProps) {
                       ))}
                     </div>
                     <p className="sm:text-sm text-xs font-normal text-muted-foreground">
-                      Trusted by 1000+ clients
+                      Trusted by 30+ clients
                     </p>
                   </div>
                 </div>

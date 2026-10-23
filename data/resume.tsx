@@ -272,6 +272,38 @@ export const DATA = {
       metricsContext: "Built around the digitization of school operations",
     },
     {
+      id: "medisupply",
+      title: "MediSupply — Pharmaceutical Procurement Platform",
+      category: "Healthcare & B2B SaaS",
+      speciality: ["Web-Design", "Software", "Full-Stack Development"],
+      role: "Full-Stack Developer & UI/UX Designer",
+      summary:
+        "A B2B pharmaceutical procurement platform designed to connect healthcare institutions with verified medicine suppliers through a structured digital purchasing workflow.",
+      description:
+        "A healthcare procurement platform built to streamline pharmaceutical sourcing, supplier matching, order management, and payment workflows. The platform supports role-based access for buyers, suppliers, pharmacists, and administrators, with a focus on procurement transparency and operational efficiency.",
+      tags: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "MongoDB",
+        "Mongoose",
+        "Paystack",
+        "B2B SaaS",
+        "Healthcare",
+      ],
+      image: "/medisupply.png",
+      liveUrl: "https://www.medisupplyltd.com/",
+      repoUrl: "",
+      highlights: [
+        "Structured pharmaceutical procurement and supplier-matching workflows",
+        "Role-based dashboards for buyers, suppliers, pharmacists, and administrators",
+        "Order tracking, payment integration, and procurement management",
+        "Designed to improve transparency and efficiency in healthcare supply chains",
+      ],
+      metricsContext:
+        "Built to support more organized pharmaceutical procurement and supplier coordination",
+    },
+    {
       id: "emilyagros",
       title: "Farm Management Mobile App",
       category: "Agriculture & Mobile Applications",
@@ -345,6 +377,37 @@ export const DATA = {
         "Web3 project showcasing decentralized application interface work",
     },
     {
+  id: "usemoos",
+  title: "UseMoos — Enterprise Knowledge Layer",
+  category: "Enterprise SaaS & AI",
+  speciality: ["Web-Design", "Software", "AI Integration"],
+  role: "Full-Stack Developer & UI/UX Designer",
+  summary:
+    "An enterprise knowledge layer that ensures employees only access information they're authorized to see.",
+  description:
+    "An enterprise knowledge platform concept focused on secure information retrieval, permission-aware AI, and multi-tenant data isolation. Designed to help organizations make internal knowledge accessible while enforcing existing access controls, protecting sensitive documents, and preventing unauthorized information disclosure.",
+  tags: [
+    "Next.js",
+    "TypeScript",
+    "AI Integration",
+    "Enterprise SaaS",
+    "RBAC",
+    "Data Security",
+    "Multi-Tenancy",
+  ],
+  image: "/usemoos.png",
+  liveUrl: "https://www.usemoos.com/",
+  repoUrl: "",
+  highlights: [
+    "Permission-aware enterprise knowledge access",
+    "Designed around role-based authorization and data isolation",
+    "Security-focused approach to AI-powered information retrieval",
+    "Balances organizational knowledge discovery with access-control enforcement",
+  ],
+  metricsContext:
+    "Focused on making enterprise knowledge discoverable without exposing unauthorized information",
+},
+    {
       id: "eu-cultural-centre",
       title: "EU Cultural Centre Website",
       category: "Culture & International Education",
@@ -371,33 +434,6 @@ export const DATA = {
       ],
       metricsContext:
         "Designed to strengthen digital communication for cultural exchange",
-    },
-    {
-      id: "stella-maris-academy",
-      title: "Stella Maris Academy Website",
-      category: "Education & Institutional Websites",
-      speciality: ["Web-Design", "Full-Stack"],
-      role: "Frontend Developer & UI/UX Designer",
-      summary:
-        "An official school website presenting the institution's academic programs, values, and educational identity.",
-      description:
-        "A responsive institutional website designed to communicate school information and provide visitors with an accessible overview of academic offerings, values, and programs.",
-      tags: [
-        "Next.js",
-        "Tailwind CSS",
-        "Framer Motion",
-        "SMTP",
-        "Responsive Design",
-      ],
-      image: "/stellamaris.png",
-      liveUrl: "https://stellamarisschools.com",
-      repoUrl: "",
-      highlights: [
-        "Presented institutional information and academic programs",
-        "Focused on responsive layouts and clear navigation",
-        "Included email integration in the listed technology stack",
-      ],
-      metricsContext: "Designed to strengthen the school's online presence",
     },
   ] satisfies ProjectItem[],
 
