@@ -70,7 +70,8 @@ export function Contact() {
               </p>
 
               {/* Direct WhatsApp Contact Card */}
-              <div className="mt-8 rounded-2xl glass-panel p-5 shadow-sm">
+              <div className="hidden mt-8 rounded-2xl glass-panel p-5 shadow-sm">
+                {/* <div className="mt-8 rounded-2xl glass-panel p-5 shadow-sm"> */}
                 <p className="text-xs font-bold uppercase tracking-wider text-slate-400">
                   Direct Inquiries
                 </p>
@@ -78,7 +79,7 @@ export function Contact() {
                 <div className="mt-3 flex items-center justify-between gap-3">
                   <a
                     href={`https://wa.me/${DATA.whatsappNumber.replace(/\D/g, "")}?text=${encodeURIComponent(
-                      "Hello, I came across your portfolio and would like to discuss a project with you."
+                      "Hello, I came across your portfolio and would like to discuss a project with you.",
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -86,12 +87,14 @@ export function Contact() {
                     className="hidden min-w-0 items-center gap-2 font-mono text-sm font-semibold text-emerald-600 hover:underline dark:text-emerald-400"
                   >
                     <MessageCircle className="size-4 shrink-0" />
-                    <span className="hiddentruncate">{DATA.whatsappNumber}</span>
+                    <span className="hiddentruncate">
+                      {DATA.whatsappNumber}
+                    </span>
                   </a>
 
                   <a
                     href={`https://wa.me/${DATA.whatsappNumber.replace(/\D/g, "")}?text=${encodeURIComponent(
-                      "Hello, I came across your portfolio and would like to discuss a project with you."
+                      "Hello, I came across your portfolio and would like to discuss a project with you.",
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -115,8 +118,8 @@ export function Contact() {
 
                     const href = isWhatsApp
                       ? `https://wa.me/${DATA.whatsappNumber.replace(/\D/g, "")}?text=${encodeURIComponent(
-                        "Hello, I came across your portfolio and would like to discuss a project with you.",
-                      )}`
+                          "Hello, I came across your portfolio and would like to discuss a project with you.",
+                        )}`
                       : social.url;
 
                     return (
@@ -126,12 +129,15 @@ export function Contact() {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={
-                          isWhatsApp ? "Contact via WhatsApp" : `Visit ${name} profile`
+                          isWhatsApp
+                            ? "Contact via WhatsApp"
+                            : `Visit ${name} profile`
                         }
-                        className={`inline-flex items-center gap-1.5 text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-electric-500 ${isWhatsApp
+                        className={`inline-flex items-center gap-1.5 text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-electric-500 ${
+                          isWhatsApp
                             ? "text-[#25D366] hover:text-[#1EBE5D]"
                             : "text-slate-700 hover:text-electric-600 dark:text-slate-300 dark:hover:text-electric-400"
-                          }`}
+                        }`}
                       >
                         <social.icon className="size-3.5" />
                         <span>{name}</span>

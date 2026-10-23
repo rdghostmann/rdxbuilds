@@ -38,7 +38,7 @@ function HeroSection({ avatarList }: HeroSectionProps) {
                   transition={{ duration: 1, ease: "easeInOut" }}
                   className="pt-7 px-2 lg:text-8xl md:text-7xl text-4xl font-medium  md:leading-20 lg:leading-24"
                 >
-                  Transforming ideas into {" "}
+                  Transforming ideas into{" "}
                   <span
                     className={`${instrumentSerif.className} tracking-tight text-electric-600 dark:text-electric-400`}
                   >
@@ -52,7 +52,9 @@ function HeroSection({ avatarList }: HeroSectionProps) {
                   className="text-base font-normal max-w-2xl text-muted-foreground"
                 >
                   {/* We partner with founders, venture builders, and ambitious teams to turn complex ideas into reliable, useful, and exceptionally polished web applications. Focused on engineering rigor, maintainability, and clear business results. */}
-                  We help founders and ambitious teams turn complex ideas into polished, reliable web applications that deliver results.                </motion.p>
+                  We help founders and ambitious teams turn complex ideas into
+                  polished, reliable web applications that deliver results.{" "}
+                </motion.p>
               </div>
               <motion.div
                 initial={{ opacity: 0, y: 32 }}
@@ -69,7 +71,7 @@ function HeroSection({ avatarList }: HeroSectionProps) {
                   className="relative text-sm font-medium rounded-full h-12 p-1 ps-6 pe-14 group transition-all duration-500 hover:ps-14 hover:pe-6 w-fit overflow-hidden cursor-pointer"
                 >
                   <span className="relative z-10 transition-all duration-500">
-                    Let&apos;s build 
+                    Let&apos;s build
                   </span>
                   <span className="absolute right-1 w-10 h-10 bg-background text-foreground rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-44px)] group-hover:rotate-45">
                     <ArrowUpRight size={16} />

@@ -48,7 +48,9 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
             <span className="font-medium text-electric-600 dark:text-electric-400">
               {project.category}
             </span>
-            <span className="hidden xl:block" aria-hidden="true">·</span>
+            <span className="hidden xl:block" aria-hidden="true">
+              ·
+            </span>
             <span className="hidden xl:block">{project.role}</span>
           </div>
           <button

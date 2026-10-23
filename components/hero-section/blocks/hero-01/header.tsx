@@ -102,8 +102,7 @@ const Header = ({ navigationData, className }: HeaderProps) => {
       event.preventDefault();
 
       section.scrollIntoView({
-        behavior: window.matchMedia("(prefers-reduced-motion: reduce)")
-          .matches
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
           ? "auto"
           : "smooth",
         block: "start",
@@ -200,11 +199,7 @@ const Header = ({ navigationData, className }: HeaderProps) => {
                   aria-label="Open navigation menu"
                   className="block rounded-full border border-border p-2 transition-colors hover:bg-muted"
                 >
-                  <Menu
-                    width={20}
-                    height={20}
-                    aria-hidden="true"
-                  />
+                  <Menu width={20} height={20} aria-hidden="true" />
                 </button>
               </SheetTrigger>
 
@@ -230,20 +225,14 @@ const Header = ({ navigationData, className }: HeaderProps) => {
                       aria-label="Close navigation menu"
                       className="block rounded-full border border-border p-2.5 transition-colors hover:bg-muted"
                     >
-                      <X
-                        width={16}
-                        height={16}
-                        aria-hidden="true"
-                      />
+                      <X width={16} height={16} aria-hidden="true" />
                     </button>
                   </SheetClose>
                 </div>
 
                 <div className="flex max-h-[calc(100dvh-88px)] flex-col gap-12 overflow-y-auto px-6 pb-6">
                   <div className="flex flex-col gap-8">
-                    <SheetTitle className="sr-only">
-                      Navigation menu
-                    </SheetTitle>
+                    <SheetTitle className="sr-only">Navigation menu</SheetTitle>
 
                     <NavigationMenu
                       orientation="vertical"
@@ -297,11 +286,7 @@ const Header = ({ navigationData, className }: HeaderProps) => {
                           aria-label={`Visit ${label} profile`}
                           className="flex items-center justify-center rounded-full p-3 shadow-xs outline outline-border transition hover:bg-muted"
                         >
-                          <Icon
-                            size={16}
-                            weight="regular"
-                            aria-hidden="true"
-                          />
+                          <Icon size={16} weight="regular" aria-hidden="true" />
                         </Link>
                       ))}
                     </div>

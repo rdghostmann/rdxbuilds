@@ -1,5 +1,5 @@
 // HeroSection.tsx
-"use client"
+"use client";
 
 import {
   CSS,
@@ -19,7 +19,9 @@ import {
   Postman,
 } from "developer-icons";
 
-import BrandSlider, { type BrandList } from "@/components/hero-section/blocks/hero-01/brand-slider";
+import BrandSlider, {
+  type BrandList,
+} from "@/components/hero-section/blocks/hero-01/brand-slider";
 import Header, {
   NavigationSection,
 } from "@/components/hero-section/blocks/hero-01/header";
@@ -59,7 +61,7 @@ const brandList: BrandList[] = [
   { name: "Python", Icon: Python },
   { name: "JavaScript", Icon: JavaScript },
   { name: "Tailwind CSS", Icon: TailwindCSS },
-  {name: "PostgreSQL", Icon: PostgreSQL},
+  { name: "PostgreSQL", Icon: PostgreSQL },
   { name: "Node.js", Icon: NodeJs },
   { name: "MongoDB", Icon: MongoDB },
   { name: "Next.js", Icon: NextJs },

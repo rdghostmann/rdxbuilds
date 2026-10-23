@@ -99,7 +99,6 @@ export function Approach() {
     }, AUTO_SCROLL_INTERVAL);
   }, [clearAutoScroll, scrollToStep]);
 
-
   const pauseAutoScroll = useCallback(() => {
     isInteractingRef.current = true;
     clearAutoScroll();
@@ -351,7 +350,6 @@ export function Approach() {
               />
             ))}
           </div>
-
         </div>
 
         {/* Milestone & Deliverables */}

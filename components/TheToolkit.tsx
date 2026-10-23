@@ -167,26 +167,21 @@ export function TheToolkit() {
 
         {/* 5 Domain Navigation Buttons */}
         {/* Swipeable Domain Navigation */}
-        <div
-          className="
-    mt-10 -mx-6 px-6
-    sm:mx-0 sm:px-0
-  "
-        >
+        <div className="  mt-10 -mx-6 px-6  sm:mx-0 sm:px-0 " >
           <div
             role="tablist"
             aria-label="Toolkit domains"
             className="
-      flex w-full sm:w-fit
-      flex-nowrap sm:flex-wrap
-      gap-2 p-1.5
-      rounded-2xl glass-panel
-      overflow-x-auto sm:overflow-visible
-      overscroll-x-contain
-      snap-x snap-mandatory
-      touch-pan-x
-      scrollbar-none
-    "
+              flex w-full sm:w-fit
+              flex-nowrap sm:flex-wrap
+              gap-2 p-1.5
+              rounded-lg glass-panel
+              overflow-x-auto sm:overflow-visible
+              overscroll-x-contain
+              snap-x snap-mandatory
+              touch-pan-x
+              scrollbar-none
+            "
             style={{
               WebkitOverflowScrolling: "touch",
               scrollbarWidth: "none",
@@ -206,22 +201,22 @@ export function TheToolkit() {
                   aria-controls="toolkit-panel"
                   onClick={() => setActiveTab(d.id)}
                   className={`
-            inline-flex items-center justify-center gap-2
-            px-4 py-3
-            min-h-11
-            text-xs font-semibold
-            rounded-xl transition-all duration-200
-            whitespace-nowrap shrink-0 snap-start
-            focus-visible:outline-none
-            focus-visible:ring-2
-            focus-visible:ring-electric-500
-            focus-visible:ring-offset-2
-            dark:focus-visible:ring-offset-slate-950
-            ${isSelected
+                    inline-flex items-center justify-center gap-2
+                    px-4 py-3
+                    min-h-11
+                    text-xs font-semibold
+                    rounded-lg transition-all duration-200
+                    whitespace-nowrap shrink-0 snap-start
+                    focus-visible:outline-none
+                    focus-visible:ring-2
+                    focus-visible:ring-electric-500
+                    focus-visible:ring-offset-2
+                    dark:focus-visible:ring-offset-slate-950
+                    ${isSelected
                       ? "bg-electric-600 text-white shadow-md shadow-electric-600/20"
                       : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100/60 dark:hover:bg-slate-800/60"
                     }
-          `}
+                  `}
                 >
                   <Icon className="size-4 shrink-0" />
                   <span>{d.label}</span>
@@ -230,10 +225,6 @@ export function TheToolkit() {
             })}
           </div>
 
-          {/* Mobile swipe hint */}
-          <p className="mt-2 px-1 text-[11px] text-slate-400 sm:hidden">
-            Swipe horizontally to explore all domains →
-          </p>
         </div>
 
         {/* Domain Deep-Dive Panel with Motion Reveal */}

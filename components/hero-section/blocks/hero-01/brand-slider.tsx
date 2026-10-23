@@ -28,7 +28,7 @@ function BrandSlider({ brandList }: { brandList: BrandList[] }) {
               <div className="flex items-center justify-center gap-4">
                 <div className="hidden md:block h-0.5 w-40 bg-linear-to-l from-muted-foreground to-white dark:from-muted-foreground dark:to-transparent opacity-20" />
                 <p className="text-sm font-normal sm:px-2 px-10 text-muted-foreground text-center">
-                   brands around the worlds
+                  brands around the worlds
                 </p>
                 <div className="hidden md:block h-0.5 w-40 bg-linear-to-r from-muted-foreground to-white dark:from-muted-foreground dark:to-transparent opacity-20" />
               </div>
@@ -43,11 +43,7 @@ function BrandSlider({ brandList }: { brandList: BrandList[] }) {
                       aria-label={name}
                       title={name}
                     >
-                      <Icon
-                        size={28}
-                        className="size-7"
-                        aria-hidden="true"
-                      />
+                      <Icon size={28} className="size-7" aria-hidden="true" />
                       <span className="whitespace-nowrap text-sm font-medium text-muted-foreground">
                         {name}
                       </span>
