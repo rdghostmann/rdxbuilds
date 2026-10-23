@@ -532,7 +532,7 @@ projects: [
     "Admin Dashboard",
   ],
   image: "/blueflamepos.png",
-  screenshot: "/screenshots/blueflame.png",
+  screenshot: "/screenshot/blueflame.png",
   liveUrl: "#",
   repoUrl: "",
   highlights: [

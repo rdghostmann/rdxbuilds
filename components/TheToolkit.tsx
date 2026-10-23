@@ -31,9 +31,8 @@ export function TheToolkit() {
       ],
       skills: [
         "React",
-        "Next.js",
         "TypeScript",
-        "Tailwind CSS",
+        "CSS Framework",
         "UX design",
         "Design systems",
         "Interaction design",
@@ -235,7 +234,7 @@ export function TheToolkit() {
                 </div>
 
                 {/* Right: Technologies & Stack */}
-                <div className="lg:col-span-5 space-y-4">
+                <div className="hidden lg:block lg:col-span-5 space-y-4">
                   <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400">
                     Capabilities & Technologies
                   </h4>
