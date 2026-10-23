@@ -429,8 +429,8 @@ export const DATA = {
         "Ethereum",
         "DApp",
       ],
-      image: "/2sweet.webp",
-      screenshot: "/screenshot/2sweet.png",
+      image: "/nexxro.png",
+      screenshot: "/screenshot/nexxro.png",
       liveUrl: "https://nexxro.com/",
       repoUrl: "",
       highlights: [
