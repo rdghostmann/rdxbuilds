@@ -6,7 +6,7 @@ import { GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
 import heroImg from "/public/images/rdx_hero_product_preview_1792658862900.jpg";
 
 export type ProjectSpeciality =
-  "Full-Stack" | "Web-Design" | "E-commerce" | "Software" | "Mobile" | "AI Integration" | "Web3" | "Blockchain" | "FinTech" | "Healthcare" | "Education" | "Enterprise SaaS" | "Digital Media" | "Content Management" | "Multi-Tenant";
+  "Full-Stack" | "Web-Design" | "E-commerce" | "Software" | "Mobile" | "AI Integration" | "Web3" | "Blockchain" | "FinTech" | "Healthcare" | "Education" | "Enterprise SaaS" | "Digital Media" | "Content Management" | "Multi-Tenant" | "SaaS" | "Administration" | "Dashboard" | "Data Visualization" | "Responsive UI" | "Nonprofit" | "Agriculture" | "Professional Development" | "Lifestyle";
 
 export interface ProjectItem {
   id: string;
@@ -304,6 +304,37 @@ export const DATA = {
       metricsContext:
         "Built to support more organized pharmaceutical procurement and supplier coordination",
     },
+    {
+  id: "roomfind",
+  title: "RoomFind — Find Flatmates You'll Actually Get Along With",
+  category: "Lifestyle & SaaS Platforms",
+  speciality: ["Web-Design", "Software", "SaaS"],
+  role: "Full-Stack Developer & UI/UX Designer",
+  summary:
+    "A flatmate-matching platform designed to help people find compatible roommates based on lifestyle, preferences, and shared living expectations.",
+  description:
+    "A SaaS platform focused on simplifying the flatmate discovery process by helping users explore accommodation opportunities and connect with people they are more likely to get along with. The product emphasizes user-friendly discovery, compatibility-focused matching, and a streamlined digital experience for shared living.",
+  tags: [
+    "SaaS",
+    "Next.js",
+    "TypeScript",
+    "UI/UX Design",
+    "Responsive Web Design",
+    "Flatmate Matching",
+    "Marketplace",
+  ],
+  image: "/roomfind.png",
+  liveUrl: "https://www.roomfind.ie/",
+  repoUrl: "",
+  highlights: [
+    "Designed around compatibility-focused flatmate discovery",
+    "Simplifies the process of finding suitable shared accommodation",
+    "Emphasizes intuitive navigation and a responsive user experience",
+    "Built around the needs of people seeking better shared-living arrangements",
+  ],
+  metricsContext:
+    "Focused on making flatmate discovery more convenient and compatibility-driven",
+},
     {
       id: "emilyagros",
       title: "Farm Management Mobile App",

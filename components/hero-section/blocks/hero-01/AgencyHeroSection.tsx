@@ -28,8 +28,8 @@ import Hero, {
 const navigationData: NavigationSection[] = [
   { title: "Home", href: "#", isActive: true },
   { title: "About", href: "#about" },
-  { title: "What You Hand Over", href: "#handover" },
-  { title: "Toolkit", href: "#toolkit" },
+  // { title: "What You Hand Over", href: "#handover" },
+  // { title: "Toolkit", href: "#toolkit" },
   { title: "Projects", href: "#projects" },
   { title: "Contact", href: "#contact" },
 ];
