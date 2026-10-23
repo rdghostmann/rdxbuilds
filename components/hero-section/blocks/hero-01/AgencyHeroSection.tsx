@@ -15,6 +15,8 @@ import {
   TailwindCSS,
   TypeScript,
   VercelDark,
+  PostgreSQL,
+  Postman,
 } from "developer-icons";
 
 import BrandSlider, { type BrandList } from "@/components/hero-section/blocks/hero-01/brand-slider";
@@ -28,8 +30,6 @@ import Hero, {
 const navigationData: NavigationSection[] = [
   { title: "Home", href: "#", isActive: true },
   { title: "About", href: "#about" },
-  // { title: "What You Hand Over", href: "#handover" },
-  // { title: "Toolkit", href: "#toolkit" },
   { title: "Projects", href: "#projects" },
   { title: "Contact", href: "#contact" },
 ];
@@ -54,19 +54,21 @@ const avatarList: AvatarList[] = [
 ];
 
 const brandList: BrandList[] = [
-  { name: "Next.js", Icon: NextJs },
   { name: "React", Icon: React },
   { name: "TypeScript", Icon: TypeScript },
   { name: "Python", Icon: Python },
   { name: "JavaScript", Icon: JavaScript },
   { name: "Tailwind CSS", Icon: TailwindCSS },
+  {name: "PostgreSQL", Icon: PostgreSQL},
   { name: "Node.js", Icon: NodeJs },
   { name: "MongoDB", Icon: MongoDB },
+  { name: "Next.js", Icon: NextJs },
   { name: "Supabase", Icon: Supabase },
   { name: "Vercel", Icon: VercelDark },
   { name: "HTML5", Icon: HTML5 },
   { name: "CSS", Icon: CSS },
   { name: "Figma", Icon: Figma },
+  { name: "Postman", Icon: Postman },
 ];
 
 const AgencyHeroSection = () => {
