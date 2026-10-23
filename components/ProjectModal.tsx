@@ -76,7 +76,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
           </div>
 
           {/* Full Preview Image */}
-          <div className=" relative aspect-video rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-950">
+          <div className="hidden lg:block relative aspect-video rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-950">
             <Image
               src={project.image}
               alt={project.title}
