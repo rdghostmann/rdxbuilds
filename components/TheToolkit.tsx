@@ -1,10 +1,10 @@
+// TheToolkit.tsx
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Brain,
   CheckCircle2,
-  ChevronRight,
   Database,
   Layout,
   Server,
@@ -39,30 +39,6 @@ export function TheToolkit() {
         "Interaction design",
         "Accessibility",
         "Figma to code",
-      ],
-    },
-    {
-      id: "AI",
-      label: "AI",
-      icon: Brain,
-      thesis:
-        "Grounded generation and deterministic permission boundaries over novelty demo hacks.",
-      explanation:
-        "Enterprise AI fails on hallucination, document leakage, and latency spikes. Integrating an LLM is straightforward; engineering tenant isolation, evaluation harnesses, and sub-second streaming pipelines is where products survive real customer scrutiny.",
-      offYourHands: [
-        "Pre-retrieval authorization checks ensuring users never see unauthorized context",
-        "Automated CI/CD eval harnesses to catch answer degradation before deployment",
-        "Low-latency streaming responses with deterministic error fallbacks",
-        "Vector indexing, chunking optimization, and embeddings pipeline design",
-      ],
-      skills: [
-        "RAG Architecture",
-        "Tenant Isolation",
-        "CI-Gated Eval Harnesses",
-        "Vector Embeddings",
-        "Streaming Response Pipelines",
-        "Structured Schema Output",
-        "Rate-Limit Resilience",
       ],
     },
     {
@@ -135,6 +111,30 @@ export function TheToolkit() {
         "Uptime Monitoring",
       ],
     },
+     {
+      id: "AI",
+      label: "AI",
+      icon: Brain,
+      thesis:
+        "Grounded generation and deterministic permission boundaries over novelty demo hacks.",
+      explanation:
+        "Enterprise AI fails on hallucination, document leakage, and latency spikes. Integrating an LLM is straightforward; engineering tenant isolation, evaluation harnesses, and sub-second streaming pipelines is where products survive real customer scrutiny.",
+      offYourHands: [
+        "Pre-retrieval authorization checks ensuring users never see unauthorized context",
+        "Automated CI/CD eval harnesses to catch answer degradation before deployment",
+        "Low-latency streaming responses with deterministic error fallbacks",
+        "Vector indexing, chunking optimization, and embeddings pipeline design",
+      ],
+      skills: [
+        "RAG Architecture",
+        "Tenant Isolation",
+        "CI-Gated Eval Harnesses",
+        "Vector Embeddings",
+        "Streaming Response Pipelines",
+        "Structured Schema Output",
+        "Rate-Limit Resilience",
+      ],
+    },
   ];
 
   const currentDomain = domains.find((d) => d.id === activeTab) || domains[0];
@@ -176,7 +176,7 @@ export function TheToolkit() {
                 key={d.id}
                 type="button"
                 onClick={() => setActiveTab(d.id)}
-                className={`inline-flex items-center gap-2 px-4 py-2.5 text-xs sm:text-sm font-semibold rounded-xl transition-all whitespace-nowrap shrink-0 ${
+                className={`inline-flex items-center gap-2 px-4 py-2.5 text-xs font-semibold rounded-xl transition-all whitespace-nowrap shrink-0 ${
                   isSelected
                     ? "bg-electric-600 text-white shadow-md shadow-electric-600/20"
                     : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100/60 dark:hover:bg-slate-800/60"
