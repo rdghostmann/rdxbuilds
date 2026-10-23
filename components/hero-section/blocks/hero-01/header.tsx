@@ -202,7 +202,8 @@ const Header = ({ navigationData, className }: HeaderProps) => {
                   id="mobile-menu-trigger"
                   type="button"
                   aria-label="Open navigation menu"
-                  className="block rounded-full border border-border p-2 transition-colors hover:bg-muted"
+                  className="hidden rounded-full border border-border p-2 transition-colors hover:bg-muted"
+                  // className="block rounded-full border border-border p-2 transition-colors hover:bg-muted"
                 >
                   <Menu width={20} height={20} aria-hidden="true" />
                 </button>
