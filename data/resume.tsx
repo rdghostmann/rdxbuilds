@@ -274,7 +274,7 @@ export const DATA = {
       id: "medisupply",
       title: "MediSupply — Pharmaceutical Procurement Platform",
       category: "Healthcare & B2B SaaS",
-      speciality: ["Web-Design", "Software", "Full-Stack Development"],
+      speciality: ["Web-Design", "Software", "Full-Stack"],
       role: "Full-Stack Developer & UI/UX Designer",
       summary:
         "A B2B pharmaceutical procurement platform designed to connect healthcare institutions with verified medicine suppliers through a structured digital purchasing workflow.",
