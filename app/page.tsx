@@ -21,7 +21,7 @@ export default function Home() {
         <About />
         <WhatYouHandOver />
         <TheToolkit />
-        <Work />
+        {/* <Work /> */}
         <Projects />
         <Approach />
         <Contact />
