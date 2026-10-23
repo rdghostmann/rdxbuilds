@@ -435,7 +435,7 @@ projects: [
       "Data Security",
       "Multi-Tenancy",
     ],
-    image: "/usemoos.webp",
+    image: "/usemoos.png",
     screenshot: "/screenshot/usemoos.png",
     liveUrl: "https://www.usemoos.com/",
     repoUrl: "",
