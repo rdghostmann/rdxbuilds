@@ -2,9 +2,8 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
-import { DATA } from "@/data/resume";
 import { ArrowUpRight } from "lucide-react";
+import Logo from "./Logo";
 
 export function Header() {
   const handleNavClick = (
@@ -29,32 +28,10 @@ export function Header() {
 
   return (
     <header className="glass-panel z-30 w-full border-b border-slate-200/80 transition-colors dark:border-electric-500/15">
-    {/* <header className="glass-panel sticky top-0 z-30 w-full border-b border-slate-200/80 transition-colors dark:border-electric-500/15"> */}
+      {/* <header className="glass-panel sticky top-0 z-30 w-full border-b border-slate-200/80 transition-colors dark:border-electric-500/15"> */}
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-8 px-6 lg:px-8">
         {/* Brand */}
-        <a
-          href="#hero"
-          onClick={(e) => handleNavClick(e, "hero")}
-          className="group flex shrink-0 items-center gap-2.5 whitespace-nowrap text-lg font-bold tracking-tight text-slate-900 transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-electric-500 dark:text-white"
-          aria-label="Rdxbuilds homepage"
-        >
-          <div className="flex size-8 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-electric-600/30 bg-electric-600/10 p-0.5">
-            <Image
-              src={DATA.brandAvatar}
-              alt="Rdxbuilds logo"
-              width={32}
-              height={32}
-              sizes="32px"
-              priority
-              className="size-full rounded-md object-cover"
-            />
-          </div>
-
-          <span className="font-extrabold tracking-tight">
-            Rdx<span className="text-electric-600 dark:text-electric-400">builds</span>
-          </span>
-        </a>
-
+        <Logo handleNavClick={handleNavClick} />
         {/* Desktop Navigation */}
         <nav
           aria-label="Primary navigation"

@@ -7,11 +7,11 @@ import { DATA } from "@/data/resume";
 import { ArrowUp } from "lucide-react";
 
 export function Footer() {
-  const [year, setYear] = useState<number | null>(null);
+  // const [year, setYear] = useState<number | null>(null);
 
-  useEffect(() => {
-    setYear(new Date().getFullYear());
-  }, []);
+  // useEffect(() => {
+  //   setYear(new Date().getFullYear());
+  // }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -61,9 +61,7 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t border-slate-200/60 pt-6 text-[11px] text-slate-400 dark:border-slate-800/60 dark:text-slate-500 sm:flex-row">
-          <p>
-            © {year ?? ""} Rdxbuilds. All rights reserved.
-          </p>
+          <p>© 2026 Rdxbuilds. All rights reserved.</p>
 
           <p>Engineered with React 19, TypeScript & Tailwind CSS.</p>
         </div>

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { DATA } from "@/data/resume";
@@ -24,12 +24,14 @@ export function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!formState.email || !formState.message) return;
-    
-    const subject = encodeURIComponent(`Project Inquiry: ${formState.projectType} [via Portfolio]`);
-    const body = encodeURIComponent(
-      `Hi Rdxbuilds,\n\nName: ${formState.name}\nEmail: ${formState.email}\nScope: ${formState.projectType}\nTimeline: ${formState.timeline}\n\nProject Overview:\n${formState.message}\n`
+
+    const subject = encodeURIComponent(
+      `Project Inquiry: ${formState.projectType} [via Portfolio]`,
     );
-    
+    const body = encodeURIComponent(
+      `Hi Rdxbuilds,\n\nName: ${formState.name}\nEmail: ${formState.email}\nScope: ${formState.projectType}\nTimeline: ${formState.timeline}\n\nProject Overview:\n${formState.message}\n`,
+    );
+
     window.location.href = `mailto:${DATA.contactEmail}?subject=${subject}&body=${body}`;
     setSubmitted(true);
   };
@@ -56,8 +58,9 @@ export function Contact() {
                 Let&apos;s build something exceptional together.
               </h2>
               <p className="mt-4 text-base text-slate-600 dark:text-slate-300 leading-relaxed">
-                Whether you need to prototype a high-stakes MVP, overhaul an existing product for speed,
-                or build out an investor-ready web architecture, I am open to discussing select new opportunities.
+                Whether you need to prototype a high-stakes MVP, overhaul an
+                existing product for speed, or build out an investor-ready web
+                architecture, I am open to discussing select new opportunities.
               </p>
 
               {/* Direct Email Card with One-Click Copy */}
@@ -81,7 +84,9 @@ export function Contact() {
                     {copied ? (
                       <>
                         <Check className="size-3.5 text-emerald-600 dark:text-emerald-400" />
-                        <span className="text-emerald-600 dark:text-emerald-400">Copied</span>
+                        <span className="text-emerald-600 dark:text-emerald-400">
+                          Copied
+                        </span>
                       </>
                     ) : (
                       <>
@@ -118,8 +123,13 @@ export function Contact() {
 
             {/* Availability Notice */}
             <div className="mt-8 pt-6 border-t border-slate-200/80 dark:border-slate-800/80 text-xs text-slate-500 dark:text-slate-400">
-              <span className="font-semibold text-slate-800 dark:text-slate-200">Current Status: </span>
-              <span>Accepting freelance and contract engineering engagements. Typical turnaround for initial discovery is within 24 hours.</span>
+              <span className="font-semibold text-slate-800 dark:text-slate-200">
+                Current Status:{" "}
+              </span>
+              <span>
+                Accepting freelance and contract engineering engagements.
+                Typical turnaround for initial discovery is within 24 hours.
+              </span>
             </div>
           </div>
 
@@ -147,8 +157,13 @@ export function Contact() {
                     Inquiry Prepared!
                   </h4>
                   <p className="text-xs text-slate-600 dark:text-slate-300 max-w-md mx-auto">
-                    Your email client has been opened with your structured brief. If it didn&apos;t open automatically, you can email me directly at{" "}
-                    <span className="font-mono font-semibold text-electric-600 dark:text-electric-400">{DATA.contactEmail}</span>.
+                    Your email client has been opened with your structured
+                    brief. If it didn&apos;t open automatically, you can email
+                    me directly at{" "}
+                    <span className="font-mono font-semibold text-electric-600 dark:text-electric-400">
+                      {DATA.contactEmail}
+                    </span>
+                    .
                   </p>
                   <button
                     type="button"
@@ -170,7 +185,9 @@ export function Contact() {
                         required
                         placeholder="Alex Rivera"
                         value={formState.name}
-                        onChange={(e) => setFormState({ ...formState, name: e.target.value })}
+                        onChange={(e) =>
+                          setFormState({ ...formState, name: e.target.value })
+                        }
                         className="w-full rounded-lg border border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-950/60 px-3.5 py-2 text-xs text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-electric-500"
                       />
                     </div>
@@ -183,7 +200,9 @@ export function Contact() {
                         required
                         placeholder="alex@company.com"
                         value={formState.email}
-                        onChange={(e) => setFormState({ ...formState, email: e.target.value })}
+                        onChange={(e) =>
+                          setFormState({ ...formState, email: e.target.value })
+                        }
                         className="w-full rounded-lg border border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-950/60 px-3.5 py-2 text-xs text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-electric-500"
                       />
                     </div>
@@ -196,14 +215,29 @@ export function Contact() {
                       </label>
                       <select
                         value={formState.projectType}
-                        onChange={(e) => setFormState({ ...formState, projectType: e.target.value })}
+                        onChange={(e) =>
+                          setFormState({
+                            ...formState,
+                            projectType: e.target.value,
+                          })
+                        }
                         className="w-full rounded-lg border border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-950/60 px-3 py-2 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-electric-500"
                       >
-                        <option value="Full Web Application Build">Full Web Application Build</option>
-                        <option value="Rapid MVP Prototyping">Rapid MVP Prototyping</option>
-                        <option value="Frontend Architecture & UI Overhaul">Frontend Architecture & UI Overhaul</option>
-                        <option value="Performance & Core Web Vitals Optimization">Performance Optimization</option>
-                        <option value="Technical Advisory & Code Review">Technical Advisory & Code Review</option>
+                        <option value="Full Web Application Build">
+                          Full Web Application Build
+                        </option>
+                        <option value="Rapid MVP Prototyping">
+                          Rapid MVP Prototyping
+                        </option>
+                        <option value="Frontend Architecture & UI Overhaul">
+                          Frontend Architecture & UI Overhaul
+                        </option>
+                        <option value="Performance & Core Web Vitals Optimization">
+                          Performance Optimization
+                        </option>
+                        <option value="Technical Advisory & Code Review">
+                          Technical Advisory & Code Review
+                        </option>
                       </select>
                     </div>
 
@@ -213,13 +247,24 @@ export function Contact() {
                       </label>
                       <select
                         value={formState.timeline}
-                        onChange={(e) => setFormState({ ...formState, timeline: e.target.value })}
+                        onChange={(e) =>
+                          setFormState({
+                            ...formState,
+                            timeline: e.target.value,
+                          })
+                        }
                         className="w-full rounded-lg border border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-950/60 px-3 py-2 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-electric-500"
                       >
-                        <option value="Urgent (Under 1 Month)">Urgent (Under 1 Month)</option>
+                        <option value="Urgent (Under 1 Month)">
+                          Urgent (Under 1 Month)
+                        </option>
                         <option value="1-3 Months">1-3 Months</option>
-                        <option value="Quarterly / Long-term">Quarterly / Long-term</option>
-                        <option value="Flexible / Exploration">Flexible / Exploration</option>
+                        <option value="Quarterly / Long-term">
+                          Quarterly / Long-term
+                        </option>
+                        <option value="Flexible / Exploration">
+                          Flexible / Exploration
+                        </option>
                       </select>
                     </div>
                   </div>
@@ -233,7 +278,9 @@ export function Contact() {
                       required
                       placeholder="Briefly describe what you are building, existing stack or assets, and your primary target outcome..."
                       value={formState.message}
-                      onChange={(e) => setFormState({ ...formState, message: e.target.value })}
+                      onChange={(e) =>
+                        setFormState({ ...formState, message: e.target.value })
+                      }
                       className="w-full rounded-lg border border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-950/60 p-3 text-xs text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-electric-500 resize-none"
                     />
                   </div>

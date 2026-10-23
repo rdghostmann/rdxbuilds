@@ -4,9 +4,13 @@ import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import BlurFade from "@/components/magicui/blur-fade";
 import { Projects } from "@/components/Projects";
+import { ResumeCard } from "@/components/resume-card";
+import AgencyHeroSection from "@/components/shadcn-space/blocks/hero-01/HeroSection";
 import { TheToolkit } from "@/components/TheToolkit";
 import { WhatYouHandOver } from "@/components/WhatYouHandOver";
+import Work from "@/components/Work";
 
 export default function Home() {
   return (
@@ -16,10 +20,12 @@ export default function Home() {
 
       {/* Main Content Sections */}
       <main id="main-content" tabIndex={-1} className="outline-none">
+        {/* <AgencyHeroSection /> */}
         <Hero />
         <About />
         <WhatYouHandOver />
         <TheToolkit />
+        <Work />
         <Projects />
         <Approach />
         <Contact />

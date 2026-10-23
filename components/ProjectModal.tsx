@@ -1,13 +1,9 @@
-'use client';
+"use client";
 import React, { useEffect } from "react";
 import Image from "next/image";
 import { ProjectItem } from "@/data/resume";
 import { CheckCircle2, ExternalLink, X } from "lucide-react";
-import {
-  GithubLogo,
-  XLogo,
-  LinkedinLogo,
-} from "@phosphor-icons/react";
+import { GithubLogo, XLogo, LinkedinLogo } from "@phosphor-icons/react";
 
 interface ProjectModalProps {
   project: ProjectItem | null;
@@ -49,7 +45,9 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
         {/* Top Header Bar */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-slate-200/80 dark:border-slate-800/80 bg-slate-50/50 dark:bg-slate-950/50">
           <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
-            <span className="font-medium text-electric-600 dark:text-electric-400">{project.category}</span>
+            <span className="font-medium text-electric-600 dark:text-electric-400">
+              {project.category}
+            </span>
             <span aria-hidden="true">·</span>
             <span>{project.role}</span>
           </div>
@@ -66,7 +64,10 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
         <div className="p-6 sm:p-8 overflow-y-auto space-y-6">
           {/* Main Title & Context */}
           <div>
-            <h3 id="modal-project-title" className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
+            <h3
+              id="modal-project-title"
+              className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white"
+            >
               {project.title}
             </h3>
             <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -92,7 +93,10 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
             </h4>
             <div className="space-y-2">
               {project.highlights.map((item, idx) => (
-                <div key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+                <div
+                  key={idx}
+                  className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700 dark:text-slate-300"
+                >
                   <CheckCircle2 className="size-4 text-electric-600 dark:text-electric-400 shrink-0 mt-0.5" />
                   <span>{item}</span>
                 </div>
@@ -109,7 +113,11 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
               {project.tags.map((tag, idx) => (
                 <React.Fragment key={tag}>
                   <span>{tag}</span>
-                  {idx < project.tags.length - 1 && <span className="text-slate-400" aria-hidden="true">·</span>}
+                  {idx < project.tags.length - 1 && (
+                    <span className="text-slate-400" aria-hidden="true">
+                      ·
+                    </span>
+                  )}
                 </React.Fragment>
               ))}
             </div>
@@ -117,7 +125,9 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
 
           {/* Performance & Benchmark Context */}
           <div className="p-4 rounded-xl bg-slate-50/70 dark:bg-slate-950/60 border border-slate-200 dark:border-electric-500/15 text-xs text-slate-600 dark:text-slate-400">
-            <span className="font-semibold text-slate-800 dark:text-slate-200">Engineering Benchmark: </span>
+            <span className="font-semibold text-slate-800 dark:text-slate-200">
+              Engineering Benchmark:{" "}
+            </span>
             <span>{project.metricsContext}</span>
           </div>
 

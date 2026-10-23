@@ -1,8 +1,16 @@
-'use client';
+"use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { DATA } from "@/data/resume";
-import { CheckCircle2, ShieldCheck, Sparkles, Terminal, Users } from "lucide-react";
+import {
+  CheckCircle2,
+  ShieldCheck,
+  Sparkles,
+  Terminal,
+  Users,
+} from "lucide-react";
+import BlurFade from "./magicui/blur-fade";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 export function About() {
   const [isPaused, setIsPaused] = useState(false);
@@ -16,6 +24,7 @@ export function About() {
 
   // Repeat for continuous seamless auto-slide loop
   const marqueeItems = [...principles, ...principles, ...principles];
+  const BLUR_FADE_DELAY = 0.04;
 
   return (
     <motion.section
@@ -28,17 +37,29 @@ export function About() {
     >
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         {/* Section Header */}
-        <div className="max-w-2xl">
-          <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-electric-600 dark:text-electric-400">
-            <span className="h-px w-6 bg-electric-600 dark:bg-electric-400" />
-            <span>Engineering Discipline</span>
+        <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
+          <div className="max-w-2xl">
+            <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-electric-600 dark:text-electric-400">
+              <span className="h-px w-6 bg-electric-600 dark:bg-electric-400" />
+              <span>Engineering Discipline</span>
+            </div>
+
+            <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white text-balance sm:text-4xl">
+              Craftsmanship, reliability, and pragmatic problem-solving.
+            </h2>
+
+            <p className="mt-4 text-base leading-relaxed text-slate-600 dark:text-slate-300">
+              {DATA.about.philosophy}
+            </p>
           </div>
-          <h2 className="mt-3 text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white text-balance">
-            Craftsmanship, reliability, and pragmatic problem-solving.
-          </h2>
-          <p className="mt-4 text-base text-slate-600 dark:text-slate-300 leading-relaxed">
-            {DATA.about.philosophy}
-          </p>
+
+          {/* Portrait */}
+          <BlurFade delay={BLUR_FADE_DELAY}>
+            <Avatar className="hidden xl:block size-40 shrink-0 border">
+              <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+              <AvatarFallback>{DATA.initials}</AvatarFallback>
+            </Avatar>
+          </BlurFade>
         </div>
 
         {/* 3 Pillars Grid using glass-panel with staggered entrance */}
@@ -49,16 +70,26 @@ export function About() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.5, delay: idx * 0.1, ease: [0.16, 1, 0.3, 1] }}
+              transition={{
+                duration: 0.5,
+                delay: idx * 0.1,
+                ease: [0.16, 1, 0.3, 1],
+              }}
               className="relative p-6 rounded-xl glass-panel transition-all hover:border-electric-500/40 hover:shadow-lg hover:shadow-electric-500/5 group"
             >
               <div className="flex items-center justify-between">
                 <span className="font-mono text-xs font-bold text-electric-600 dark:text-electric-400">
                   0{idx + 1}
                 </span>
-                {idx === 0 && <Terminal className="size-4 text-slate-400 group-hover:text-electric-500 transition-colors" />}
-                {idx === 1 && <ShieldCheck className="size-4 text-slate-400 group-hover:text-electric-500 transition-colors" />}
-                {idx === 2 && <Users className="size-4 text-slate-400 group-hover:text-electric-500 transition-colors" />}
+                {idx === 0 && (
+                  <Terminal className="size-4 text-slate-400 group-hover:text-electric-500 transition-colors" />
+                )}
+                {idx === 1 && (
+                  <ShieldCheck className="size-4 text-slate-400 group-hover:text-electric-500 transition-colors" />
+                )}
+                {idx === 2 && (
+                  <Users className="size-4 text-slate-400 group-hover:text-electric-500 transition-colors" />
+                )}
               </div>
               <h3 className="mt-4 text-lg font-bold text-slate-900 dark:text-white">
                 {pillar.title}
@@ -86,10 +117,14 @@ export function About() {
                 Core Standards & Principles
               </h3>
             </div>
-            <div className="flex items-center gap-2 text-[11px] font-mono text-slate-400 dark:text-slate-500">
+            <div className="hidden items-center gap-2 text-[11px] font-mono text-slate-400 dark:text-slate-500">
               <span className="hidden sm:inline">Pause on hover</span>
-              <span aria-hidden="true" className="hidden sm:inline">·</span>
-              <span className="text-electric-600 dark:text-electric-400 font-semibold">Production Bar</span>
+              <span aria-hidden="true" className="hidden sm:inline">
+                ·
+              </span>
+              <span className="text-electric-600 dark:text-electric-400 font-semibold">
+                Production Bar
+              </span>
             </div>
           </div>
 
@@ -102,11 +137,11 @@ export function About() {
             {/* Left and Right Fade Scrims */}
             <div
               aria-hidden="true"
-              className="absolute left-0 top-0 bottom-0 w-12 sm:w-20 bg-gradient-to-r from-white/95 dark:from-slate-900/95 to-transparent z-10 pointer-events-none"
+              className="absolute left-0 top-0 bottom-0 w-12 sm:w-20 bg-linear-to-r from-white/95 dark:from-slate-900/95 to-transparent z-10 pointer-events-none"
             />
             <div
               aria-hidden="true"
-              className="absolute right-0 top-0 bottom-0 w-12 sm:w-20 bg-gradient-to-l from-white/95 dark:from-slate-900/95 to-transparent z-10 pointer-events-none"
+              className="absolute right-0 top-0 bottom-0 w-12 sm:w-20 bg-linear-to-l from-white/95 dark:from-slate-900/95 to-transparent z-10 pointer-events-none"
             />
 
             {/* Continuous Motion Marquee Track */}

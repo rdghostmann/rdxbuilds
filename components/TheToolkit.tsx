@@ -1,7 +1,15 @@
-'use client';
+"use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Brain, CheckCircle2, ChevronRight, Database, Layout, Server, Sparkles } from "lucide-react";
+import {
+  Brain,
+  CheckCircle2,
+  ChevronRight,
+  Database,
+  Layout,
+  Server,
+  Sparkles,
+} from "lucide-react";
 
 export function TheToolkit() {
   const [activeTab, setActiveTab] = useState<string>("Frontend / UX");
@@ -153,7 +161,8 @@ export function TheToolkit() {
           </h2>
 
           <p className="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed text-pretty">
-            A technology list shows familiarity. What follows is what I actually take off your hands, and the judgment that comes with it.
+            A technology list shows familiarity. What follows is what I actually
+            take off your hands, and the judgment that comes with it.
           </p>
         </div>
 

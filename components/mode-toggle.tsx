@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import * as React from "react";
 import { Moon, Sun } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
@@ -31,7 +31,7 @@ export function ModeToggle() {
       aria-label="Toggle theme"
       className={cn(
         buttonVariants({ variant: "ghost", size: "icon" }),
-        "size-10 rounded-full hover:bg-electric-50 dark:hover:bg-electric-950/50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-electric-500"
+        "size-10 rounded-full hover:bg-electric-50 dark:hover:bg-electric-950/50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-electric-500",
       )}
     >
       {isDark ? (

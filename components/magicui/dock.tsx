@@ -16,7 +16,7 @@ const DEFAULT_MAGNIFICATION = 58;
 const DEFAULT_DISTANCE = 130;
 
 const dockVariants = cva(
-  "mx-auto w-max h-full p-1.5 flex items-end rounded-full glass-dock"
+  "mx-auto w-max h-full p-1.5 flex items-end rounded-full glass-dock",
 );
 
 const Dock = React.forwardRef<HTMLDivElement, DockProps>(
@@ -28,7 +28,7 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
       distance = DEFAULT_DISTANCE,
       ...props
     },
-    ref
+    ref,
   ) => {
     const mousex = useMotionValue(Infinity);
 
@@ -56,7 +56,7 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
         {renderChildren()}
       </motion.div>
     );
-  }
+  },
 );
 
 Dock.displayName = "Dock";
@@ -90,7 +90,7 @@ const DockIcon = ({
   const widthSync = useTransform(
     distanceCalc,
     [-distance, 0, distance],
-    [40, magnification, 40]
+    [40, magnification, 40],
   );
 
   const width = useSpring(widthSync, {
@@ -105,7 +105,7 @@ const DockIcon = ({
       style={{ width }}
       className={cn(
         "flex aspect-square cursor-pointer items-center justify-center rounded-full transition-colors",
-        className
+        className,
       )}
       {...props}
     >

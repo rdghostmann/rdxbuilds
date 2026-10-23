@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { motion } from "framer-motion";
 import { CheckCircle2, Clock, Rocket, Shield, Users } from "lucide-react";
 
@@ -60,12 +60,18 @@ export function WhatYouHandOver() {
           </div>
 
           <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight text-balance">
-            You should be selling and growing. <br className="hidden sm:inline" />
-            <span className="text-electric-600 dark:text-electric-400">Not managing engineers.</span>
+            You should be selling and growing.{" "}
+            <br className="hidden sm:inline" />
+            <span className="text-electric-600 dark:text-electric-400">
+              Not managing engineers.
+            </span>
           </h2>
 
           <p className="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed text-pretty">
-            Your job is to talk to customers and grow the top line. Mine is to make sure the product underneath that growth does not break, does not leak data, and does not ship a feature that demos well and falls over in production.
+            Your job is to talk to customers and grow the top line. Mine is to
+            make sure the product underneath that growth does not break, does
+            not leak data, and does not ship a feature that demos well and falls
+            over in production.
           </p>
         </div>
 
@@ -79,7 +85,11 @@ export function WhatYouHandOver() {
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.5, delay: idx * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                transition={{
+                  duration: 0.5,
+                  delay: idx * 0.1,
+                  ease: [0.16, 1, 0.3, 1],
+                }}
                 className="flex flex-col justify-between p-7 rounded-2xl glass-panel hover:border-electric-500/40 hover:shadow-xl hover:shadow-electric-600/5 transition-all group"
               >
                 <div>

@@ -1,36 +1,23 @@
 // /data/resume.tsx
-'use client';
-import {
-  Compass,
-  FolderGit2,
-  Home,
-  Mail,
-  ShieldCheck,
-  User,
-  Wrench,
-} from "lucide-react";
-import {
-  GithubLogo,
-  XLogo,
-  LinkedinLogo,
-} from "@phosphor-icons/react";
-import type { StaticImageData } from "next/image";
+"use client";
+import { FolderGit2, Home, Mail } from "lucide-react";
+import { GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
 
 import brandAvatarImg from "/public/images/rdxbuilds-favicon.png";
-// import brandAvatarImg from "/public/images/rdx_brand_avatar_1792658864789.jpg";
 import heroImg from "/public/images/rdx_hero_product_preview_1792658862900.jpg";
-import analyticsImg from "/public/images/rdx_project_analytics_1792658864113.jpg";
-import commerceImg from "/public/images/rdx_project_commerce_1792658865063.jpg";
-import workflowImg from "/public/images/rdx_project_workflow_1792658866772.jpg";
+
+export type ProjectSpeciality =
+  "Full-Stack" | "Web-Design" | "E-commerce" | "Software";
 
 export interface ProjectItem {
   id: string;
   title: string;
   category: string;
+  speciality: ProjectSpeciality[];
   summary: string;
   description: string;
   tags: string[];
-  image: StaticImageData;
+  image: string;
   liveUrl?: string;
   repoUrl?: string;
   highlights: string[];
@@ -59,7 +46,8 @@ export const DATA = {
   contactEmail: "RandalChukzWilson@gmail.com",
   brandAvatar: brandAvatarImg,
   heroImage: heroImg,
-  
+  avatarUrl: "/1768559048664.jpg",
+
   navbar: [
     { href: "#hero", icon: Home, label: "Home" },
     // { href: "#about", icon: User, label: "About" },
@@ -70,29 +58,177 @@ export const DATA = {
     { href: "#contact", icon: Mail, label: "Contact" },
   ],
 
- contact: {
-  email: "RandalChukzWilson@gmail.com",
-  social: {
-    GitHub: {
-      name: "GitHub",
-      url: "https://github.com",
-      icon: GithubLogo,
-      navbar: true,
-    },
-    X: {
-      name: "X (Twitter)",
-      url: "https://x.com",
-      icon: XLogo,
-      navbar: true,
-    },
-    LinkedIn: {
-      name: "LinkedIn",
-      url: "https://linkedin.com",
-      icon: LinkedinLogo,
-      navbar: true,
+  contact: {
+    email: "RandalChukzWilson@gmail.com",
+    social: {
+      GitHub: {
+        name: "GitHub",
+        url: "https://github.com",
+        icon: GithubLogo,
+        navbar: true,
+      },
+      // X: {
+      //   name: "X (Twitter)",
+      //   url: "https://x.com",
+      //   icon: XLogo,
+      //   navbar: true,
+      // },
+      LinkedIn: {
+        name: "LinkedIn",
+        url: "https://linkedin.com",
+        icon: LinkedinLogo,
+        navbar: true,
+      },
     },
   },
-},
+
+  // Work Experience
+  work: [
+    {
+      company: "DAAF NGO",
+      href: "https://www.agapefoundationasaba.org",
+      badges: ["Web Design", "Nonprofit", "Responsive UI"],
+      location: "Remote",
+      title: "NGO & Charity Website",
+      logoUrl: "/DAAF_Logo-1.webp",
+      start: "2024",
+      end: "2024",
+      description:
+        "Designed and developed a responsive website for a nonprofit organization, presenting its mission, donation options, team, testimonials, and contact information. Focused on accessibility, usability, and SEO-friendly content structure.",
+    },
+    {
+      company: "EmilyAgro",
+      href: "https://www.emilyagros.com/",
+      badges: ["Agriculture", "Mobile App", "Farm Management"],
+      location: "Remote",
+      title: "Farm Management Mobile App",
+      logoUrl: "/emilyagros.png",
+      start: "2024",
+      end: "2024",
+      description:
+        "Worked on a mobile-focused agricultural application concept for tracking farm activities, managing expenses, monitoring crops, and reviewing yield information. Focused on practical workflows and an accessible mobile experience.",
+    },
+    {
+      company: "Speak 10x Better",
+      href: "https://www.speak10xbetter.com",
+      badges: ["Education", "Coaching", "Responsive UI"],
+      location: "Remote",
+      title: "Public Speaking Coaching Platform",
+      logoUrl: "/speaker10xbetter.png",
+      start: "2024",
+      end: "2024",
+      description:
+        "Developed a professional web presence for a public speaking coaching service, presenting its coaching offerings and helping professionals, entrepreneurs, and leaders explore opportunities to improve their communication and presentation skills.",
+    },
+    {
+      company: "2Sweet",
+      href: "https://nexxro.com/",
+      badges: ["Web3", "Ethereum", "DeFi"],
+      location: "Remote",
+      title: "2Sweet DeFi",
+      logoUrl: "/2sweet.webp",
+      start: "2024",
+      end: "2024",
+      description:
+        "Contributed to a Web3-oriented project associated with decentralized finance and Ethereum. The work focused on frontend development and user interface design for a decentralized application experience.",
+    },
+    {
+      company: "EU Cultural Centre",
+      href: "https://eu-cultural-centre.com/",
+      badges: ["Culture", "Education", "International"],
+      location: "Remote",
+      title: "Cultural Exchange Platform",
+      logoUrl: "/eucc.webp",
+      start: "2024",
+      end: "2024",
+      description:
+        "Developed a digital platform presenting cultural initiatives, educational activities, arts, and international exchange. Focused on communicating the organization's mission of strengthening cultural understanding and cooperation between Europe and Nigeria.",
+    },
+    {
+      company: "Paragon Micro Data",
+      href: "https://schoolpilot.ng/",
+      badges: ["Education", "Administration", "ERP"],
+      location: "Remote",
+      title: "SchoolPilot Management Platform",
+      logoUrl: "/schoolpilot.png",
+      start: "2024",
+      end: "2024",
+      description:
+        "Worked on a school management platform in conjunction with Paragon Micro Data, supporting digital school operations, fee management, invoices, transactions, and administrative workflows. The platform aims to simplify school payment processes and improve operational efficiency.",
+    },
+    {
+      company: "Stella Maris Academy",
+      href: "https://stellamarisschools.com",
+      badges: ["School Website", "Education", "Responsive UI"],
+      location: "Remote",
+      title: "Official School Website",
+      logoUrl: "/stellamaris.png",
+      start: "2024",
+      end: "2024",
+      description:
+        "Designed and developed a modern, responsive school website showcasing the institution's academic programs, educational values, and identity. Focused on clear information architecture, accessible navigation, and a professional online presence.",
+    },
+    {
+      company: "Expense TrackerPRO",
+      href: "https://expense-tracker-pro-flame.vercel.app",
+      badges: ["FinTech", "Dashboard", "Data Visualization"],
+      location: "Remote",
+      title: "Expense Tracking Application",
+      logoUrl: "/expense.png",
+      start: "2024",
+      end: "2024",
+      description:
+        "Built a personal finance dashboard featuring pie and line charts, monthly expense reviews, and visual summaries to help users examine spending patterns and organize financial information.",
+    },
+    {
+      company: "Agrifarm",
+      href: "https://agrifarm-farm-management-system.vercel.app",
+      badges: ["Agriculture", "Dashboard", "Management"],
+      location: "Remote",
+      title: "Farm Management System",
+      logoUrl: "/project-placeholder.png",
+      start: "2024",
+      end: "2024",
+      description:
+        "Developed a responsive farm management interface for organizing agricultural activities, expenses, income, crops, land, equipment, warehouses, livestock housing, and employee records. Focused on reusable interface components and streamlined operational workflows.",
+    },
+    {
+      company: "Modern Digital Hub",
+      href: "https://blogshop47app.vercel.app/",
+      badges: ["E-Commerce", "Digital Media", "Blog"],
+      location: "Remote",
+      title: "Digital Media & Shop Platform",
+      logoUrl: "/project-placeholder.png",
+      start: "2024",
+      end: "2024",
+      description:
+        "Developed a unified digital platform combining blog content, product discovery, online shopping, and featured video content. Designed to bring content publishing and commerce together in a responsive browsing experience.",
+    },
+    {
+      company: "Chocolite Group",
+      href: "https://www.chocolitegroup.com/",
+      badges: ["Digital Media", "Content", "Web Development"],
+      location: "Remote",
+      title: "Digital Media Platform",
+      logoUrl: "/chocolite.webp",
+      start: "2024",
+      end: "2024",
+      description:
+        "Worked on a digital media website focused on content presentation and online publishing. Applied modern frontend development practices to create a structured web experience for presenting editorial material.",
+    },
+    {
+      company: "JelaConfectionaries",
+      href: "https://jela-confectionaries.vercel.app/",
+      badges: ["Restaurant", "Dashboard", "Multi-Tenant"],
+      location: "Remote",
+      title: "Two-Tenant Restaurant Management System",
+      logoUrl: "/project-placeholder.png",
+      start: "2025",
+      end: "2025",
+      description:
+        "Developed a restaurant management interface designed for two-location operations, featuring order management, menu and inventory control, staff scheduling, and reporting dashboards to organize daily workflows and support restaurant operations.",
+    },
+  ],
 
   about: {
     philosophy:
@@ -115,66 +251,155 @@ export const DATA = {
 
   projects: [
     {
-      id: "project-analytics",
-      title: "Real-Time Streaming Analytics Dashboard",
-      category: "Full-Stack Web Application",
-      role: "Lead Frontend & Architecture Builder",
+      id: "schoolpilot",
+      title: "SchoolPilot Management Platform",
+      category: "Education & Administration",
+      speciality: ["Full-Stack", "Web-Design", "Software"],
+      role: "Frontend Developer & UI/UX Designer",
       summary:
-        "High-throughput data visualization console engineered to monitor multi-node service health, streaming throughput, and latency in real time.",
+        "A school management platform designed to streamline academic and administrative operations.",
       description:
-        "An enterprise-ready telemetry dashboard built for operational monitoring teams. Features interactive time-series charting, customizable timeline ranges, live ingestion indicators, and a clean dark-canvas layout designed for long sessions without eye fatigue.",
-      tags: ["React 19", "TypeScript", "Tailwind CSS", "Data Streams", "Modular UI"],
-      image: analyticsImg,
-      liveUrl: "https://example.com/demo/analytics",
-      repoUrl: "https://github.com/example/analytics-dashboard",
+        "A digital school operations platform focused on improving administrative workflows and productivity. The recorded technology stack includes Laravel, JavaScript, Bootstrap, and MySQL.",
+      tags: ["Laravel", "HTML5", "JavaScript", "CSS3", "Bootstrap", "MySQL"],
+      image: "/schoolpilot.png",
+      liveUrl: "https://schoolpilot.ng/",
+      repoUrl: "",
       highlights: [
-        "Architected high-frequency canvas and SVG telemetry visualization with 60fps rendering",
-        "Configured robust client-side state caching with zero redundant network repaints",
-        "Engineered full responsive viewport scaling from ultra-wide displays to mobile devices",
+        "Focused on school administration and academic workflows",
+        "Used a server-backed web application stack",
+        "Designed interfaces around operational usability",
       ],
-      metricsContext: "Engineered for sub-100ms UI response times during active data updates",
+      metricsContext: "Built around the digitization of school operations",
     },
     {
-      id: "project-commerce",
-      title: "Architectural Commerce & Modern Storefront",
-      category: "E-Commerce Architecture",
-      role: "Full-Stack Developer",
+      id: "emilyagros",
+      title: "Farm Management Mobile App",
+      category: "Agriculture & Mobile Applications",
+      speciality: ["Web-Design", "Software"],
+      role: "Frontend Developer & UI/UX Designer",
       summary:
-        "A minimalist, content-first headless storefront engineered with precision grid mathematics, instant catalog filtering, and frictionless checkout flow.",
+        "A mobile-first agricultural product concept focused on helping farmers organize farm activities, expenses, crop monitoring, and yield information.",
       description:
-        "Designed and implemented for modern digital brands requiring editorial elegance and speed. Eliminates sluggish monolith store frontends through client-side catalog navigation, dynamic product variant pickers, and optimized imagery.",
-      tags: ["TypeScript", "Next.js / React", "Tailwind CSS", "Headless Cart", "Accessible UI"],
-      image: commerceImg,
-      liveUrl: "https://example.com/demo/commerce",
-      repoUrl: "https://github.com/example/modern-storefront",
+        "A farm management application concept designed to support agricultural workflows through activity tracking, expense management, crop monitoring, and yield analysis. The listed stack includes React Native, Expo, and Supabase.",
+      tags: ["React Native", "Expo", "Supabase", "Mobile UI", "Agriculture"],
+      image: "/emilyagros.png",
+      liveUrl: "https://www.emilyagros.com/",
+      repoUrl: "",
       highlights: [
-        "Engineered sub-second client-side facet and tag filtering with zero layout shifts",
-        "Built resilient local shopping cart synchronization with persistent storage backups",
-        "Implemented strict WCAG AA contrast, touch target math, and screen reader labels",
+        "Focused on mobile-first agricultural workflows",
+        "Organized farm activity and expense management features",
+        "Designed around practical information access for farmers",
       ],
-      metricsContext: "Optimized for 99+ Core Web Vitals score and rapid catalog load",
+      metricsContext:
+        "Designed to support more organized digital farm management",
     },
     {
-      id: "project-workflow",
-      title: "Visual Node Automation & Pipeline Studio",
-      category: "Developer Tooling",
-      role: "Frontend Engineer & Interaction Designer",
+      id: "speak-10x-better",
+      title: "Public Speaking Coaching Platform",
+      category: "Education & Professional Development",
+      speciality: ["Web-Design", "Full-Stack"],
+      role: "Frontend Developer & UI/UX Designer",
       summary:
-        "Interactive node-based automation workspace allowing engineers to visually chain webhooks, data transformers, and notification endpoints.",
+        "A professional coaching platform helping individuals communicate confidently and develop their public speaking skills.",
       description:
-        "A developer-first automation workbench providing intuitive drag-and-drop orchestration of asynchronous tasks. Includes connection wire rendering, live payload inspection, node validation, and execution logging.",
-      tags: ["React", "TypeScript", "Framer Motion", "Interactive Canvas", "Node Graph"],
-      image: workflowImg,
-      liveUrl: "https://example.com/demo/workflow-studio",
-      repoUrl: "https://github.com/example/workflow-automation-studio",
+        "A web presence for a public speaking coaching service, presenting its value proposition to professionals, entrepreneurs, and leaders seeking to improve their communication and presentation skills.",
+      tags: ["Next.js", "Tailwind CSS", "Framer Motion", "Responsive UI"],
+      image: "/speaker10xbetter.png",
+      liveUrl: "https://www.speak10xbetter.com",
+      repoUrl: "",
       highlights: [
-        "Implemented interactive SVG connection bezier curve calculations and snap points",
-        "Engineered live JSON payload validator with real-time error pinpoints",
-        "Integrated dock-style tool palette and keyboard shortcuts for rapid node creation",
+        "Presented coaching services through a clear digital experience",
+        "Structured messaging around communication and professional growth",
+        "Applied responsive frontend design principles",
       ],
-      metricsContext: "Smooth panning and zoom handling with 100+ concurrent interactive nodes",
+      metricsContext:
+        "Designed to communicate coaching services and encourage engagement",
     },
-  ],
+    {
+      id: "2sweet-defi",
+      title: "2Sweet DeFi",
+      category: "Web3 & Decentralized Finance",
+      speciality: ["Full-Stack", "Web-Design", "Software"],
+      role: "Frontend Developer & UI/UX Designer",
+      summary:
+        "A decentralized finance project associated with Web3 and Ethereum technologies.",
+      description:
+        "A Web3-focused project listed in the RdxWorks portfolio. The original project record identifies decentralized finance, Ethereum, and DApp development as its core areas.",
+      tags: [
+        "Next.js",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Web3",
+        "Ethereum",
+        "DApp",
+      ],
+      image: "/2sweet.webp",
+      liveUrl: "https://nexxro.com/",
+      repoUrl: "",
+      highlights: [
+        "Worked within a Web3-oriented product context",
+        "Focused on frontend presentation and interface design",
+        "Explored decentralized application interface requirements",
+      ],
+      metricsContext:
+        "Web3 project showcasing decentralized application interface work",
+    },
+    {
+      id: "eu-cultural-centre",
+      title: "EU Cultural Centre Website",
+      category: "Culture & International Education",
+      speciality: ["Web-Design", "Full-Stack"],
+      role: "Frontend Developer & UI/UX Designer",
+      summary:
+        "A cultural platform promoting education, arts, cultural exchange, and cooperation between Europe and Nigeria.",
+      description:
+        "A website presenting cultural initiatives and institutional information, with an emphasis on connecting audiences through education, arts, and international cultural exchange.",
+      tags: [
+        "Next.js",
+        "Tailwind CSS",
+        "Framer Motion",
+        "next-i18next",
+        "Internationalization",
+      ],
+      image: "/eucc.webp",
+      liveUrl: "https://eu-cultural-centre.com/",
+      repoUrl: "",
+      highlights: [
+        "Presented institutional information and cultural initiatives",
+        "Structured content for an international audience",
+        "Used a modern frontend stack with internationalization support",
+      ],
+      metricsContext:
+        "Designed to strengthen digital communication for cultural exchange",
+    },
+    {
+      id: "stella-maris-academy",
+      title: "Stella Maris Academy Website",
+      category: "Education & Institutional Websites",
+      speciality: ["Web-Design", "Full-Stack"],
+      role: "Frontend Developer & UI/UX Designer",
+      summary:
+        "An official school website presenting the institution's academic programs, values, and educational identity.",
+      description:
+        "A responsive institutional website designed to communicate school information and provide visitors with an accessible overview of academic offerings, values, and programs.",
+      tags: [
+        "Next.js",
+        "Tailwind CSS",
+        "Framer Motion",
+        "SMTP",
+        "Responsive Design",
+      ],
+      image: "/stellamaris.png",
+      liveUrl: "https://stellamarisschools.com",
+      repoUrl: "",
+      highlights: [
+        "Presented institutional information and academic programs",
+        "Focused on responsive layouts and clear navigation",
+        "Included email integration in the listed technology stack",
+      ],
+      metricsContext: "Designed to strengthen the school's online presence",
+    },
+  ] satisfies ProjectItem[],
 
   approach: [
     {

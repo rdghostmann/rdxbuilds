@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import { ModeToggle } from "@/components/mode-toggle";
 import { buttonVariants } from "@/components/ui/button";
@@ -61,7 +61,7 @@ export default function Navbar() {
       {/* Subtle bottom gradient backdrop so dock floats cleanly above page content */}
       <div
         aria-hidden="true"
-        className="fixed bottom-0 inset-x-0 h-20 w-full pointer-events-none bg-gradient-to-t from-slate-50 via-slate-50/80 to-transparent dark:from-[#070b14] dark:via-[#070b14]/80 backdrop-blur-[2px]"
+        className="fixed bottom-0 inset-x-0 h-20 w-full pointer-events-none bg-linear-to-t from-slate-50 via-slate-50/80 to-transparent dark:from-[#070b14] dark:via-[#070b14]/80 backdrop-blur-[2px]"
       />
 
       <Dock className="z-50 pointer-events-auto relative mx-auto flex h-full items-center px-2 py-1">
@@ -74,7 +74,7 @@ export default function Navbar() {
                   aria-label={item.label}
                   className={cn(
                     buttonVariants({ variant: "ghost", size: "icon" }),
-                    "size-10 rounded-full hover:bg-electric-50 hover:text-electric-600 dark:hover:bg-electric-950/60 dark:hover:text-electric-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-electric-500"
+                    "size-10 rounded-full hover:bg-electric-50 hover:text-electric-600 dark:hover:bg-electric-950/60 dark:hover:text-electric-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-electric-500",
                   )}
                 >
                   <item.icon className="size-4" />
@@ -100,7 +100,7 @@ export default function Navbar() {
                     aria-label={name}
                     className={cn(
                       buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-10 rounded-full hover:bg-electric-50 hover:text-electric-600 dark:hover:bg-electric-950/60 dark:hover:text-electric-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-electric-500"
+                      "size-10 rounded-full hover:bg-electric-50 hover:text-electric-600 dark:hover:bg-electric-950/60 dark:hover:text-electric-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-electric-500",
                     )}
                   >
                     <social.icon className="size-4" />
