@@ -465,7 +465,7 @@ projects: [
       "Internationalization",
     ],
     image: "/eucc.webp",
-    screenshot: "/screenshot/eu-cultural-centre.png",
+    screenshot: "/screenshot/ecc.png",
     liveUrl: "https://eu-cultural-centre.com/",
     repoUrl: "",
     highlights: [
