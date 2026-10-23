@@ -3,11 +3,10 @@
 import { FolderGit2, Home, Mail } from "lucide-react";
 import { GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
 
-import brandAvatarImg from "/public/images/rdxbuilds-favicon.png";
 import heroImg from "/public/images/rdx_hero_product_preview_1792658862900.jpg";
 
 export type ProjectSpeciality =
-  "Full-Stack" | "Web-Design" | "E-commerce" | "Software";
+  "Full-Stack" | "Web-Design" | "E-commerce" | "Software" | "Mobile" | "AI Integration" | "Web3" | "Blockchain" | "FinTech" | "Healthcare" | "Education" | "Enterprise SaaS" | "Digital Media" | "Content Management" | "Multi-Tenant";
 
 export interface ProjectItem {
   id: string;
