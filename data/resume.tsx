@@ -396,7 +396,7 @@ export const DATA = {
         "Data Security",
         "Multi-Tenancy",
       ],
-      image: "/usemoos.png",
+      image: "/usemoos.webp",
       liveUrl: "https://www.usemoos.com/",
       repoUrl: "",
       highlights: [
