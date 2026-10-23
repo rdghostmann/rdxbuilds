@@ -75,14 +75,20 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
             </p>
           </div>
 
-          {/* Full Preview Image */}
-          <div className="hidden lg:block relative aspect-video rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-950">
+          {/* Full Preview Image — Disable Right-Click and Drag */}
+          <div
+            className="block relative aspect-video rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-950 select-none"
+            onContextMenu={(e) => e.preventDefault()}
+            onDragStart={(e) => e.preventDefault()}
+          >
             <Image
               src={project.image}
               alt={project.title}
               fill
               sizes="(max-width: 768px) 100vw, 768px"
-              className="object-cover"
+              className="object-cover pointer-events-none"
+              draggable={false}
+              onContextMenu={(e) => e.preventDefault()}
             />
           </div>
 

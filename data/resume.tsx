@@ -17,6 +17,7 @@ export interface ProjectItem {
   description: string;
   tags: string[];
   image: string;
+  screenshot: string;
   liveUrl?: string;
   repoUrl?: string;
   highlights: string[];
@@ -250,256 +251,265 @@ export const DATA = {
     ],
   },
 
-  projects: [
-    {
-      id: "schoolpilot",
-      title: "SchoolPilot Management Platform",
-      category: "Education & Administration",
-      speciality: ["Full-Stack", "Web-Design", "Software"],
-      role: "Frontend Developer & UI/UX Designer",
-      summary:
-        "A school management platform designed to streamline academic and administrative operations.",
-      description:
-        "A digital school operations platform focused on improving administrative workflows and productivity. The recorded technology stack includes Laravel, JavaScript, Bootstrap, and MySQL.",
-      tags: ["Laravel", "HTML5", "JavaScript", "CSS3", "Bootstrap", "MySQL"],
-      image: "/schoolpilot.png",
-      liveUrl: "https://schoolpilot.ng/",
-      repoUrl: "",
-      highlights: [
-        "Focused on school administration and academic workflows",
-        "Used a server-backed web application stack",
-        "Designed interfaces around operational usability",
-      ],
-      metricsContext: "Built around the digitization of school operations",
-    },
-    {
-      id: "medisupply",
-      title: "MediSupply — Pharmaceutical Procurement Platform",
-      category: "Healthcare & B2B SaaS",
-      speciality: ["Web-Design", "Software", "Full-Stack"],
-      role: "Full-Stack Developer & UI/UX Designer",
-      summary:
-        "A B2B pharmaceutical procurement platform designed to connect healthcare institutions with verified medicine suppliers through a structured digital purchasing workflow.",
-      description:
-        "A healthcare procurement platform built to streamline pharmaceutical sourcing, supplier matching, order management, and payment workflows. The platform supports role-based access for buyers, suppliers, pharmacists, and administrators, with a focus on procurement transparency and operational efficiency.",
-      tags: [
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "MongoDB",
-        "Mongoose",
-        "Paystack",
-        "B2B SaaS",
-        "Healthcare",
-      ],
-      image: "/medsupply.png",
-      liveUrl: "https://www.medisupplyltd.com/",
-      repoUrl: "",
-      highlights: [
-        "Structured pharmaceutical procurement and supplier-matching workflows",
-        "Role-based dashboards for buyers, suppliers, pharmacists, and administrators",
-        "Order tracking, payment integration, and procurement management",
-        "Designed to improve transparency and efficiency in healthcare supply chains",
-      ],
-      metricsContext:
-        "Built to support more organized pharmaceutical procurement and supplier coordination",
-    },
-    {
-  id: "roomfind",
-  title: "RoomFind — Find Flatmates You'll Actually Get Along With",
-  category: "Lifestyle & SaaS Platforms",
-  speciality: ["Web-Design", "Software", "SaaS"],
-  role: "Full-Stack Developer & UI/UX Designer",
-  summary:
-    "A flatmate-matching platform designed to help people find compatible roommates based on lifestyle, preferences, and shared living expectations.",
-  description:
-    "A SaaS platform focused on simplifying the flatmate discovery process by helping users explore accommodation opportunities and connect with people they are more likely to get along with. The product emphasizes user-friendly discovery, compatibility-focused matching, and a streamlined digital experience for shared living.",
-  tags: [
-    "SaaS",
-    "Next.js",
-    "TypeScript",
-    "UI/UX Design",
-    "Responsive Web Design",
-    "Flatmate Matching",
-    "Marketplace",
-  ],
-  image: "/roomfind.png",
-  liveUrl: "https://www.roomfind.ie/",
-  repoUrl: "",
-  highlights: [
-    "Designed around compatibility-focused flatmate discovery",
-    "Simplifies the process of finding suitable shared accommodation",
-    "Emphasizes intuitive navigation and a responsive user experience",
-    "Built around the needs of people seeking better shared-living arrangements",
-  ],
-  metricsContext:
-    "Focused on making flatmate discovery more convenient and compatibility-driven",
-},
-    {
-      id: "emilyagros",
-      title: "Farm Management Mobile App",
-      category: "Agriculture & Mobile Applications",
-      speciality: ["Web-Design", "Software"],
-      role: "Frontend Developer & UI/UX Designer",
-      summary:
-        "A mobile-first agricultural product concept focused on helping farmers organize farm activities, expenses, crop monitoring, and yield information.",
-      description:
-        "A farm management application concept designed to support agricultural workflows through activity tracking, expense management, crop monitoring, and yield analysis. The listed stack includes React Native, Expo, and Supabase.",
-      tags: ["React Native", "Expo", "Supabase", "Mobile UI", "Agriculture"],
-      image: "/emilyagros.png",
-      liveUrl: "https://www.emilyagros.com/",
-      repoUrl: "",
-      highlights: [
-        "Focused on mobile-first agricultural workflows",
-        "Organized farm activity and expense management features",
-        "Designed around practical information access for farmers",
-      ],
-      metricsContext:
-        "Designed to support more organized digital farm management",
-    },
-    {
-      id: "speak-10x-better",
-      title: "Public Speaking Coaching Platform",
-      category: "Education & Professional Development",
-      speciality: ["Web-Design", "Full-Stack"],
-      role: "Frontend Developer & UI/UX Designer",
-      summary:
-        "A professional coaching platform helping individuals communicate confidently and develop their public speaking skills.",
-      description:
-        "A web presence for a public speaking coaching service, presenting its value proposition to professionals, entrepreneurs, and leaders seeking to improve their communication and presentation skills.",
-      tags: ["Next.js", "Tailwind CSS", "Framer Motion", "Responsive UI"],
-      image: "/speaker10xbetter.png",
-      liveUrl: "https://www.speak10xbetter.com",
-      repoUrl: "",
-      highlights: [
-        "Presented coaching services through a clear digital experience",
-        "Structured messaging around communication and professional growth",
-        "Applied responsive frontend design principles",
-      ],
-      metricsContext:
-        "Designed to communicate coaching services and encourage engagement",
-    },
-    {
-      id: "2sweet-defi",
-      title: "2Sweet DeFi",
-      category: "Web3 & Decentralized Finance",
-      speciality: ["Full-Stack", "Web-Design", "Software"],
-      role: "Frontend Developer & UI/UX Designer",
-      summary:
-        "A decentralized finance project associated with Web3 and Ethereum technologies.",
-      description:
-        "A Web3-focused project listed in the RdxWorks portfolio. The original project record identifies decentralized finance, Ethereum, and DApp development as its core areas.",
-      tags: [
-        "Next.js",
-        "Tailwind CSS",
-        "Framer Motion",
-        "Web3",
-        "Ethereum",
-        "DApp",
-      ],
-      image: "/2sweet.webp",
-      liveUrl: "https://nexxro.com/",
-      repoUrl: "",
-      highlights: [
-        "Worked within a Web3-oriented product context",
-        "Focused on frontend presentation and interface design",
-        "Explored decentralized application interface requirements",
-      ],
-      metricsContext:
-        "Web3 project showcasing decentralized application interface work",
-    },
-    {
-      id: "usemoos",
-      title: "UseMoos — Enterprise Knowledge Layer",
-      category: "Enterprise SaaS & AI",
-      speciality: ["Web-Design", "Software", "AI Integration"],
-      role: "Full-Stack Developer & UI/UX Designer",
-      summary:
-        "An enterprise knowledge layer that ensures employees only access information they're authorized to see.",
-      description:
-        "An enterprise knowledge platform concept focused on secure information retrieval, permission-aware AI, and multi-tenant data isolation. Designed to help organizations make internal knowledge accessible while enforcing existing access controls, protecting sensitive documents, and preventing unauthorized information disclosure.",
-      tags: [
-        "Next.js",
-        "TypeScript",
-        "AI Integration",
-        "Enterprise SaaS",
-        "RBAC",
-        "Data Security",
-        "Multi-Tenancy",
-      ],
-      image: "/usemoos.webp",
-      liveUrl: "https://www.usemoos.com/",
-      repoUrl: "",
-      highlights: [
-        "Permission-aware enterprise knowledge access",
-        "Designed around role-based authorization and data isolation",
-        "Security-focused approach to AI-powered information retrieval",
-        "Balances organizational knowledge discovery with access-control enforcement",
-      ],
-      metricsContext:
-        "Focused on making enterprise knowledge discoverable without exposing unauthorized information",
-    },
-    {
-      id: "eu-cultural-centre",
-      title: "EU Cultural Centre Website",
-      category: "Culture & International Education",
-      speciality: ["Web-Design", "Full-Stack"],
-      role: "Frontend Developer & UI/UX Designer",
-      summary:
-        "A cultural platform promoting education, arts, cultural exchange, and cooperation between Europe and Nigeria.",
-      description:
-        "A website presenting cultural initiatives and institutional information, with an emphasis on connecting audiences through education, arts, and international cultural exchange.",
-      tags: [
-        "Next.js",
-        "Tailwind CSS",
-        "Framer Motion",
-        "next-i18next",
-        "Internationalization",
-      ],
-      image: "/eucc.webp",
-      liveUrl: "https://eu-cultural-centre.com/",
-      repoUrl: "",
-      highlights: [
-        "Presented institutional information and cultural initiatives",
-        "Structured content for an international audience",
-        "Used a modern frontend stack with internationalization support",
-      ],
-      metricsContext:
-        "Designed to strengthen digital communication for cultural exchange",
-    },
-    {
-  id: "kota-ai",
-  title: "Kota AI — Trainable AI Customer Support",
-  category: "AI & Customer Experience SaaS",
-  speciality: ["Web-Design", "Software", "AI"],
-  role: "Full-Stack Developer & UI/UX Designer",
-  summary:
-    "An AI-powered customer support platform concept combining customer messaging, automated journeys, broadcasts, and a shared inbox to help businesses manage customer interactions from one unified workspace.",
-  description:
-    "A unified customer engagement platform concept featuring a trainable AI support agent, shared team inbox, help center, customer journeys, broadcast messaging, and transactional communications. Designed around a unified customer data model to help businesses coordinate support and customer communication more efficiently.",
-  tags: [
-    "AI",
-    "SaaS",
-    "Customer Support",
-    "AI Agents",
-    "Automation",
-    "Messaging",
-    "Shared Inbox",
-    "Customer Experience",
-  ],
-  image: "/kota-ai.png",
-  liveUrl: "https://bunloop.com/",
-  repoUrl: "",
-  highlights: [
-    "Trainable AI agent for customer support workflows",
-    "Shared inbox for coordinated customer conversations",
-    "Customer journeys, broadcasts, and transactional messaging",
-    "Help center and unified customer data experience",
-  ],
-  metricsContext:
-    "Designed to unify AI-powered support, customer communication, and engagement workflows",
-},
-  ] satisfies ProjectItem[],
+projects: [
+  {
+    id: "schoolpilot",
+    title: "SchoolPilot Management Platform",
+    category: "Education & Administration",
+    speciality: ["Full-Stack", "Web-Design", "Software"],
+    role: "Frontend Developer & UI/UX Designer",
+    summary:
+      "A school management platform designed to streamline academic and administrative operations.",
+    description:
+      "A digital school operations platform focused on improving administrative workflows and productivity. The recorded technology stack includes Laravel, JavaScript, Bootstrap, and MySQL.",
+    tags: ["Laravel", "HTML5", "JavaScript", "CSS3", "Bootstrap", "MySQL"],
+    image: "/schoolpilot.png",
+    screenshot: "/screenshots/schoolpilot.png",
+    liveUrl: "https://schoolpilot.ng/",
+    repoUrl: "",
+    highlights: [
+      "Focused on school administration and academic workflows",
+      "Used a server-backed web application stack",
+      "Designed interfaces around operational usability",
+    ],
+    metricsContext: "Built around the digitization of school operations",
+  },
+  {
+    id: "medisupply",
+    title: "MediSupply — Pharmaceutical Procurement Platform",
+    category: "Healthcare & B2B SaaS",
+    speciality: ["Web-Design", "Software", "Full-Stack"],
+    role: "Full-Stack Developer & UI/UX Designer",
+    summary:
+      "A B2B pharmaceutical procurement platform designed to connect healthcare institutions with verified medicine suppliers through a structured digital purchasing workflow.",
+    description:
+      "A healthcare procurement platform built to streamline pharmaceutical sourcing, supplier matching, order management, and payment workflows. The platform supports role-based access for buyers, suppliers, pharmacists, and administrators, with a focus on procurement transparency and operational efficiency.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "MongoDB",
+      "Mongoose",
+      "Paystack",
+      "B2B SaaS",
+      "Healthcare",
+    ],
+    image: "/medsupply.png",
+    screenshot: "/screenshots/medisupply.png",
+    liveUrl: "https://www.medisupplyltd.com/",
+    repoUrl: "",
+    highlights: [
+      "Structured pharmaceutical procurement and supplier-matching workflows",
+      "Role-based dashboards for buyers, suppliers, pharmacists, and administrators",
+      "Order tracking, payment integration, and procurement management",
+      "Designed to improve transparency and efficiency in healthcare supply chains",
+    ],
+    metricsContext:
+      "Built to support more organized pharmaceutical procurement and supplier coordination",
+  },
+  {
+    id: "roomfind",
+    title: "RoomFind — Find Flatmates You'll Actually Get Along With",
+    category: "Lifestyle & SaaS Platforms",
+    speciality: ["Web-Design", "Software", "SaaS"],
+    role: "Full-Stack Developer & UI/UX Designer",
+    summary:
+      "A flatmate-matching platform designed to help people find compatible roommates based on lifestyle, preferences, and shared living expectations.",
+    description:
+      "A SaaS platform focused on simplifying the flatmate discovery process by helping users explore accommodation opportunities and connect with people they are more likely to get along with. The product emphasizes user-friendly discovery, compatibility-focused matching, and a streamlined digital experience for shared living.",
+    tags: [
+      "SaaS",
+      "Next.js",
+      "TypeScript",
+      "UI/UX Design",
+      "Responsive Web Design",
+      "Flatmate Matching",
+      "Marketplace",
+    ],
+    image: "/roomfind.png",
+    screenshot: "/screenshots/roomfind.png",
+    liveUrl: "https://www.roomfind.ie/",
+    repoUrl: "",
+    highlights: [
+      "Designed around compatibility-focused flatmate discovery",
+      "Simplifies the process of finding suitable shared accommodation",
+      "Emphasizes intuitive navigation and a responsive user experience",
+      "Built around the needs of people seeking better shared-living arrangements",
+    ],
+    metricsContext:
+      "Focused on making flatmate discovery more convenient and compatibility-driven",
+  },
+  {
+    id: "emilyagros",
+    title: "Farm Management Mobile App",
+    category: "Agriculture & Mobile Applications",
+    speciality: ["Web-Design", "Software"],
+    role: "Frontend Developer & UI/UX Designer",
+    summary:
+      "A mobile-first agricultural product concept focused on helping farmers organize farm activities, expenses, crop monitoring, and yield information.",
+    description:
+      "A farm management application concept designed to support agricultural workflows through activity tracking, expense management, crop monitoring, and yield analysis. The listed stack includes React Native, Expo, and Supabase.",
+    tags: ["React Native", "Expo", "Supabase", "Mobile UI", "Agriculture"],
+    image: "/emilyagros.png",
+    screenshot: "/screenshots/emilyagros.png",
+    liveUrl: "https://www.emilyagros.com/",
+    repoUrl: "",
+    highlights: [
+      "Focused on mobile-first agricultural workflows",
+      "Organized farm activity and expense management features",
+      "Designed around practical information access for farmers",
+    ],
+    metricsContext:
+      "Designed to support more organized digital farm management",
+  },
+  {
+    id: "speak-10x-better",
+    title: "Public Speaking Coaching Platform",
+    category: "Education & Professional Development",
+    speciality: ["Web-Design", "Full-Stack"],
+    role: "Frontend Developer & UI/UX Designer",
+    summary:
+      "A professional coaching platform helping individuals communicate confidently and develop their public speaking skills.",
+    description:
+      "A web presence for a public speaking coaching service, presenting its value proposition to professionals, entrepreneurs, and leaders seeking to improve their communication and presentation skills.",
+    tags: ["Next.js", "Tailwind CSS", "Framer Motion", "Responsive UI"],
+    image: "/speaker10xbetter.png",
+    screenshot: "/screenshots/speak10xbetter.png",
+    liveUrl: "https://www.speak10xbetter.com/",
+    repoUrl: "",
+    highlights: [
+      "Presented coaching services through a clear digital experience",
+      "Structured messaging around communication and professional growth",
+      "Applied responsive frontend design principles",
+    ],
+    metricsContext:
+      "Designed to communicate coaching services and encourage engagement",
+  },
+  {
+    id: "2sweet-defi",
+    title: "2Sweet DeFi",
+    category: "Web3 & Decentralized Finance",
+    speciality: ["Full-Stack", "Web-Design", "Software"],
+    role: "Frontend Developer & UI/UX Designer",
+    summary:
+      "A decentralized finance project associated with Web3 and Ethereum technologies.",
+    description:
+      "A Web3-focused project listed in the RdxWorks portfolio. The original project record identifies decentralized finance, Ethereum, and DApp development as its core areas.",
+    tags: [
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Web3",
+      "Ethereum",
+      "DApp",
+    ],
+    image: "/2sweet.webp",
+    screenshot: "/screenshots/2sweet.png",
+    liveUrl: "https://nexxro.com/",
+    repoUrl: "",
+    highlights: [
+      "Worked within a Web3-oriented product context",
+      "Focused on frontend presentation and interface design",
+      "Explored decentralized application interface requirements",
+    ],
+    metricsContext:
+      "Web3 project showcasing decentralized application interface work",
+  },
+  {
+    id: "usemoos",
+    title: "UseMoos — Enterprise Knowledge Layer",
+    category: "Enterprise SaaS & AI",
+    speciality: ["Web-Design", "Software", "AI Integration"],
+    role: "Full-Stack Developer & UI/UX Designer",
+    summary:
+      "An enterprise knowledge layer that ensures employees only access information they're authorized to see.",
+    description:
+      "An enterprise knowledge platform concept focused on secure information retrieval, permission-aware AI, and multi-tenant data isolation. Designed to help organizations make internal knowledge accessible while enforcing existing access controls, protecting sensitive documents, and preventing unauthorized information disclosure.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "AI Integration",
+      "Enterprise SaaS",
+      "RBAC",
+      "Data Security",
+      "Multi-Tenancy",
+    ],
+    image: "/usemoos.webp",
+    screenshot: "/screenshots/usemoos.png",
+    liveUrl: "https://www.usemoos.com/",
+    repoUrl: "",
+    highlights: [
+      "Permission-aware enterprise knowledge access",
+      "Designed around role-based authorization and data isolation",
+      "Security-focused approach to AI-powered information retrieval",
+      "Balances organizational knowledge discovery with access-control enforcement",
+    ],
+    metricsContext:
+      "Focused on making enterprise knowledge discoverable without exposing unauthorized information",
+  },
+  {
+    id: "eu-cultural-centre",
+    title: "EU Cultural Centre Website",
+    category: "Culture & International Education",
+    speciality: ["Web-Design", "Full-Stack"],
+    role: "Frontend Developer & UI/UX Designer",
+    summary:
+      "A cultural platform promoting education, arts, cultural exchange, and cooperation between Europe and Nigeria.",
+    description:
+      "A website presenting cultural initiatives and institutional information, with an emphasis on connecting audiences through education, arts, and international cultural exchange.",
+    tags: [
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion",
+      "next-i18next",
+      "Internationalization",
+    ],
+    image: "/eucc.webp",
+    screenshot: "/screenshots/eu-cultural-centre.png",
+    liveUrl: "https://eu-cultural-centre.com/",
+    repoUrl: "",
+    highlights: [
+      "Presented institutional information and cultural initiatives",
+      "Structured content for an international audience",
+      "Used a modern frontend stack with internationalization support",
+    ],
+    metricsContext:
+      "Designed to strengthen digital communication for cultural exchange",
+  },
+  {
+    id: "kota-ai",
+    title: "Kota AI — Trainable AI Customer Support",
+    category: "AI & Customer Experience SaaS",
+    speciality: ["Web-Design", "Software", "AI"],
+    role: "Full-Stack Developer & UI/UX Designer",
+    summary:
+      "An AI-powered customer support platform concept combining customer messaging, automated journeys, broadcasts, and a shared inbox to help businesses manage customer interactions from one unified workspace.",
+    description:
+      "A unified customer engagement platform concept featuring a trainable AI support agent, shared team inbox, help center, customer journeys, broadcast messaging, and transactional communications. Designed around a unified customer data model to help businesses coordinate support and customer communication more efficiently.",
+    tags: [
+      "AI",
+      "SaaS",
+      "Customer Support",
+      "AI Agents",
+      "Automation",
+      "Messaging",
+      "Shared Inbox",
+      "Customer Experience",
+    ],
+    image: "/kota-ai.png",
+    screenshot: "/screenshots/kota-ai.png",
+    liveUrl: "https://bunloop.com/",
+    repoUrl: "",
+    highlights: [
+      "Trainable AI agent for customer support workflows",
+      "Shared inbox for coordinated customer conversations",
+      "Customer journeys, broadcasts, and transactional messaging",
+      "Help center and unified customer data experience",
+    ],
+    metricsContext:
+      "Designed to unify AI-powered support, customer communication, and engagement workflows",
+  },
+] satisfies ProjectItem[],
 
   approach: [
     {
