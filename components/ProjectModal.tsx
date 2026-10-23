@@ -48,8 +48,8 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
             <span className="font-medium text-electric-600 dark:text-electric-400">
               {project.category}
             </span>
-            <span aria-hidden="true">·</span>
-            <span>{project.role}</span>
+            <span className="hidden xl:block" aria-hidden="true">·</span>
+            <span className="hidden xl:block">{project.role}</span>
           </div>
           <button
             onClick={onClose}
@@ -157,7 +157,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
             )}
             <button
               onClick={onClose}
-              className="ml-auto text-xs font-medium text-slate-500 hover:text-slate-800 dark:hover:text-slate-200"
+              className="hidden ml-auto text-xs font-medium text-slate-500 hover:text-slate-800 dark:hover:text-slate-200"
             >
               Close viewer
             </button>
