@@ -1,4 +1,6 @@
 // HeroSection.tsx
+"use client"
+
 import {
   CSS,
   Figma,
@@ -8,6 +10,7 @@ import {
   NextJs,
   NodeJs,
   React,
+  Python,
   Supabase,
   TailwindCSS,
   TypeScript,
@@ -54,6 +57,7 @@ const brandList: BrandList[] = [
   { name: "Next.js", Icon: NextJs },
   { name: "React", Icon: React },
   { name: "TypeScript", Icon: TypeScript },
+  { name: "Python", Icon: Python },
   { name: "JavaScript", Icon: JavaScript },
   { name: "Tailwind CSS", Icon: TailwindCSS },
   { name: "Node.js", Icon: NodeJs },
