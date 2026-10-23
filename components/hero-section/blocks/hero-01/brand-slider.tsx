@@ -1,11 +1,15 @@
 "use client";
-import { Marquee } from "@/components/shadcn-space/animations/marquee";
-import { motion } from "motion/react";
+import type { ComponentType } from "react";
+import { Marquee } from "@/components/hero-section/animations/marquee";
+import { motion } from "framer-motion";
 
 export interface BrandList {
-  image: string;
   name: string;
-  lightimg: string;
+  Icon: ComponentType<{
+    size?: number;
+    className?: string;
+    "aria-hidden"?: boolean | "true" | "false";
+  }>;
 }
 
 function BrandSlider({ brandList }: { brandList: BrandList[] }) {
@@ -32,18 +36,21 @@ function BrandSlider({ brandList }: { brandList: BrandList[] }) {
             {brandList && brandList.length > 0 && (
               <div className="py-4">
                 <Marquee pauseOnHover className="[--duration:20s] p-0">
-                  {brandList.map((brand, index) => (
-                    <div key={index}>
-                      <img
-                        src={brand.image}
-                        alt={brand.name}
-                        className="w-36 h-8 mr-6 lg:mr-20 dark:hidden"
+                  {brandList.map(({ name, Icon }) => (
+                    <div
+                      key={name}
+                      className="flex shrink-0 items-center gap-3 px-6"
+                      aria-label={name}
+                      title={name}
+                    >
+                      <Icon
+                        size={28}
+                        className="size-7"
+                        aria-hidden="true"
                       />
-                      <img
-                        src={brand.lightimg}
-                        alt={brand.name}
-                        className="hidden dark:block w-36 h-8 mr-12 lg:mr-20"
-                      />
+                      <span className="whitespace-nowrap text-sm font-medium text-muted-foreground">
+                        {name}
+                      </span>
                     </div>
                   ))}
                 </Marquee>

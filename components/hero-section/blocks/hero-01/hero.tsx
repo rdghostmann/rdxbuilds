@@ -1,6 +1,7 @@
 "use client";
 
 import { Instrument_Serif } from "next/font/google";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
@@ -21,7 +22,11 @@ type HeroSectionProps = {
 
 function HeroSection({ avatarList }: HeroSectionProps) {
   return (
-    <section id="hero">
+    <section id="hero" className="relative overflow-hidden">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(#2563eb_1px,transparent_1px)] [background-size:24px_24px] opacity-[0.03] dark:opacity-[0.05]"
+      />
       <div className="w-full h-full relative">
         <div className="relative w-full pt-0 md:pt-20 pb-6 md:pb-10 before:absolute before:w-full before:h-full before:bg-linear-to-r before:from-sky-100 before:via-white before:to-amber-100 before:rounded-full before:top-24 before:blur-3xl before:-z-10 dark:before:from-slate-800 dark:before:via-black dark:before:to-stone-700 dark:before:rounded-full dark:before:blur-3xl dark:before:-z-10">
           <div className="container mx-auto relative z-10">
@@ -33,11 +38,11 @@ function HeroSection({ avatarList }: HeroSectionProps) {
                   transition={{ duration: 1, ease: "easeInOut" }}
                   className="lg:text-8xl md:text-7xl text-5xl font-medium leading-14 md:leading-20 lg:leading-24"
                 >
-                  Building bold brands with{" "}
+                 Transforming ideas into {" "}
                   <span
-                    className={`${instrumentSerif.className} tracking-tight`}
+                    className={`${instrumentSerif.className} tracking-tight text-electric-600 dark:text-electric-400`}
                   >
-                    thoughtful design
+                  scalable Solutions.
                   </span>
                 </motion.h1>
                 <motion.p
@@ -46,9 +51,7 @@ function HeroSection({ avatarList }: HeroSectionProps) {
                   transition={{ duration: 1, delay: 0.1, ease: "easeInOut" }}
                   className="text-base font-normal max-w-2xl text-muted-foreground"
                 >
-                  At shadcn space, we help small startups tackle the world's
-                  biggest challenges with tailored solutions, guiding you from
-                  strategy to success in a competitive market.
+                 We partner with founders, venture builders, and ambitious teams to turn complex ideas into reliable, useful, and exceptionally polished web applications. Focused on engineering rigor, maintainability, and clear business results.
                 </motion.p>
               </div>
               <motion.div
@@ -76,11 +79,12 @@ function HeroSection({ avatarList }: HeroSectionProps) {
                   <ul className="avatar flex flex-row items-center">
                     {avatarList.map((avatar, index) => (
                       <li key={index} className="-mr-2 z-1 avatar-hover:ml-2">
-                        <img
+                        <Image
                           src={avatar.image}
                           alt="Avatar"
                           width={40}
                           height={40}
+                          unoptimized
                           className="rounded-full border-2 border-white"
                         />
                       </li>
@@ -89,10 +93,12 @@ function HeroSection({ avatarList }: HeroSectionProps) {
                   <div className="gap-1 flex flex-col items-start">
                     <div className="flex gap-1">
                       {Array.from({ length: 5 }).map((_, index) => (
-                        <img
+                        <Image
                           key={index}
                           src="https://images.shadcnspace.com/assets/svgs/icon-star.svg"
-                          alt="star"
+                          alt=""
+                          width={16}
+                          height={16}
                           className="h-4 w-4"
                         />
                       ))}

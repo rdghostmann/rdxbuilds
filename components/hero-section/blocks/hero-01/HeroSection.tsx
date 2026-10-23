@@ -1,12 +1,26 @@
-import BrandSlider, {
-  BrandList,
-} from "@/components/shadcn-space/blocks/hero-01/brand-slider";
+// HeroSection.tsx
+import {
+  CSS,
+  Figma,
+  HTML5,
+  JavaScript,
+  MongoDB,
+  NextJs,
+  NodeJs,
+  React,
+  Supabase,
+  TailwindCSS,
+  TypeScript,
+  VercelDark,
+} from "developer-icons";
+
+import BrandSlider, { type BrandList } from "@/components/hero-section/blocks/hero-01/brand-slider";
 import Header, {
   NavigationSection,
-} from "@/components/shadcn-space/blocks/hero-01/header";
+} from "@/components/hero-section/blocks/hero-01/header";
 import Hero, {
   AvatarList,
-} from "@/components/shadcn-space/blocks/hero-01/hero";
+} from "@/components/hero-section/blocks/hero-01/hero";
 
 const navigationData: NavigationSection[] = [
   { title: "Home", href: "#", isActive: true },
@@ -37,36 +51,23 @@ const avatarList: AvatarList[] = [
 ];
 
 const brandList: BrandList[] = [
-  {
-    name: "UseMoos",
-    image: "https://images.shadcnspace.com/assets/svgs/brand-01.svg",
-    lightimg: "https://images.shadcnspace.com/assets/svgs/brand-light-01.svg",
-  },
-  {
-    name: "Kota AI",
-    image: "https://images.shadcnspace.com/assets/svgs/brand-02.svg",
-    lightimg: "https://images.shadcnspace.com/assets/svgs/brand-light-02.svg",
-  },
-  {
-    name: "roomfind.ie",
-    image: "https://images.shadcnspace.com/assets/svgs/brand-03.svg",
-    lightimg: "https://images.shadcnspace.com/assets/svgs/brand-light-03.svg",
-  },
-  {
-    name: "Vercel",
-    image: "https://images.shadcnspace.com/assets/svgs/brand-04.svg",
-    lightimg: "https://images.shadcnspace.com/assets/svgs/brand-light-04.svg",
-  },
-  {
-    name: "Supabase",
-    image: "https://images.shadcnspace.com/assets/svgs/brand-05.svg",
-    lightimg: "https://images.shadcnspace.com/assets/svgs/brand-light-05.svg",
-  },
+  { name: "Next.js", Icon: NextJs },
+  { name: "React", Icon: React },
+  { name: "TypeScript", Icon: TypeScript },
+  { name: "JavaScript", Icon: JavaScript },
+  { name: "Tailwind CSS", Icon: TailwindCSS },
+  { name: "Node.js", Icon: NodeJs },
+  { name: "MongoDB", Icon: MongoDB },
+  { name: "Supabase", Icon: Supabase },
+  { name: "Vercel", Icon: VercelDark },
+  { name: "HTML5", Icon: HTML5 },
+  { name: "CSS", Icon: CSS },
+  { name: "Figma", Icon: Figma },
 ];
 
 const AgencyHeroSection = () => {
   return (
-    <div className="relative overflow-hidden bg-background">
+    <div className="relative overflow-hidden pointer-none  bg-[radial-gradient(#2563eb_1px,transparent_1px)] ">
       <Header navigationData={navigationData} />
       <Hero avatarList={avatarList} />
       <BrandSlider brandList={brandList} />

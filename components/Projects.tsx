@@ -272,7 +272,7 @@ export function Projects() {
         )}
 
         {/* Showcase Notice */}
-        <div className="mt-12 flex items-start gap-3 rounded-xl border border-dashed border-slate-300 bg-slate-50/50 p-4 text-xs text-slate-500 dark:border-slate-700 dark:bg-slate-900/30 dark:text-slate-400">
+        <div className="mt-12 hidden items-start gap-3 rounded-xl border border-dashed border-slate-300 bg-slate-50/50 p-4 text-xs text-slate-500 dark:border-slate-700 dark:bg-slate-900/30 dark:text-slate-400">
           <Info className="mt-0.5 size-4 shrink-0 text-electric-500" />
 
           <p className="leading-relaxed">

@@ -50,20 +50,38 @@ export function Approach() {
 
         if (maxScroll <= 0) return;
 
-        const nextCard = Math.min(activeStep + 1, DATA.approach.length - 1);
-
-        const currentCard = Math.round(
-          container.scrollLeft /
-            (container.firstElementChild?.getBoundingClientRect().width || 1),
+        const cards = Array.from(container.children).filter(
+          (child): child is HTMLElement => child instanceof HTMLElement,
         );
+        if (cards.length === 0) return;
 
-        const targetIndex =
-          currentCard >= DATA.approach.length - 1 ? 0 : currentCard + 1;
+        const containerRect = container.getBoundingClientRect();
+        const containerCenter = containerRect.left + container.clientWidth / 2;
+        const currentCard = cards.reduce(
+          (closestIndex, card, index) => {
+            const cardCenter =
+              card.getBoundingClientRect().left + card.clientWidth / 2;
+            const closestCenter =
+              cards[closestIndex].getBoundingClientRect().left +
+              cards[closestIndex].clientWidth / 2;
+
+            return Math.abs(cardCenter - containerCenter) <
+              Math.abs(closestCenter - containerCenter)
+              ? index
+              : closestIndex;
+          },
+          0,
+        );
+        const targetIndex = (currentCard + 1) % cards.length;
+        const targetCard = cards[targetIndex];
+        const targetRect = targetCard.getBoundingClientRect();
 
         container.scrollTo({
           left:
-            targetIndex *
-            (container.firstElementChild?.getBoundingClientRect().width || 0),
+            container.scrollLeft +
+            targetRect.left -
+            containerRect.left -
+            (container.clientWidth - targetRect.width) / 2,
           behavior: "smooth",
         });
 
@@ -131,14 +149,8 @@ export function Approach() {
         {/* 3 Steps Interactive Grid with glass-panel and staggered scroll motion */}
         <div
           ref={scrollContainerRef}
-          role="button"
-          tabIndex={0}
-          onKeyDown={(event) => {
-            if (event.key === "Enter" || event.key === " ") {
-              event.preventDefault();
-              setActiveStep(idx);
-            }
-          }}
+          role="group"
+          aria-label="Project delivery phases"
           className="
     mt-14 flex gap-4 overflow-x-auto snap-x snap-mandatory
     scroll-smooth pb-4
@@ -161,7 +173,16 @@ export function Approach() {
                   delay: idx * 0.1,
                   ease: [0.16, 1, 0.3, 1],
                 }}
+                role="button"
+                tabIndex={0}
+                aria-pressed={isSelected}
                 onClick={() => setActiveStep(idx)}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    setActiveStep(idx);
+                  }
+                }}
                 className={`glass-panel w-[85%] min-w-[85%] shrink-0 snap-center cursor-pointer rounded-2xl p-6 transition-all sm:w-[70%] sm:min-w-[70%] sm:p-7 md:w-auto md:min-w-0 ${
                   isSelected
                     ? "border-electric-600 dark:border-electric-500 ring-1 ring-electric-500/30 bg-electric-50/30 dark:bg-electric-950/20 shadow-md"

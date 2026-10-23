@@ -6,8 +6,7 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import BlurFade from "@/components/magicui/blur-fade";
 import { Projects } from "@/components/Projects";
-import { ResumeCard } from "@/components/resume-card";
-import AgencyHeroSection from "@/components/shadcn-space/blocks/hero-01/HeroSection";
+import AgencyHeroSection from "@/components/hero-section/blocks/hero-01/HeroSection";
 import { TheToolkit } from "@/components/TheToolkit";
 import { WhatYouHandOver } from "@/components/WhatYouHandOver";
 import Work from "@/components/Work";
@@ -16,12 +15,12 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-[#070b14] text-slate-900 dark:text-slate-100 transition-colors selection:bg-electric-600 selection:text-white relative">
       {/* Top Bar Header */}
-      <Header />
+      {/* <Header /> */}
 
       {/* Main Content Sections */}
       <main id="main-content" tabIndex={-1} className="outline-none">
-        {/* <AgencyHeroSection /> */}
-        <Hero />
+        <AgencyHeroSection />
+        {/* <Hero /> */}
         <About />
         <WhatYouHandOver />
         <TheToolkit />
