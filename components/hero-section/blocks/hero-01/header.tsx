@@ -5,7 +5,7 @@ import { useState, useEffect, useCallback, type MouseEvent } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Menu, X, ArrowUpRight } from "lucide-react";
-import { LinkedinLogo } from "@phosphor-icons/react";
+import { LinkedinLogo, WhatsappLogo } from "@phosphor-icons/react";
 
 import {
   Sheet,
@@ -40,6 +40,11 @@ const SOCIAL_LINKS = [
     label: "LinkedIn",
     href: "https://www.linkedin.com/",
     Icon: LinkedinLogo,
+  },
+  {
+    label: "Whatsapp",
+    href: "https://www.whatsapp.com/",
+    Icon: WhatsappLogo,
   },
 ] as const;
 

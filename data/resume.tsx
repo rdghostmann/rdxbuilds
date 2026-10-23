@@ -285,7 +285,7 @@ export const DATA = {
       speciality: ["Full-Stack", "Web-Design", "SaaS"],
       role: "Frontend Developer & UI/UX Designer",
       summary:
-        "A school management platform designed to streamline academic and administrative operations.",
+        "A school management saas cloud operating system platform designed to streamline academic and administrative operations.  Nigerian primary, secondary, and tertiary institutions — unifying automated fee collections, CBT examinations, broadsheet results, and parent communications into one seamless platform.  ",
       description:
         "A digital school operations platform focused on improving administrative workflows and productivity. The recorded technology stack includes Laravel, JavaScript, Bootstrap, and MySQL.",
       tags: ["Laravel", "HTML5", "JavaScript", "CSS3", "Bootstrap", "MySQL"],
@@ -448,7 +448,7 @@ export const DATA = {
       speciality: ["Web-Design", "Software", "AI Integration"],
       role: "Full-Stack Developer & UI/UX Designer",
       summary:
-        "An enterprise knowledge layer that ensures employees only access information they're authorized to see.",
+        "An enterprise AI powered platform with knowledge layer that ensures employees only access information they're authorized to see.",
       description:
         "An enterprise knowledge platform concept focused on secure information retrieval, permission-aware AI, and multi-tenant data isolation. Designed to help organizations make internal knowledge accessible while enforcing existing access controls, protecting sensitive documents, and preventing unauthorized information disclosure.",
       tags: [
