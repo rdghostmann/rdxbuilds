@@ -467,6 +467,38 @@ export const DATA = {
       metricsContext:
         "Designed to strengthen digital communication for cultural exchange",
     },
+    {
+  id: "kota-ai",
+  title: "Kota AI — Trainable AI Customer Support",
+  category: "AI & Customer Experience SaaS",
+  speciality: ["Web-Design", "Software", "AI"],
+  role: "Full-Stack Developer & UI/UX Designer",
+  summary:
+    "An AI-powered customer support platform concept combining customer messaging, automated journeys, broadcasts, and a shared inbox to help businesses manage customer interactions from one unified workspace.",
+  description:
+    "A unified customer engagement platform concept featuring a trainable AI support agent, shared team inbox, help center, customer journeys, broadcast messaging, and transactional communications. Designed around a unified customer data model to help businesses coordinate support and customer communication more efficiently.",
+  tags: [
+    "AI",
+    "SaaS",
+    "Customer Support",
+    "AI Agents",
+    "Automation",
+    "Messaging",
+    "Shared Inbox",
+    "Customer Experience",
+  ],
+  image: "/kota-ai.png",
+  liveUrl: "https://bunloop.com/",
+  repoUrl: "",
+  highlights: [
+    "Trainable AI agent for customer support workflows",
+    "Shared inbox for coordinated customer conversations",
+    "Customer journeys, broadcasts, and transactional messaging",
+    "Help center and unified customer data experience",
+  ],
+  metricsContext:
+    "Designed to unify AI-powered support, customer communication, and engagement workflows",
+},
   ] satisfies ProjectItem[],
 
   approach: [
