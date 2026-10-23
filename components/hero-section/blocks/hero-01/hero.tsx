@@ -36,7 +36,7 @@ function HeroSection({ avatarList }: HeroSectionProps) {
                   initial={{ opacity: 0, y: 32 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
-                  className="px-2 lg:text-8xl md:text-7xl text-4xl font-medium  md:leading-20 lg:leading-24"
+                  className="pt-7 px-2 lg:text-8xl md:text-7xl text-4xl font-medium  md:leading-20 lg:leading-24"
                 >
                   Transforming ideas into {" "}
                   <span
@@ -69,14 +69,14 @@ function HeroSection({ avatarList }: HeroSectionProps) {
                   className="relative text-sm font-medium rounded-full h-12 p-1 ps-6 pe-14 group transition-all duration-500 hover:ps-14 hover:pe-6 w-fit overflow-hidden cursor-pointer"
                 >
                   <span className="relative z-10 transition-all duration-500">
-                    Get Started
+                    Let&apos;s build 
                   </span>
                   <span className="absolute right-1 w-10 h-10 bg-background text-foreground rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-44px)] group-hover:rotate-45">
                     <ArrowUpRight size={16} />
                   </span>
                 </Button>
                 <div className="flex items-center sm:gap-7 gap-3">
-                  <ul className="avatar hidden flex-row items-center">
+                  <ul className="avatar flex flex-row items-center">
                     {avatarList.map((avatar, index) => (
                       <li key={index} className="-mr-2 z-1 avatar-hover:ml-2">
                         <Image
