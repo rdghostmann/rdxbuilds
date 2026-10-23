@@ -16,7 +16,7 @@ import Link from "next/link";
 
 const stepIcons = [Compass, PanelsTopLeft, Wrench, Rocket];
 
-const AUTO_SCROLL_INTERVAL = 3500;
+const AUTO_SCROLL_INTERVAL = 7000;
 const RESUME_DELAY = 3000;
 
 export function Approach() {
@@ -56,12 +56,12 @@ export function Approach() {
       container.offsetLeft -
       (container.clientWidth - card.clientWidth) / 2;
 
+    setActiveStep(index);
+
     container.scrollTo({
       left: Math.max(0, targetLeft),
       behavior: smooth ? "smooth" : "auto",
     });
-
-    setActiveStep(index);
   }, []);
 
   const startAutoScroll = useCallback(() => {
@@ -76,18 +76,29 @@ export function Approach() {
         return;
       }
 
-      const nextStep = (activeStepRef.current + 1) % phases.length;
+      const cards = Array.from(container.children) as HTMLElement[];
+      if (!cards.length) return;
 
-      scrollToStep(nextStep);
+      const containerCenter =
+        container.getBoundingClientRect().left + container.clientWidth / 2;
+
+      let closestIndex = 0;
+      let closestDistance = Infinity;
+
+      cards.forEach((card, index) => {
+        const rect = card.getBoundingClientRect();
+        const distance = Math.abs(rect.left + rect.width / 2 - containerCenter);
+
+        if (distance < closestDistance) {
+          closestDistance = distance;
+          closestIndex = index;
+        }
+      });
+
+      scrollToStep((closestIndex + 1) % cards.length);
     }, AUTO_SCROLL_INTERVAL);
-  }, [clearAutoScroll, phases.length, scrollToStep]);
+  }, [clearAutoScroll, scrollToStep]);
 
-  // Keep the current index accessible to the interval without stale state.
-  const activeStepRef = useRef(activeStep);
-
-  useEffect(() => {
-    activeStepRef.current = activeStep;
-  }, [activeStep]);
 
   const pauseAutoScroll = useCallback(() => {
     isInteractingRef.current = true;
@@ -177,7 +188,6 @@ export function Approach() {
       }
     });
 
-    activeStepRef.current = closestIndex;
     setActiveStep((current) =>
       current === closestIndex ? current : closestIndex,
     );

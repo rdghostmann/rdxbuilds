@@ -12,53 +12,29 @@ export function Footer() {
     <footer className="border-t border-slate-200/80 bg-slate-100/50 pb-28 transition-colors dark:border-slate-800/80 dark:bg-[#070b14]/60">
       {/* <footer className="border-t border-slate-200/80 bg-slate-100/50 pb-28 pt-12 transition-colors dark:border-slate-800/80 dark:bg-[#070b14]/60"> */}
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
-        <div className="hidden flex-col items-center justify-between gap-6 md:flex-row">
-          {/* <div className="flex flex-col items-center justify-between gap-6 md:flex-row"> */}
-          {/* Brand & Tagline */}
-          <div className="flex items-center gap-3">
-            <div className="flex size-7 items-center justify-center overflow-hidden rounded-md border border-electric-600/30 bg-electric-600/10">
-              <Image
-                src={DATA.brandAvatar}
-                alt="Rdxbuilds brand mark"
-                width={28}
-                height={28}
-                sizes="28px"
-                className="size-full object-cover"
-              />
-            </div>
-
-            <div className="text-xs">
-              <span className="font-bold text-slate-900 dark:text-white">
-                Rdxbuilds
-              </span>
-              <span className="ml-2 text-slate-400 dark:text-slate-500">
-                · Web Developer & Product Builder
-              </span>
-            </div>
-          </div>
-        </div>
 
         {/* Copyright */}
         <div className=" flex  items-center justify-between gap-4 border-t border-slate-200/60 pt-6 text-[11px] text-slate-400 dark:border-slate-800/60 dark:text-slate-500 sm:flex-row">
           {/* Brand & Tagline */}
           <div className="flex items-center gap-3">
-            <div className="flex size-7 items-center justify-center overflow-hidden rounded-md border border-electric-600/30 bg-electric-600/10">
-              <Image
-                src={DATA.brandAvatar}
-                alt="Rdxbuilds brand mark"
-                width={28}
-                height={28}
-                sizes="28px"
-                className="size-full object-cover"
-              />
-            </div>
-
-            <div className="text-xs">
-              <span className="font-bold text-slate-900 dark:text-white">
-                Rdxbuilds
-              </span>
-              
-            </div>
+              <div className="flex size-20 shrink-0 items-center justify-center">
+                    <Image
+                      src="/rdxbuilds-logo-light.png"
+                      alt="Rdxbuilds logo"
+                      width={30}
+                      height={30}
+                      priority
+                      className="size-full object-contain dark:hidden"
+                    />
+                    <Image
+                      src="/rdxbuilds-logo-dark.png"
+                      alt=""
+                      width={30}
+                      height={30}
+                      priority
+                      className="hidden size-full object-contain dark:block"
+                    />
+                  </div>
           </div>
 
           <p>© 2026 Rdxbuilds. All rights reserved.</p>

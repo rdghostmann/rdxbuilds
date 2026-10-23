@@ -2,7 +2,13 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { DATA } from "@/data/resume";
-import { ArrowUpRight, Check, Copy, MessageCircle, MessageSquare, Send } from "lucide-react";
+import {
+  ArrowUpRight,
+  Check,
+  MessageCircle,
+  MessageSquare,
+  Send,
+} from "lucide-react";
 
 export function Contact() {
   const [copied, setCopied] = useState(false);
@@ -63,7 +69,6 @@ export function Contact() {
                 architecture, I am open to discussing select new opportunities.
               </p>
 
-              {/* Direct Email Card with One-Click Copy */}
               {/* Direct WhatsApp Contact Card */}
               <div className="mt-8 rounded-2xl glass-panel p-5 shadow-sm">
                 <p className="text-xs font-bold uppercase tracking-wider text-slate-400">
@@ -99,24 +104,41 @@ export function Contact() {
               </div>
 
               {/* Social Channels */}
-              <div className="mt-6 space-y-2">
+              <div className="mt-8 space-y-3">
                 <p className="text-xs font-semibold text-slate-500 dark:text-slate-400">
                   Connect & Verify
                 </p>
-                <div className="flex flex-wrap gap-3">
-                  {Object.entries(DATA.contact.social).map(([name, social]) => (
-                    <a
-                      key={name}
-                      href={social.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-700 dark:text-slate-300 hover:text-electric-600 dark:hover:text-electric-400 transition-colors"
-                    >
-                      <social.icon className="size-3.5" />
-                      <span>{name}</span>
-                      <ArrowUpRight className="size-3 text-slate-400" />
-                    </a>
-                  ))}
+
+                <div className="flex flex-wrap gap-x-5 gap-y-3">
+                  {Object.entries(DATA.contact.social).map(([name, social]) => {
+                    const isWhatsApp = name.toLowerCase() === "whatsapp";
+
+                    const href = isWhatsApp
+                      ? `https://wa.me/${DATA.whatsappNumber.replace(/\D/g, "")}?text=${encodeURIComponent(
+                        "Hello, I came across your portfolio and would like to discuss a project with you.",
+                      )}`
+                      : social.url;
+
+                    return (
+                      <a
+                        key={name}
+                        href={href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={
+                          isWhatsApp ? "Contact via WhatsApp" : `Visit ${name} profile`
+                        }
+                        className={`inline-flex items-center gap-1.5 text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-electric-500 ${isWhatsApp
+                            ? "text-[#25D366] hover:text-[#1EBE5D]"
+                            : "text-slate-700 hover:text-electric-600 dark:text-slate-300 dark:hover:text-electric-400"
+                          }`}
+                      >
+                        <social.icon className="size-3.5" />
+                        <span>{name}</span>
+                        <ArrowUpRight className="size-3 text-slate-400" />
+                      </a>
+                    );
+                  })}
                 </div>
               </div>
             </div>

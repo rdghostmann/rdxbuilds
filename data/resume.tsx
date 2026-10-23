@@ -1,7 +1,7 @@
 // /data/resume.tsx
 "use client";
 import { FolderGit2, Home, Mail } from "lucide-react";
-import { GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
+import { GithubLogo, LinkedinLogo, WhatsappLogoIcon } from "@phosphor-icons/react";
 
 import heroImg from "/public/images/rdx_hero_product_preview_1792658862900.jpg";
 
@@ -52,37 +52,33 @@ export const DATA = {
 
   navbar: [
     { href: "#hero", icon: Home, label: "Home" },
-    // { href: "#about", icon: User, label: "About" },
-    // { href: "#hand-over", icon: ShieldCheck, label: "What You Hand Over" },
-    // { href: "#toolkit", icon: Wrench, label: "The Toolkit" },
     { href: "#projects", icon: FolderGit2, label: "Projects" },
-    // { href: "#approach", icon: Compass, label: "Approach" },
     { href: "#contact", icon: Mail, label: "Contact" },
   ],
 
-  contact: {
-    email: "RandalChukzWilson@gmail.com",
-    social: {
-      GitHub: {
-        name: "GitHub",
-        url: "https://github.com",
-        icon: GithubLogo,
-        navbar: true,
-      },
-      // X: {
-      //   name: "X (Twitter)",
-      //   url: "https://x.com",
-      //   icon: XLogo,
-      //   navbar: true,
-      // },
-      LinkedIn: {
-        name: "LinkedIn",
-        url: "https://linkedin.com",
-        icon: LinkedinLogo,
-        navbar: true,
-      },
+ contact: {
+  email: "RandalChukzWilson@gmail.com",
+  social: {
+    GitHub: {
+      name: "GitHub",
+      url: "https://github.com",
+      icon: GithubLogo,
+      navbar: true,
+    },
+    LinkedIn: {
+      name: "LinkedIn",
+      url: "https://linkedin.com",
+      icon: LinkedinLogo,
+      navbar: true,
+    },
+    WhatsApp: {
+      name: "WhatsApp",
+      url: "https://wa.me/",
+      icon: WhatsappLogoIcon ,
+      navbar: false,
     },
   },
+},
 
   // Work Experience
   work: [
