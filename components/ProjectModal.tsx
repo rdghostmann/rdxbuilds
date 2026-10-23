@@ -82,7 +82,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
             onDragStart={(e) => e.preventDefault()}
           >
             <Image
-              src={project.image}
+              src={project.screenshot}
               alt={project.title}
               fill
               sizes="(max-width: 768px) 100vw, 768px"
