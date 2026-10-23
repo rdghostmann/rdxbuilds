@@ -548,36 +548,46 @@ projects: [
 },
 ] satisfies ProjectItem[],
 
-  approach: [
-    {
-      step: "01",
-      title: "Deconstruct & Define",
-      lead: "Aligning on core objectives, user requirements, and technical constraints before writing a single line of code.",
-      points: [
-        "Clarifying product requirements, edge cases, and success benchmarks",
-        "Evaluating tech stack trade-offs for longevity, maintainability, and delivery speed",
-        "Defining strict data contracts, type interfaces, and architecture wireframes",
-      ],
-    },
-    {
-      step: "02",
-      title: "Agile & Resilient Build",
-      lead: "Iterative development with clean component boundaries, strict typing, and constant verification.",
-      points: [
-        "Developing modular, reusable component systems with high testability",
-        "Implementing clean API integrations with comprehensive error boundaries",
-        "Conducting frequent milestone reviews to ensure complete alignment with vision",
-      ],
-    },
-    {
-      step: "03",
-      title: "Refine, Optimize & Deliver",
-      lead: "Polishing every detail to ensure high performance, rock-solid accessibility, and seamless handoff.",
-      points: [
-        "Auditing Core Web Vitals, asset compression, and rendering performance",
-        "Verifying full keyboard accessibility, dark/light contrast, and cross-browser stability",
-        "Delivering organized code repositories with exhaustive documentation and zero tech debt",
-      ],
-    },
-  ],
+approach: [
+  {
+    step: "01",
+    title: "Understand & Plan",
+    lead: "We start by understanding your business, your goals, and the people you want to reach. Then we agree on what to build, how it should work, and what success looks like.",
+    points: [
+      "Discuss your goals, needs, and expectations",
+      "Plan the features, timeline, and project budget",
+      "Agree on the design and delivery milestones",
+    ],
+  },
+  {
+    step: "02",
+    title: "Design & Build",
+    lead: "We turn the plan into a practical digital product with a clear design, useful features, and an experience your customers can navigate easily.",
+    points: [
+      "Create a clean, user-friendly design",
+      "Build the website or application around your needs",
+      "Keep you updated as the project takes shape",
+    ],
+  },
+  {
+    step: "03",
+    title: "Test & Improve",
+    lead: "Before launch, we check that everything works as expected, fix issues, and make improvements so your product feels polished and works reliably across devices.",
+    points: [
+      "Test key features and everyday user journeys",
+      "Check mobile, tablet, and desktop experiences",
+      "Fix issues and improve speed and usability",
+    ],
+  },
+  {
+    step: "04",
+    title: "Launch & Support",
+    lead: "We prepare your product for launch, help get it online, and provide a clear handover so you know how to use and manage what has been built.",
+    points: [
+      "Deploy the finished product",
+      "Provide project files and usage guidance",
+      "Discuss maintenance and future improvements",
+    ],
+  },
+],
 };

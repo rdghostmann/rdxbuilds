@@ -110,7 +110,7 @@ export function TheToolkit() {
         "Uptime Monitoring",
       ],
     },
-     {
+    {
       id: "AI",
       label: "AI",
       icon: Brain,
@@ -166,31 +166,84 @@ export function TheToolkit() {
         </div>
 
         {/* 5 Domain Navigation Buttons */}
-        <div className="mt-10 flex flex-wrap gap-2 p-1.5 rounded-2xl glass-panel w-fit">
-          {domains.map((d) => {
-            const Icon = d.icon;
-            const isSelected = activeTab === d.id;
-            return (
-              <button
-                key={d.id}
-                type="button"
-                onClick={() => setActiveTab(d.id)}
-                className={`inline-flex items-center gap-2 px-4 py-2.5 text-xs font-semibold rounded-xl transition-all whitespace-nowrap shrink-0 ${
-                  isSelected
-                    ? "bg-electric-600 text-white shadow-md shadow-electric-600/20"
-                    : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100/60 dark:hover:bg-slate-800/60"
-                }`}
-              >
-                <Icon className="size-4" />
-                <span>{d.label}</span>
-              </button>
-            );
-          })}
+        {/* Swipeable Domain Navigation */}
+        <div
+          className="
+    mt-10 -mx-6 px-6
+    sm:mx-0 sm:px-0
+  "
+        >
+          <div
+            role="tablist"
+            aria-label="Toolkit domains"
+            className="
+      flex w-full sm:w-fit
+      flex-nowrap sm:flex-wrap
+      gap-2 p-1.5
+      rounded-2xl glass-panel
+      overflow-x-auto sm:overflow-visible
+      overscroll-x-contain
+      snap-x snap-mandatory
+      touch-pan-x
+      scrollbar-none
+    "
+            style={{
+              WebkitOverflowScrolling: "touch",
+              scrollbarWidth: "none",
+            }}
+          >
+            {domains.map((d) => {
+              const Icon = d.icon;
+              const isSelected = activeTab === d.id;
+
+              return (
+                <button
+                  key={d.id}
+                  id={`tab-${d.id.replace(/[^a-zA-Z0-9]/g, "-")}`}
+                  type="button"
+                  role="tab"
+                  aria-selected={isSelected}
+                  aria-controls="toolkit-panel"
+                  onClick={() => setActiveTab(d.id)}
+                  className={`
+            inline-flex items-center justify-center gap-2
+            px-4 py-3
+            min-h-11
+            text-xs font-semibold
+            rounded-xl transition-all duration-200
+            whitespace-nowrap shrink-0 snap-start
+            focus-visible:outline-none
+            focus-visible:ring-2
+            focus-visible:ring-electric-500
+            focus-visible:ring-offset-2
+            dark:focus-visible:ring-offset-slate-950
+            ${isSelected
+                      ? "bg-electric-600 text-white shadow-md shadow-electric-600/20"
+                      : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100/60 dark:hover:bg-slate-800/60"
+                    }
+          `}
+                >
+                  <Icon className="size-4 shrink-0" />
+                  <span>{d.label}</span>
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Mobile swipe hint */}
+          <p className="mt-2 px-1 text-[11px] text-slate-400 sm:hidden">
+            Swipe horizontally to explore all domains →
+          </p>
         </div>
 
         {/* Domain Deep-Dive Panel with Motion Reveal */}
-        <div className="mt-8 rounded-2xl glass-panel p-6 sm:p-10 shadow-lg relative overflow-hidden">
-          <AnimatePresence mode="wait">
+        {/* Domain Deep-Dive Panel */}
+        <div
+          id="toolkit-panel"
+          role="tabpanel"
+          aria-labelledby={`tab-${currentDomain.id.replace(/[^a-zA-Z0-9]/g, "-")}`}
+          className="mt-8 rounded-2xl glass-panel p-6 sm:p-10 shadow-lg relative overflow-hidden"
+        >          <AnimatePresence mode="wait">
             <motion.div
               key={currentDomain.id}
               initial={{ opacity: 0, y: 16 }}
