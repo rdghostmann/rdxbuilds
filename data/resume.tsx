@@ -295,7 +295,7 @@ projects: [
       "Healthcare",
     ],
     image: "/medsupply.png",
-    screenshot: "/screenshot/medisupply.png",
+    screenshot: "/screenshot/medsupply.png",
     liveUrl: "https://www.medisupplyltd.com/",
     repoUrl: "",
     highlights: [
