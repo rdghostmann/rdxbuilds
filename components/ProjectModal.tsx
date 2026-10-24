@@ -140,7 +140,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
           </div>
 
           {/* Action Links */}
-          <div className="flex flex-wrap items-center gap-4 pt-4 border-t border-slate-200/80 dark:border-slate-800/80">
+          <div className="hidden flex-wrap items-center gap-4 pt-4 border-t border-slate-200/80 dark:border-slate-800/80">
             {project.liveUrl && (
               <a
                 href={project.liveUrl}
