@@ -76,6 +76,16 @@ const brandList: BrandList[] = [
 const AgencyHeroSection = () => {
   return (
     <div className="relative overflow-hidden pointer-none  bg-[radial-gradient(#2563eb_1px,transparent_1px)] ">
+      
+      {/* Background ambient electric blue glow */}
+      <div
+        className="pointer-events-none absolute -top-40 right-0 h-[480px] w-[480px] rounded-full bg-blue-500/10 blur-[120px] dark:bg-blue-600/15"
+        aria-hidden="true"
+      />
+      <div
+        className="pointer-events-none absolute top-1/2 -left-32 h-[380px] w-[380px] rounded-full bg-indigo-500/5 blur-[100px] dark:bg-indigo-600/10"
+        aria-hidden="true"
+      />
       <Header navigationData={navigationData} />
       <Hero avatarList={avatarList} />
       <BrandSlider brandList={brandList} />
